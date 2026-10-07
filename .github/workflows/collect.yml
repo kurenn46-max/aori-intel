@@ -32,6 +32,8 @@ jobs:
           DEBUG_ANGLERS: '1'
         run: npm run collect
       - name: Search the open web
+        env:
+          DEBUG_DISCOVERY: '1'
         run: npm run discover
       - name: Commit changed intelligence
         run: |
