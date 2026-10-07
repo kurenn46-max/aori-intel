@@ -69,6 +69,26 @@ function parseYamaria(html, source) {
       raw_hit:Number(hit)
     });
   }
+  if (events.length) return events;
+
+  // Fallback: some responses flatten the latest cards instead of exposing the same anchor markup.
+  // HIT is engagement, never catch count.
+  const flat=stripTags(html);
+  const re=/(\\d+)\\s*HIT\\s+(.+?)\\s+さん\\s+(\\d{4}-\\d{2}-\\d{2})\\s+(\\d{2}:\\d{2})\\s+アオリイカ：([^ ]+)\\s+釣果場所：\\s*福井\\s+([^ ]+)\\s+釣り場所：([^ #]+)(?:\\s+(.*?))?(?=\\s+\\d+\\s*HIT\\s+.+?\\s+さん\\s+\\d{4}-\\d{2}-\\d{2}|$)/g;
+  let m;
+  while ((m=re.exec(flat))) {
+    const hit=m[1], angler=m[2], date=m[3], time=m[4], size=m[5], city=m[6], placeType=m[7], comment=m[8]||'';
+    const region=normalizeRegion(city)||source.region||city;
+    if (!region || /小名浜/.test(city)) continue;
+    events.push({
+      id:'yamaria-flat-'+idFor([source.url,date,time,angler,city,placeType]),
+      date,time,region,subregion:city,mode:classifyMode(placeType),method:'エギング',place_type:placeType,
+      catch_count:1,confirmed_events:1,count_source:'posted_event',size_text:size,
+      claimed_count:ordinalClaim(comment),angler,confidence:'公開一覧実釣',
+      source:source.name,source_url:source.url,notes:normalizeSpace(comment)||null,verified:true,
+      raw_hit:Number(hit)
+    });
+  }
   return events;
 }
 
@@ -120,13 +140,29 @@ function extractDate(text='') {
   if (!m) return null;
   return `${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`;
 }
-function speciesFromText(text='') {
+function escapeRegex(s='') { return s.replace(/[-/\\^$*+?.()|[\]{}]/g,'\\function speciesFromText(text='') {
   const names=[...new Set([...BAIT_SPECIES,...PREDATOR_SPECIES,...OTHER_SPECIES])];
   return names.filter(n=>text.includes(n)).map(name=>({
     name,
     signal: name==='アオリイカ'?'target':BAIT_SPECIES.includes(name)?'direct_bait':PREDATOR_SPECIES.includes(name)?'indirect_predator_signal':'other',
     amount:null
   }));
+}'); }
+function speciesFromText(text='') {
+  const names=[...new Set([...BAIT_SPECIES,...PREDATOR_SPECIES,...OTHER_SPECIES])].sort((a,b)=>b.length-a.length);
+  const found=[]; let masked=text;
+  for (const name of names) {
+    const pattern='(?<![一-龯ぁ-んァ-ヶー])'+escapeRegex(name)+'(?![一-龯ぁ-んァ-ヶー])';
+    const rx=new RegExp(pattern,'u');
+    if (!rx.test(masked)) continue;
+    found.push({
+      name,
+      signal: name==='アオリイカ'?'target':BAIT_SPECIES.includes(name)?'direct_bait':PREDATOR_SPECIES.includes(name)?'indirect_predator_signal':'other',
+      amount:null
+    });
+    masked=masked.replace(new RegExp(pattern,'gu'),' ');
+  }
+  return found;
 }
 function parseJfObama(html, source) {
   const text=stripTags(html); const rows=[];
@@ -155,7 +191,9 @@ function parseJfObama(html, source) {
   return rows;
 }
 function parseWakasaArticle(html, url, source) {
-  const text=stripTags(html); const date=extractDate(text);
+  const fullText=stripTags(html);
+  const text=fullText.split(/よかったらシェア/)[0];
+  const date=extractDate(text);
   if (!date || !/定置網/.test(text)) return null;
   const mixed=/底曳|底引|延縄/.test(text);
   let confirmedOnly = /定置網は[^。]*だけ/.test(text) || /漁は[、,:：\s]*定置網[。\s]/.test(text);
@@ -192,7 +230,11 @@ async function collect() {
     try{
       if(source.adapter==='yamaria'){
         const html=await fetchText(source.url); const events=parseYamaria(html,source); const sessions=groupSessions(events);
-        newSessions.push(...sessions); st.new_count=sessions.length; if(!sessions.length)st.status='no_new';
+        newSessions.push(...sessions); st.new_count=sessions.length;
+        if(!sessions.length){
+          if(/アオリイカ：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
+          else st.status='no_new';
+        }
       } else if(source.adapter==='jf_obama'){
         const html=await fetchText(source.url); const rows=parseJfObama(html,source); newSetnet.push(...rows); st.new_count=rows.length; if(!rows.length)st.status='no_new';
       } else if(source.adapter==='wakasa_osakana'){
