@@ -206,6 +206,50 @@ function parseWakasaArticle(html, url, source) {
 
 
 
+
+function parseChowari(html, source) {
+  const text=stripTags(html);
+  const re=/釣行日[:：]?\s*(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日/g;
+  const marks=[]; let m;
+  while((m=re.exec(text))) marks.push({date:`${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`,idx:m.index,end:re.lastIndex});
+  const rows=[];
+  for(let i=0;i<marks.length;i++){
+    const cur=marks[i],next=marks[i+1]?.idx??text.length;
+    const block=normalizeSpace(text.slice(cur.end,Math.min(next,cur.end+3200)));
+    if(!/アオリイカ|アオリ(?!ゾメ)/.test(block)) continue;
+
+    let count=null,countMin=null,countMax=null,countBasis='unknown';
+    let mm=block.match(/アオリイカ[^。]{0,140}?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
+    if(mm){
+      countMin=Number(mm[1]);countMax=Number(mm[2]);count=countMax;countBasis='per_angler_range';
+    } else {
+      mm=block.match(/アオリイカ[^。]{0,140}?竿頭\s*(\d{1,3})\s*匹/);
+      if(mm){count=countMax=Number(mm[1]);countBasis='per_angler_max';}
+      else {
+        mm=block.match(/アオリイカ[^。]{0,140}?合計\s*(\d{1,3})\s*匹/);
+        if(mm){count=countMax=Number(mm[1]);countBasis='boat_total';}
+      }
+    }
+
+    const sr=block.match(/アオリイカ[^。]{0,100}?(\d{1,2})\s*[-〜～]\s*(\d{1,2})\s*cm/);
+    const sizeText=sr?`${sr[1]}〜${sr[2]}cm`:null;
+    const place=normalizeSpace((block.match(/釣り場\s*([^。]{1,80}?)(?=釣り人|アオリイカ|天気|コメント|$)/)||[])[1]||'');
+    const method=/ティップラン/.test(block)?'ティップラン':/エギング/.test(block)?'エギング':'船アオリ';
+    rows.push({
+      id:`chowari-${idFor([source.id||source.name,cur.date,place,countMin||'',countMax||''])}`,
+      date:cur.date,time:null,region:source.region||normalizeRegion(place)||'小浜湾',
+      subregion:place||source.subregion||source.region||'小浜沖',
+      mode:'boat',method,place_type:place||'沖/船',
+      catch_count:count,catch_min:countMin,catch_max:countMax,confirmed_events:null,claimed_count:null,
+      count_source:count?'boat_report':'report_only',count_basis:countBasis,
+      duration_hours:null,cpue:null,size_text:sizeText,max_size_text:sizeText,angler:null,
+      confidence:'遊漁船公式/予約サイト掲載釣果',source:source.name,source_url:source.url,
+      notes:block.slice(0,360),verified:true
+    });
+  }
+  return dedupe(rows);
+}
+
 function parseJohshuya(html, source) {
   const full=stripTags(html);
   const text=full.split(/近隣店舗の最新釣果/)[0];
@@ -451,6 +495,10 @@ async function collect() {
           if(/アオリイカ\s*：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
           else st.status='no_new';
         }
+      } else if(source.adapter==='chowari'){
+        const html=await fetchText(source.url); const rows=parseChowari(html,source);
+        newSessions.push(...rows); st.new_count=rows.length;
+        if(!rows.length){st.status='no_new';st.note='公開釣果一覧にアオリ情報なし';}
       } else if(source.adapter==='johshuya'){
         const html=await fetchText(source.url); const rows=parseJohshuya(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
@@ -486,5 +534,5 @@ async function collect() {
   console.log(`catches=${catches.length} setnet=${setnet.length}`);
 }
 
-module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseJohshuya,parseUosoku,speciesFromText};
+module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseChowari,parseJohshuya,parseUosoku,speciesFromText};
 if(require.main===module) collect().catch(e=>{console.error(e);process.exit(1);});
