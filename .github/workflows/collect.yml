@@ -22,6 +22,8 @@ jobs:
       - name: Validate parsers
         run: npm test
       - name: Collect public data
+        env:
+          DEBUG_YAMARIA: '1'
         run: npm run collect
       - name: Commit changed data
         run: |
