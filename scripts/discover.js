@@ -95,10 +95,18 @@ function countInfo(text=''){
       const n=Number(m[1]); if(n>=1&&n<=200)vals.push({n,context:normalize(m[0])});
     }
   }
+  if(!vals.length){
+    const exact=text.match(/(?:匹数|杯数)\s*(\d{1,3})\s*(?:匹|杯)?/);
+    if(exact){const n=Number(exact[1]);if(n>=1&&n<=200)vals.push({n,context:normalize(exact[0]),basis:'reported'});}
+  }
+  if(!vals.length){
+    const posts=text.match(/釣果投稿\s*(\d{1,3})\s*釣果/);
+    if(posts && /アオリイカ/.test(text)){const n=Number(posts[1]);if(n>=1&&n<=50)vals.push({n,context:normalize(posts[0]),basis:'post_count'});}
+  }
   if(!vals.length)return {count:null,basis:'unknown',context:null};
   vals.sort((a,b)=>b.n-a.n);
   const v=vals[0];
-  const basis=/船中|合計|トータル|全体/.test(v.context)?'boat_total':'reported';
+  const basis=v.basis||(/船中|合計|トータル|全体/.test(v.context)?'boat_total':'reported');
   return {count:v.n,basis,context:v.context};
 }
 function canonical(url){
@@ -124,13 +132,12 @@ function trusted(url){const d=domain(url);return cfg.trusted_domains.some(x=>d==
 function rejected(url){const d=domain(url);return cfg.reject_domains.some(x=>d===x||d.endsWith('.'+x));}
 function queryList(){
   const p=jstParts(); const ym=`${p.year} ${p.month}`;
-  const out=[];
+  const out=[...cfg.targeted_queries.map(q=>q+' '+p.year)];
   for(const r of cfg.regions){
     const term=r.terms[0];
-    for(const t of cfg.query_templates.slice(0,3))out.push(t.replace('{term}',term)+' '+ym);
+    for(const t of cfg.query_templates)out.push(t.replace('{term}',term)+' '+ym);
   }
-  out.push(...cfg.targeted_queries.map(q=>q+' '+p.year));
-  return [...new Set(out)].slice(0,cfg.provider.max_queries||28);
+  return [...new Set(out)].slice(0,cfg.provider.max_queries||40);
 }
 function parseRss(xml,query){
   const items=[];
@@ -160,7 +167,8 @@ async function fetchText(url,timeout=12000){
 }
 function candidateFrom(result,pageText){
   const combined=normalize([result.title,result.description,pageText].join(' '));
-  const region=regionOf(combined);
+  const confirmedRegion=regionOf(combined);
+  const region=confirmedRegion||regionOf(result.query);
   const mode=modeOf(combined);
   const method=methodOf(combined);
   const d=parseDate(combined,result.pubDate);
@@ -169,7 +177,7 @@ function candidateFrom(result,pageText){
   const catchish=/釣果|釣れ|釣った|キャッチ|ゲット|ヒット|杯|匹|エギング|ティップラン/.test(combined);
   let score=0;
   if(hasAori)score+=3;
-  if(region)score+=3;
+  if(confirmedRegion)score+=3; else if(region)score+=1;
   if(d.kind==='explicit_full')score+=3; else if(d.kind==='explicit_monthday')score+=2; else if(d.kind==='search_pubdate')score+=1;
   if(ci.count)score+=3;
   if(mode!=='unknown')score+=2;
@@ -177,7 +185,7 @@ function candidateFrom(result,pageText){
   if(trusted(result.url))score+=1;
   if(daysAgo(d.date)<=7)score+=1;
   if(/通販|商品|中古販売|ランキング|レシピ|図鑑|飼育/.test(combined))score-=4;
-  const auto=score>=12 && hasAori && region && ci.count && mode!=='unknown' && d.kind==='explicit_full' && daysAgo(d.date)>=0 && daysAgo(d.date)<=30;
+  const auto=score>=12 && hasAori && confirmedRegion && ci.count && mode!=='unknown' && d.kind==='explicit_full' && daysAgo(d.date)>=0 && daysAgo(d.date)<=30 && ci.basis!=='post_count';
   return {
     id:'discover-'+hash(result.url+'|'+(d.date||'')+'|'+(region||'')+'|'+(ci.count||'')),
     query:result.query,title:result.title,url:result.url,domain:domain(result.url),
@@ -223,7 +231,7 @@ async function main(){
     try{page=stripTags(await fetchText(r.url,12000));}
     catch(e){errors.push({stage:'fetch',url:r.url,error:String(e).slice(0,180)});}
     const c=candidateFrom(r,page);
-    if(c.score>=5)candidates.push(c);
+    if(c.score>=4)candidates.push(c);
   }
 
   const current=load(path.join(DATA,'catches.json'),[]);
