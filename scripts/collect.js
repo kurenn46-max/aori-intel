@@ -318,7 +318,9 @@ function parseUosoku(html, source) {
   for(let i=0;i<marks.length;i++){
     const cur=marks[i], next=marks[i+1]?.idx ?? body.length;
     const before=body.slice(Math.max(0,cur.idx-260),cur.idx);
-    const meta=normalizeSpace(body.slice(cur.end,Math.min(next,cur.end+900)));
+    let meta=normalizeSpace(body.slice(cur.end,Math.min(next,cur.end+900)));
+    const clickEnd=meta.search(/\d+Click/);
+    if(clickEnd>=0) meta=meta.slice(0,clickEnd+(meta.slice(clickEnd).match(/^\d+Click/)||[''])[0].length);
     if(!/関連魚種:\s*[^。]{0,160}アオリイカ/.test(meta) && !/アオリイカ/.test(meta)) continue;
 
     let title=normalizeSpace(before
