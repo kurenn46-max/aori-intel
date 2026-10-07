@@ -1,6 +1,54 @@
 [
   {
-    "id": "setnet-20261003-uku-sekumi",
+    "id": "setnet-jf-2026-10-06",
+    "date": "2026-10-06",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "species_explicit",
+    "aori_present": false,
+    "species": [
+      {
+        "name": "シイラ",
+        "signal": "other",
+        "amount": null
+      }
+    ],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置対象魚種が本文で明示",
+    "notes": "おはようございます。今朝は延縄・底曳・定置その他の魚が並んでいます！定置のシイラが多いですが、底曳きのノドグロもいますよ～ 延縄・底曳は本日休漁です。"
+  },
+  {
+    "id": "setnet-jf-2026-10-05",
+    "date": "2026-10-05",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "おはようございます。今日は底曳、定置その他の水揚げがありました。 シロカジキ。"
+  },
+  {
+    "id": "setnet-wakasa-ca4bc0417d33dd40",
+    "date": "2026-10-05",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26969",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
+    "id": "setnet-wakasa-bb49fdad05998064",
     "date": "2026-10-03",
     "region": "小浜湾・若狭町",
     "fishery": "宇久定置網・世久見",
@@ -8,15 +56,362 @@
     "gear_attribution": "confirmed",
     "aori_present": true,
     "species": [
-      {"name":"アオリイカ","signal":"target","amount":null},
-      {"name":"ジンタ","signal":"direct_bait","amount":null},
-      {"name":"サゴシ","signal":"indirect_predator_signal","amount":null},
-      {"name":"カンパチ","signal":"indirect_predator_signal","amount":null},
-      {"name":"ツバス","signal":"indirect_predator_signal","amount":null}
+      {
+        "name": "ジンタ",
+        "signal": "direct_bait",
+        "amount": null
+      },
+      {
+        "name": "アジ",
+        "signal": "direct_bait",
+        "amount": null
+      },
+      {
+        "name": "サバ",
+        "signal": "direct_bait",
+        "amount": null
+      },
+      {
+        "name": "サゴシ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "サワラ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ツバス",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ハマチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ブリ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "カンパチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "スズキ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "アオリイカ",
+        "signal": "target",
+        "amount": null
+      },
+      {
+        "name": "シイラ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カジキ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ヒラメ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "マダイ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "タイ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ウチワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "タコ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ガザミ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "シロサバフグ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ヤリイカ",
+        "signal": "other",
+        "amount": null
+      }
     ],
     "source": "若狭小浜 おさかな探訪記",
     "source_url": "https://seiza-design.com/blog/archives/26945",
     "confidence": "定置網帰属が記事で明示",
-    "notes": "定置網は宇久定置網と世久見だけ入荷と明記。数量は公表されていないため補完しない。"
+    "notes": "数量は明記分のみ。未公表量は補完しない。"
+  },
+  {
+    "id": "setnet-wakasa-4d6ddb73292fcba0",
+    "date": "2026-10-02",
+    "region": "小浜湾・若狭町",
+    "fishery": "宇久定置網",
+    "gear": "定置網",
+    "gear_attribution": "confirmed",
+    "aori_present": true,
+    "species": [
+      {
+        "name": "アジ",
+        "signal": "direct_bait",
+        "amount": null
+      },
+      {
+        "name": "サバ",
+        "signal": "direct_bait",
+        "amount": null
+      },
+      {
+        "name": "サゴシ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "サワラ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ツバス",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ハマチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "ブリ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "カンパチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "スズキ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "カマス",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "アオリイカ",
+        "signal": "target",
+        "amount": null
+      },
+      {
+        "name": "シイラ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カジキ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ヒラメ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "マダイ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "タイ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ウチワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "タコ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ガザミ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "シロサバフグ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "スルメイカ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "ヤリイカ",
+        "signal": "other",
+        "amount": null
+      }
+    ],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26875",
+    "confidence": "定置網帰属が記事で明示",
+    "notes": "数量は明記分のみ。未公表量は補完しない。"
+  },
+  {
+    "id": "setnet-jf-2026-10-01",
+    "date": "2026-10-01",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "おはようございます。 今日から底曳きが解禁となりました。現在出漁中です。明日の朝、市場に底曳きの魚が並びます。 今朝は延縄、定置その他の水揚げがありました。"
+  },
+  {
+    "id": "setnet-wakasa-84cf19b1152fb1b7",
+    "date": "2026-09-30",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26804",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
+    "id": "setnet-jf-2026-09-28",
+    "date": "2026-09-28",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "こんにちは。今日は雨が降り続いています。 今朝は定置の水揚げがありました。"
+  },
+  {
+    "id": "setnet-wakasa-3fdcb7ce00ca6445",
+    "date": "2026-09-26",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26708",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
+    "id": "setnet-wakasa-825fb10b78cbd23f",
+    "date": "2026-09-23",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26675",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
+    "id": "setnet-wakasa-823c96e54909ce6b",
+    "date": "2026-09-19",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26584",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
+    "id": "setnet-jf-2026-09-18",
+    "date": "2026-09-18",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "こんにちは。今日は定置その他の水揚げがありました。 明日から連休の方もいらっしゃると思います。小浜では放生祭やイベントがありますので、ぜひ小浜に遊びに来てください。"
+  },
+  {
+    "id": "setnet-jf-2026-09-17",
+    "date": "2026-09-17",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "こんにちは。今朝は定置その他の水揚げがありました。シイラ、ヒラマサ、カンパチの水揚げが多かったです。延縄は24日まで休漁の予定となっています。 嶺北は一足先に底曳きが始まっています。 投稿のページ送り 1 2 &hellip; 67 次へ 月別アーカイブ 選択してください 2026年10月 (4) 2026年9月 (15) 2026年8月 (16) 2026年7月 (17) 2026年6月 (18) 2026年5月 (14) 2026年4月 (17) 2026年3月 (17)"
   }
 ]

@@ -1,4 +1,33 @@
 {
-  "checked_at": null,
-  "sources": []
+  "checked_at": "2026-10-07T09:34:13.342Z",
+  "sources": [
+    {
+      "source": "エギCOM 小浜",
+      "checked_at": "2026-10-07T09:34:07.717Z",
+      "status": "no_new",
+      "new_count": 0,
+      "note": null
+    },
+    {
+      "source": "エギCOM 敦賀",
+      "checked_at": "2026-10-07T09:34:08.525Z",
+      "status": "no_new",
+      "new_count": 0,
+      "note": null
+    },
+    {
+      "source": "小浜市漁業協同組合 水揚げ情報",
+      "checked_at": "2026-10-07T09:34:09.049Z",
+      "status": "ok",
+      "new_count": 6,
+      "note": null
+    },
+    {
+      "source": "若狭小浜 おさかな探訪記",
+      "checked_at": "2026-10-07T09:34:10.591Z",
+      "status": "ok",
+      "new_count": 7,
+      "note": null
+    }
+  ]
 }
