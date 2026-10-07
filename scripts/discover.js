@@ -218,6 +218,7 @@ function candidateFrom(result,pageText){
     date:d.date,date_source:d.kind,region,mode,method,count:ci.count,count_basis:ci.basis,
     size_text:sizeOf(combined),score,status:auto?'accepted':'candidate',
     source:sourceName(result.url),snippet:normalize(result.description||combined.slice(0,260)).slice(0,320),
+    region_confirmed:Boolean(confirmedRegion),has_aori:hasAori,
     count_context:ci.context,checked_at:new Date().toISOString()
   };
 }
@@ -241,7 +242,12 @@ async function main(){
   if(braveKey){
     for(const q of queries){
       try{
-        const items=await braveSearch(q,braveKey);
+        let items=await braveSearch(q,braveKey);
+        const sm=q.match(/site:([^\s/]+)/i);
+        if(sm){
+          const host=sm[1].replace(/^www\./,'').toLowerCase();
+          items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
+        }
         searchResults.push(...items); searchesOk++;
       }catch(e){errors.push({stage:'brave_search',query:q,error:String(e).slice(0,180)});}
       await sleep(cfg.provider.delay_ms||350);
@@ -258,7 +264,7 @@ async function main(){
     try{page=stripTags(await fetchText(r.url,12000));}
     catch(e){errors.push({stage:'fetch',url:r.url,error:String(e).slice(0,180)});}
     const c=candidateFrom(r,page);
-    if(c.score>=4)candidates.push(c);
+    if(c.score>=4 && c.has_aori && c.region_confirmed)candidates.push(c);
   }
 
   const current=load(path.join(DATA,'catches.json'),[]);
@@ -271,7 +277,7 @@ async function main(){
   const catches=[...byId.values()].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
 
   const prev=load(path.join(DATA,'discovery.json'),{candidates:[]});
-  const combined=[...candidates,...(prev.candidates||[])];
+  const combined=braveKey?[...candidates,...(prev.candidates||[]).filter(x=>x.has_aori&&x.region_confirmed)]:[];
   const byUrl=new Map();
   for(const x of combined){
     const key=x.url+'|'+(x.date||'')+'|'+(x.region||'');
