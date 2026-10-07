@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T10:23:12.505Z",
+  "updated_at": "2026-10-07T10:27:33.265Z",
   "sources": [
     {
       "id": "yamaria-obama",
@@ -21,6 +21,17 @@
       "region": "敦賀",
       "url": "https://www.yamaria.com/community/catch/egiou/cities/85",
       "enabled": true
+    },
+    {
+      "id": "johshuya-tsuruga",
+      "name": "上州屋 新敦賀店",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "johshuya",
+      "region": "敦賀",
+      "url": "https://johshuya.co.jp/shop/choka.php?s=151",
+      "enabled": true,
+      "note": "店舗公開の実釣・持込情報。釣り場本文から敦賀/美浜/小浜等を再分類。"
     },
     {
       "id": "uosoku-fukui-aori",
