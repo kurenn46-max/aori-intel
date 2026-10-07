@@ -2,35 +2,40 @@ name: Collect Aori Intel
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 */4 * * *'
   push:
     branches: [main]
     paths:
       - 'scripts/collect.js'
+      - 'scripts/discover.js'
       - 'data/source-registry.json'
+      - 'data/search-config.json'
       - '.github/workflows/collect.yml'
 permissions:
   contents: write
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Validate parsers
+      - name: Validate collectors
         run: npm test
-      - name: Collect public data
+      - name: Collect fixed sources
         run: npm run collect
-      - name: Commit changed data
+      - name: Search the open web
+        run: npm run discover
+      - name: Commit changed intelligence
         run: |
           git config user.name "aori-intel-bot"
           git config user.email "aori-intel-bot@users.noreply.github.com"
-          git add data/catches.json data/setnet.json data/source-status.json
+          git add data/catches.json data/setnet.json data/source-status.json data/discovery.json data/discovery-status.json
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "data: update aori intel"
+            git commit -m "data: update aori intelligence"
             git push
           fi
