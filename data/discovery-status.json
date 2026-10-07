@@ -1,44 +1,49 @@
 {
-  "checked_at": "2026-10-07T10:16:23.241Z",
+  "checked_at": "2026-10-07T10:20:11.844Z",
   "provider": "bing_rss",
-  "queries_planned": 28,
-  "queries_ok": 28,
-  "raw_results": 59,
-  "unique_results": 45,
-  "pages_attempted": 45,
-  "candidates": 0,
+  "queries_planned": 40,
+  "queries_ok": 40,
+  "raw_results": 275,
+  "unique_results": 264,
+  "pages_attempted": 70,
+  "candidates": 17,
   "accepted": 0,
   "new_catches": 0,
   "errors": [
     {
       "stage": "fetch",
-      "url": "https://www.storeopeninghours.com/walmart-plymouth-road-livonia-mi",
-      "error": "Error: 403 Forbidden"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.mystore411.com/store/view/1898/Walmart-Livonia",
+      "url": "https://www.jp.bing.com/",
       "error": "TypeError: fetch failed"
     },
     {
       "stage": "fetch",
-      "url": "https://www.storesinfo.com/walmart/michigan/livonia/29555-plymouth-rd.html",
+      "url": "https://jp.investing.com/equities/toshiba-corp.",
       "error": "Error: 403 Forbidden"
     },
     {
       "stage": "fetch",
-      "url": "https://www.storeopeninghours.com/walmart-mile-road-livonia-mi",
+      "url": "https://minkabu.jp/stock/6502",
       "error": "Error: 403 Forbidden"
     },
     {
       "stage": "fetch",
-      "url": "https://www.storesinfo.com/walmart/michigan/livonia/29574-7-mile-rd.html",
+      "url": "https://kabutan.jp/stock/chart?code=6502",
+      "error": "Error: 405 Not Allowed"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://jp.investing.com/equities/toshiba-corp.-chart",
       "error": "Error: 403 Forbidden"
     },
     {
       "stage": "fetch",
-      "url": "https://www.reverso.net/text-translation",
+      "url": "https://www.officetar.jp/building/8510/",
       "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://explore.microsoft.com/ja-jp/bing/features/web-search",
+      "error": "TypeError: fetch failed"
     },
     {
       "stage": "fetch",
@@ -47,33 +52,23 @@
     },
     {
       "stage": "fetch",
-      "url": "https://windowsforum.com/news/microsoft-retires-bing-search-apis-what-developers-need-to-know-about-the-transition-to-azure-ai-agents.365785/",
-      "error": "Error: 403 Forbidden"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.ghacks.net/2026/08/31/microsoft-ships-windows-11-tool-that-installs-a-bing-extension-in-chrome-firefox-and-brave/",
-      "error": "Error: 403 Forbidden"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.ca.bing.com/",
+      "url": "https://www.uk.bing.com/",
       "error": "TypeError: fetch failed"
     },
     {
       "stage": "fetch",
-      "url": "https://www.apk4fun.com/history/993/",
+      "url": "https://businessyab.com/explore/united_states/washington/king_county/redmond/overlake/microsoft_way/1/microsoft-corporate-headquarters-425-882-8080.html",
       "error": "Error: 403 Forbidden"
     }
   ],
   "sample_queries": [
-    "\"高浜\" アオリイカ 釣果 2026 10",
-    "\"高浜\" エギング アオリ 2026 10",
-    "\"高浜\" 秋イカ エギング 2026 10",
-    "\"小浜\" アオリイカ 釣果 2026 10",
-    "\"小浜\" エギング アオリ 2026 10",
-    "\"小浜\" 秋イカ エギング 2026 10",
-    "\"常神\" アオリイカ 釣果 2026 10",
-    "\"常神\" エギング アオリ 2026 10"
+    "site:anglers.jp/catches \"小浜湾\" アオリイカ 2026",
+    "site:anglers.jp/fishings \"小浜湾\" アオリイカ 2026",
+    "site:anglers.jp/catches \"神子漁港\" アオリイカ 2026",
+    "site:anglers.jp/fishings \"世久見湾\" アオリイカ 2026",
+    "site:anglers.jp/catches \"敦賀\" アオリイカ 2026",
+    "site:anglers.jp/fishings \"敦賀湾\" アオリイカ 2026",
+    "site:anglers.jp/catches \"高浜\" アオリイカ 2026",
+    "site:anglers.jp/catches \"美浜\" アオリイカ 2026"
   ]
 }
