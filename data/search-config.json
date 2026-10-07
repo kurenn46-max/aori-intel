@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "provider": {
+    "type": "bing_rss",
+    "base_url": "https://www.bing.com/search?format=rss&q=",
+    "max_queries": 28,
+    "fetch_limit": 50,
+    "delay_ms": 550
+  },
+  "regions": [
+    {
+      "region": "高浜",
+      "terms": [
+        "高浜",
+        "音海",
+        "内浦",
+        "和田"
+      ]
+    },
+    {
+      "region": "小浜湾",
+      "terms": [
+        "小浜",
+        "泊",
+        "堅海",
+        "犬熊",
+        "宇久"
+      ]
+    },
+    {
+      "region": "常神半島",
+      "terms": [
+        "常神",
+        "小川漁港",
+        "神子",
+        "世久見"
+      ]
+    },
+    {
+      "region": "美浜",
+      "terms": [
+        "美浜",
+        "日向",
+        "菅浜"
+      ]
+    },
+    {
+      "region": "敦賀",
+      "terms": [
+        "敦賀",
+        "白木",
+        "色ヶ浜"
+      ]
+    },
+    {
+      "region": "舞鶴",
+      "terms": [
+        "舞鶴",
+        "白杉",
+        "小橋"
+      ]
+    },
+    {
+      "region": "宮津",
+      "terms": [
+        "宮津",
+        "栗田",
+        "伊根"
+      ]
+    },
+    {
+      "region": "越前",
+      "terms": [
+        "越前",
+        "厨",
+        "梅浦"
+      ]
+    }
+  ],
+  "query_templates": [
+    "\"{term}\" アオリイカ 釣果",
+    "\"{term}\" エギング アオリ",
+    "\"{term}\" 秋イカ エギング",
+    "\"{term}\" ティップラン アオリイカ"
+  ],
+  "targeted_queries": [
+    "site:anglers.jp アオリイカ 福井 釣果",
+    "site:anglers.jp アオリイカ 若狭 釣果",
+    "site:johshuya.co.jp アオリイカ 小浜",
+    "site:johshuya.co.jp アオリイカ 敦賀",
+    "site:ishiguro-gr.com アオリイカ 福井",
+    "site:ameblo.jp アオリイカ 常神",
+    "site:ameblo.jp アオリイカ 小浜",
+    "site:instagram.com アオリイカ 若狭",
+    "site:youtube.com アオリイカ 若狭 釣果",
+    "若狭 遊漁船 ティップラン アオリイカ",
+    "小浜 遊漁船 ティップラン アオリイカ",
+    "敦賀 遊漁船 ティップラン アオリイカ"
+  ],
+  "trusted_domains": [
+    "anglers.jp",
+    "yamaria.com",
+    "johshuya.co.jp",
+    "ishiguro-gr.com",
+    "fishingmax.co.jp",
+    "tsurigu-np.jp",
+    "ameblo.jp"
+  ],
+  "reject_domains": [
+    "amazon.co.jp",
+    "rakuten.co.jp",
+    "mercari.com",
+    "wikipedia.org"
+  ]
+}
