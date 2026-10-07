@@ -15,18 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rebuild package
+      - name: Rebuild application package
         run: |
           cat bootstrap/package.*.b64 | base64 -d > /tmp/aori-intel.zip
           unzip -q /tmp/aori-intel.zip -d /tmp/aori-intel
-          cp -a /tmp/aori-intel/aori-intel/. .
+          rsync -a --exclude='.github/workflows/' /tmp/aori-intel/aori-intel/ ./
           rm -rf bootstrap
-          rm -f .github/workflows/bootstrap.yml
       - name: Validate
         run: |
           npm test
           npm run validate
-      - name: Commit application
+      - name: Commit application files
         run: |
           git config user.name "aori-intel-bot"
           git config user.email "aori-intel-bot@users.noreply.github.com"
