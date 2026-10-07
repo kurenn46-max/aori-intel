@@ -221,7 +221,7 @@ async function collect() {
     const st={source:source.name,checked_at:new Date().toISOString(),status:'ok',new_count:0,note:null};
     try{
       if(source.adapter==='yamaria'){
-        const html=await fetchText(source.url); const events=parseYamaria(html,source); const sessions=groupSessions(events);
+        const html=await fetchText(source.url); if(process.env.DEBUG_YAMARIA==='1'){const plain=stripTags(html);console.log('YAMARIA_DEBUG',source.name,'len='+html.length,'aori='+(plain.match(/アオリイカ/g)||[]).length,plain.slice(Math.max(0,plain.indexOf('最新釣果投稿')-200),Math.max(0,plain.indexOf('最新釣果投稿')-200)+3500));} const events=parseYamaria(html,source); const sessions=groupSessions(events);
         newSessions.push(...sessions); st.new_count=sessions.length;
         if(!sessions.length){
           if(/アオリイカ：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
