@@ -1,0 +1,30 @@
+name: Collect Aori Intel
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate parsers
+        run: npm test
+      - name: Collect public data
+        run: npm run collect
+      - name: Commit changed data
+        run: |
+          git config user.name "aori-intel-bot"
+          git config user.email "aori-intel-bot@users.noreply.github.com"
+          git add data/catches.json data/setnet.json data/source-status.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "data: update aori intel"
+            git push
+          fi
