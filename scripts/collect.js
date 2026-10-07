@@ -274,10 +274,13 @@ async function collectAnglersAreas(source) {
       const links=extractAnchors(html)
         .map(a=>a.href.startsWith('http')?a.href:new URL(a.href,area.url).toString())
         .filter(u=>/anglers\.jp\/fishings\/\d+/.test(u));
+      if(process.env.DEBUG_ANGLERS==='1') console.log('ANGLERS_AREA',area.name,'len='+html.length,'links='+links.length,stripTags(html).slice(0,900));
       for(const url of [...new Set(links)].slice(0,area.limit||6)){
         if(seen.has(url)) continue; seen.add(url);
         try{
-          const row=parseAnglersFishing(await fetchText(url),url,source,area);
+          const page=await fetchText(url);
+          const row=parseAnglersFishing(page,url,source,area);
+          if(process.env.DEBUG_ANGLERS==='1') console.log('ANGLERS_FISHING',url,'len='+page.length,'aori='+(stripTags(page).match(/アオリイカ/g)||[]).length,'parsed='+(row?'yes':'no'));
           if(row) rows.push(row);
         }catch{}
       }
