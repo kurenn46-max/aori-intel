@@ -28,6 +28,8 @@ jobs:
       - name: Validate collectors
         run: npm test
       - name: Collect fixed sources
+        env:
+          DEBUG_ANGLERS: '1'
         run: npm run collect
       - name: Search the open web
         run: npm run discover
