@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T10:27:33.265Z",
+  "updated_at": "2026-10-07T10:28:11.025Z",
   "sources": [
     {
       "id": "yamaria-obama",
@@ -32,6 +32,39 @@
       "url": "https://johshuya.co.jp/shop/choka.php?s=151",
       "enabled": true,
       "note": "店舗公開の実釣・持込情報。釣り場本文から敦賀/美浜/小浜等を再分類。"
+    },
+    {
+      "id": "chowari-kadoya",
+      "name": "かどや丸 釣果",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "chowari",
+      "region": "小浜湾",
+      "subregion": "甲ヶ崎・小浜沖",
+      "url": "https://www.chowari.jp/ship/00105/catch/",
+      "enabled": true
+    },
+    {
+      "id": "chowari-kawashiro",
+      "name": "川代丸 釣果",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "chowari",
+      "region": "常神半島",
+      "subregion": "西小川漁港沖",
+      "url": "https://www.chowari.jp/ship/00122/catch/",
+      "enabled": true
+    },
+    {
+      "id": "chowari-superviking",
+      "name": "SUPER VIKING 釣果",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "chowari",
+      "region": "小浜湾",
+      "subregion": "小浜新港沖",
+      "url": "https://www.chowari.jp/ship/00107/catch/",
+      "enabled": true
     },
     {
       "id": "uosoku-fukui-aori",
