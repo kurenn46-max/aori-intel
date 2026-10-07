@@ -1,12 +1,15 @@
 {
   "name": "aori-intel",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "アオリイカ釣果情報収集・分析アプリ",
   "scripts": {
     "test": "node --test tests/*.test.js",
     "collect": "node scripts/collect.js",
-    "validate": "node --check app.js && node --check scripts/collect.js && node --test tests/*.test.js"
+    "validate": "node --check app.js && node --check scripts/collect.js && node --check scripts/discover.js && node --test tests/*.test.js",
+    "discover": "node scripts/discover.js"
   },
-  "engines": {"node": ">=20"}
+  "engines": {
+    "node": ">=20"
+  }
 }
