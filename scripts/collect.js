@@ -205,6 +205,61 @@ function parseWakasaArticle(html, url, source) {
 
 
 
+
+function parseJohshuya(html, source) {
+  const full=stripTags(html);
+  const text=full.split(/近隣店舗の最新釣果/)[0];
+  const re=/([ぁ-んァ-ヶ一-龯A-Za-z0-9・ー]+店)（福井県）：(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日の釣果/g;
+  const marks=[]; let m;
+  while((m=re.exec(text))) marks.push({shop:m[1],date:`${m[2]}-${String(m[3]).padStart(2,'0')}-${String(m[4]).padStart(2,'0')}`,idx:m.index,end:re.lastIndex});
+  const rows=[];
+  for(let i=0;i<marks.length;i++){
+    const cur=marks[i],next=marks[i+1]?.idx??text.length;
+    const block=normalizeSpace(text.slice(cur.end,Math.min(next,cur.end+5000)));
+    if(!/アオリイカ/.test(block)) continue;
+    const place=normalizeSpace((block.match(/釣り場\s*\|?\s*(.+?)\s+釣り人/)||[])[1]||'');
+    let region=normalizeRegion(place+' '+block);
+    if(!region && source.region && !/(金沢|能登|新潟|石川|富山|岐阜|三重)/.test(block)) region=source.region;
+    if(!region) continue;
+
+    let mode='unknown';
+    if(/ティップラン|船|沖|サップ|SUP|カヤック|ボート/.test(block)) mode='boat';
+    else if(/堤防|防波堤|サーフ|漁港|磯|エギング|岸|ショア/.test(block)) mode='shore';
+
+    let method='不明';
+    if(/ティップラン/.test(block)) method='ティップラン';
+    else if(/ヤエン|泳がせ|活きアジ|活アジ/.test(block)) method='ヤエン・泳がせ';
+    else if(/エギング|エギ/.test(block)) method='エギング';
+
+    let count=null,countBasis='reported';
+    const table=block.match(/アオリイカ[^。]{0,150}?合計\s*(\d{1,3})\s*匹/);
+    if(table) count=Number(table[1]);
+    if(!count){
+      const group=block.match(/(?:二人|2人|２人)で[^。]{0,80}?アオリイカ\s*(\d{1,3})\s*(?:ハイ|杯|匹)/);
+      if(group){count=Number(group[1]);countBasis='group_total';}
+    }
+    if(!count){
+      const prose=block.match(/(?:アオリイカ[^。]{0,100}?|釣果は[^。]{0,80}?)(\d{1,3})\s*(?:ハイ|杯|匹)/);
+      if(prose) count=Number(prose[1]);
+    }
+
+    const sr=block.match(/アオリイカ\s*\|?\s*(\d{1,2}(?:\.\d+)?)\s*[-〜～]\s*(\d{1,2}(?:\.\d+)?)\s*cm/i);
+    const kg=block.match(/アオリイカ\s*\|?\s*(\d(?:\.\d+)?)\s*kg/i);
+    const sizeText=sr?`${sr[1]}〜${sr[2]}cm`:kg?`${kg[1]}kg`:null;
+
+    const angler=normalizeSpace((block.match(/釣り人\s*\|?\s*(.+?)(?:\s{2,}|スタッフ|■|$)/)||[])[1]||'')||null;
+    rows.push({
+      id:`johshuya-${idFor([source.id||source.name,cur.date,place,count||'',block.slice(0,120)])}`,
+      date:cur.date,time:null,region,subregion:place||region,mode,method,place_type:place||'詳細不明',
+      catch_count:count,confirmed_events:count||null,claimed_count:null,count_source:count?'shop_report':'report_only',
+      count_basis:countBasis,duration_hours:null,cpue:null,size_text:sizeText,max_size_text:sizeText,
+      angler,confidence:'現地釣具店・実釣/持込情報',source:source.name,source_url:source.url,
+      notes:block.slice(0,360),verified:true
+    });
+  }
+  return dedupe(rows);
+}
+
 function parseUosoku(html, source) {
   const text=stripTags(html);
   const body=text.split(/福井県のおすすめ釣りスポット|本日の激熱釣果情報/)[0];
@@ -396,6 +451,10 @@ async function collect() {
           if(/アオリイカ\s*：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
           else st.status='no_new';
         }
+      } else if(source.adapter==='johshuya'){
+        const html=await fetchText(source.url); const rows=parseJohshuya(html,source);
+        newSessions.push(...rows); st.new_count=rows.length;
+        if(!rows.length){st.status='no_new';st.note='店舗公開釣果に直近アオリ情報なし';}
       } else if(source.adapter==='uosoku'){
         const html=await fetchText(source.url); const rows=parseUosoku(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
@@ -427,5 +486,5 @@ async function collect() {
   console.log(`catches=${catches.length} setnet=${setnet.length}`);
 }
 
-module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseUosoku,speciesFromText};
+module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseJohshuya,parseUosoku,speciesFromText};
 if(require.main===module) collect().catch(e=>{console.error(e);process.exit(1);});
