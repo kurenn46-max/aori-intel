@@ -212,6 +212,7 @@ async function main(){
     await sleep(cfg.provider.delay_ms||500);
   }
   const uniq=[...new Map(searchResults.map(x=>[x.url,x])).values()];
+  if(process.env.DEBUG_DISCOVERY==='1') console.log('DISCOVERY_RESULTS',uniq.slice(0,20).map(x=>({q:x.query,title:x.title,url:x.url,description:x.description})));
   const ranked=uniq.sort((a,b)=>{
     const ta=trusted(a.url)?1:0,tb=trusted(b.url)?1:0; return tb-ta;
   }).slice(0,cfg.provider.fetch_limit||50);
