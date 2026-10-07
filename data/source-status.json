@@ -1,37 +1,37 @@
 {
-  "checked_at": "2026-10-07T10:19:17.246Z",
+  "checked_at": "2026-10-07T10:23:13.625Z",
   "sources": [
     {
       "source": "エギCOM 小浜",
-      "checked_at": "2026-10-07T10:19:09.244Z",
+      "checked_at": "2026-10-07T10:23:06.326Z",
       "status": "ok",
       "new_count": 4,
       "note": null
     },
     {
       "source": "エギCOM 敦賀",
-      "checked_at": "2026-10-07T10:19:09.559Z",
+      "checked_at": "2026-10-07T10:23:06.883Z",
       "status": "ok",
       "new_count": 4,
       "note": null
     },
     {
       "source": "ANGLERS 若狭・敦賀エリア",
-      "checked_at": "2026-10-07T10:19:09.737Z",
-      "status": "no_new",
+      "checked_at": "2026-10-07T10:23:08.314Z",
+      "status": "blocked",
       "new_count": 0,
-      "note": "公開エリアページは取得できたが直近アオリ釣行を抽出できず"
+      "note": "GitHub Actionsから公開エリア本文が空レスポンス。探索検索側で補完"
     },
     {
       "source": "小浜市漁業協同組合 水揚げ情報",
-      "checked_at": "2026-10-07T10:19:12.573Z",
+      "checked_at": "2026-10-07T10:23:09.633Z",
       "status": "ok",
       "new_count": 6,
       "note": null
     },
     {
       "source": "若狭小浜 おさかな探訪記",
-      "checked_at": "2026-10-07T10:19:14.276Z",
+      "checked_at": "2026-10-07T10:23:11.203Z",
       "status": "ok",
       "new_count": 7,
       "note": null
