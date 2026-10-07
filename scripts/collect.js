@@ -204,6 +204,89 @@ function parseWakasaArticle(html, url, source) {
 }
 
 
+
+function parseUosoku(html, source) {
+  const text=stripTags(html);
+  const body=text.split(/福井県のおすすめ釣りスポット|本日の激熱釣果情報/)[0];
+  const anchors=extractAnchors(html).map(a=>({
+    href:a.href.startsWith('http')?a.href:new URL(a.href,source.url).toString(),
+    text:normalizeSpace(a.text)
+  }));
+  const dateRe=/(20\d{2}-\d{2}-\d{2})推定都道府県:\s*福井県/g;
+  const marks=[]; let m;
+  while((m=dateRe.exec(body))) marks.push({date:m[1],idx:m.index,end:dateRe.lastIndex});
+  const rows=[];
+  for(let i=0;i<marks.length;i++){
+    const cur=marks[i], next=marks[i+1]?.idx ?? body.length;
+    const before=body.slice(Math.max(0,cur.idx-260),cur.idx);
+    const meta=normalizeSpace(body.slice(cur.end,Math.min(next,cur.end+900)));
+    if(!/関連魚種:\s*[^。]{0,160}アオリイカ/.test(meta) && !/アオリイカ/.test(meta)) continue;
+
+    let title=normalizeSpace(before
+      .replace(/##\s*20\d{2}年\d{1,2}月の釣果情報/g,' ')
+      .replace(/アオリイカ福井県/g,' ')
+      .replace(/エギング×福井県|ティップラン×福井県|船釣り×福井県/g,' '));
+    const cuts=['アオリイカ ','福井県 ','Click '];
+    for(const k of cuts){const p=title.lastIndexOf(k);if(p>=0 && title.length-p>30) title=title.slice(p+k.length);}
+    title=title.slice(-180).trim();
+    if(!title) title='アオリイカ釣果情報';
+
+    const combined=title+' '+meta;
+    let region=normalizeRegion(combined);
+    if(!region){
+      if(/泰丸/.test(combined)) region='敦賀';
+      else if(/美浜沖|美浜町|早瀬/.test(combined)) region='美浜';
+      else if(/小浜市|小浜湾|小浜新港|西小川/.test(combined)) region='小浜湾';
+      else if(/高浜町|音海/.test(combined)) region='高浜';
+    }
+
+    let mode='unknown';
+    if(/ソルトオフショア|ティップラン|ボートエギング|船釣り|遊漁船|筏/.test(combined)) mode='boat';
+    if(/ソルト陸っぱり|エギング/.test(combined) && !/ソルトオフショア|ティップラン|ボートエギング|船釣り/.test(combined)) mode='shore';
+
+    let method='不明';
+    if(/ティップラン/.test(combined)) method='ティップラン';
+    else if(/ヤエン/.test(combined)) method='ヤエン';
+    else if(/エギング/.test(combined)) method='エギング';
+
+    let count=null, countBasis='unknown';
+    const countPatterns=[
+      /アオリイカ[^\d]{0,35}(\d{1,3})\s*(?:匹|杯)/,
+      /(?:合計|竿頭)[^\d]{0,12}(\d{1,3})\s*(?:匹|杯)/,
+      /(\d{1,3})\s*(?:匹|杯)[^。]{0,40}アオリイカ/
+    ];
+    for(const rx of countPatterns){
+      const cm=combined.match(rx);
+      if(cm){const n=Number(cm[1]);if(n>=1&&n<=200){count=n;countBasis=/船中|合計/.test(cm[0])?'boat_total':'reported';break;}}
+    }
+
+    const sourceM=meta.match(/情報元:\s*([^\d]{1,100}?)(?:\s+\d+Click|\s+Click|$)/);
+    const originName=normalizeSpace(sourceM?.[1]||'魚速');
+    const titleAnchor=anchors.find(a=>a.text && (title.includes(a.text)||a.text.includes(title.slice(0,Math.min(35,title.length)))) && !/uosoku\.com/.test(a.href));
+    const originUrl=titleAnchor?.href || source.url;
+
+    const sizeCm=[...combined.matchAll(/(\d{1,2})\s*[-〜～]\s*(\d{1,2})\s*cm/g)];
+    const sizeText=sizeCm.length?`${sizeCm[0][1]}〜${sizeCm[0][2]}cm`:null;
+
+    rows.push({
+      id:`uosoku-${idFor([cur.date,originName,title,region||'',mode])}`,
+      date:cur.date,time:null,region:region||'福井県',subregion:region||'福井県',
+      mode,method,place_type:mode==='boat'?'沖/船':'詳細不明',
+      catch_count:count,confirmed_events:null,claimed_count:null,
+      count_source:count?'uosoku_index_report':'report_only',
+      count_basis:countBasis,duration_hours:null,cpue:null,size_text:sizeText,max_size_text:sizeText,
+      angler:null,confidence:'魚速索引・原文確認推奨',
+      source:`魚速 / ${originName}`,source_url:originUrl,
+      notes:normalizeSpace(title+' / '+meta).slice(0,360),
+      verified:false,discovery:true
+    });
+  }
+  return dedupe(rows).filter(x=>{
+    const d=new Date(x.date+'T00:00:00+09:00').getTime();
+    return Number.isFinite(d) && (Date.now()-d)<=35*86400000 && (Date.now()-d)>=-86400000;
+  });
+}
+
 function parseAnglersFishing(html,url,source,areaDef={}) {
   const text=stripTags(html);
   const start=text.indexOf('釣行の概要');
@@ -313,9 +396,13 @@ async function collect() {
           if(/アオリイカ\s*：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
           else st.status='no_new';
         }
+      } else if(source.adapter==='uosoku'){
+        const html=await fetchText(source.url); const rows=parseUosoku(html,source);
+        newSessions.push(...rows); st.new_count=rows.length;
+        if(!rows.length){st.status='no_new';st.note='魚速の公開一覧から直近アオリ情報を抽出できず';}
       } else if(source.adapter==='anglers_areas'){
         const rows=await collectAnglersAreas(source); newSessions.push(...rows); st.new_count=rows.length;
-        if(!rows.length){st.status='no_new';st.note='公開エリアページは取得できたが直近アオリ釣行を抽出できず';}
+        if(!rows.length){st.status='blocked';st.note='GitHub Actionsから公開エリア本文が空レスポンス。探索検索側で補完';}
       } else if(source.adapter==='jf_obama'){
         const html=await fetchText(source.url); const rows=parseJfObama(html,source); newSetnet.push(...rows); st.new_count=rows.length; if(!rows.length)st.status='no_new';
       } else if(source.adapter==='wakasa_osakana'){
@@ -340,5 +427,5 @@ async function collect() {
   console.log(`catches=${catches.length} setnet=${setnet.length}`);
 }
 
-module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,speciesFromText};
+module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseUosoku,speciesFromText};
 if(require.main===module) collect().catch(e=>{console.error(e);process.exit(1);});
