@@ -1,14 +1,54 @@
 {
-  "checked_at": null,
+  "checked_at": "2026-10-07T10:09:29.487Z",
   "provider": "bing_rss",
-  "queries_planned": 0,
-  "queries_ok": 0,
-  "raw_results": 0,
-  "unique_results": 0,
-  "pages_attempted": 0,
+  "queries_planned": 28,
+  "queries_ok": 28,
+  "raw_results": 85,
+  "unique_results": 71,
+  "pages_attempted": 50,
   "candidates": 0,
   "accepted": 0,
   "new_catches": 0,
-  "errors": [],
-  "sample_queries": []
+  "errors": [
+    {
+      "stage": "fetch",
+      "url": "https://www.ca.bing.com/",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://windowsforum.com/news/microsoft-retires-bing-search-apis-what-developers-need-to-know-about-the-transition-to-azure-ai-agents.365785/",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://support.google.com/youtube/answer/2853835?hl=en",
+      "error": "AbortError: This operation was aborted"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.avvo.com/legal-answers/i-received-a-email-is-this-scam-or-not--1785098.html",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.avvo.com/legal-answers/where-to-serve-subpoenas-on-hotmail-and-outlook--2128445.html",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.social.technet.microsoft.com/",
+      "error": "TypeError: fetch failed"
+    }
+  ],
+  "sample_queries": [
+    "\"高浜\" アオリイカ 釣果 2026 10",
+    "\"高浜\" エギング アオリ 2026 10",
+    "\"高浜\" 秋イカ エギング 2026 10",
+    "\"小浜\" アオリイカ 釣果 2026 10",
+    "\"小浜\" エギング アオリ 2026 10",
+    "\"小浜\" 秋イカ エギング 2026 10",
+    "\"常神\" アオリイカ 釣果 2026 10",
+    "\"常神\" エギング アオリ 2026 10"
+  ]
 }
