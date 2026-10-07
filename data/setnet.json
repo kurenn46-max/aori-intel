@@ -7,13 +7,7 @@
     "gear": "定置網",
     "gear_attribution": "species_explicit",
     "aori_present": false,
-    "species": [
-      {
-        "name": "シイラ",
-        "signal": "other",
-        "amount": null
-      }
-    ],
+    "species": [],
     "source": "小浜市漁業協同組合 水揚げ情報",
     "source_url": "https://jf-obama.com/catchinfo/",
     "confidence": "定置対象魚種が本文で明示",
@@ -57,17 +51,32 @@
     "aori_present": true,
     "species": [
       {
+        "name": "シロサバフグ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "アオリイカ",
+        "signal": "target",
+        "amount": null
+      },
+      {
+        "name": "ウチワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カンパチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "カワハギ",
+        "signal": "other",
+        "amount": null
+      },
+      {
         "name": "ジンタ",
-        "signal": "direct_bait",
-        "amount": null
-      },
-      {
-        "name": "アジ",
-        "signal": "direct_bait",
-        "amount": null
-      },
-      {
-        "name": "サバ",
         "signal": "direct_bait",
         "amount": null
       },
@@ -87,31 +96,6 @@
         "amount": null
       },
       {
-        "name": "ハマチ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "ブリ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "カンパチ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "スズキ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "アオリイカ",
-        "signal": "target",
-        "amount": null
-      },
-      {
         "name": "シイラ",
         "signal": "other",
         "amount": null
@@ -122,47 +106,12 @@
         "amount": null
       },
       {
-        "name": "ヒラメ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "マダイ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "タイ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "カワハギ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "ウチワハギ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "タコ",
-        "signal": "other",
-        "amount": null
-      },
-      {
         "name": "ガザミ",
         "signal": "other",
         "amount": null
       },
       {
-        "name": "シロサバフグ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "ヤリイカ",
+        "name": "タコ",
         "signal": "other",
         "amount": null
       }
@@ -182,13 +131,28 @@
     "aori_present": true,
     "species": [
       {
-        "name": "アジ",
-        "signal": "direct_bait",
+        "name": "シロサバフグ",
+        "signal": "other",
         "amount": null
       },
       {
-        "name": "サバ",
-        "signal": "direct_bait",
+        "name": "アオリイカ",
+        "signal": "target",
+        "amount": null
+      },
+      {
+        "name": "スルメイカ",
+        "signal": "other",
+        "amount": null
+      },
+      {
+        "name": "カンパチ",
+        "signal": "indirect_predator_signal",
+        "amount": null
+      },
+      {
+        "name": "カワハギ",
+        "signal": "other",
         "amount": null
       },
       {
@@ -207,43 +171,8 @@
         "amount": null
       },
       {
-        "name": "ハマチ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "ブリ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "カンパチ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "スズキ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
         "name": "カマス",
         "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "アオリイカ",
-        "signal": "target",
-        "amount": null
-      },
-      {
-        "name": "シイラ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "カジキ",
-        "signal": "other",
         "amount": null
       },
       {
@@ -257,42 +186,7 @@
         "amount": null
       },
       {
-        "name": "タイ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "カワハギ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "ウチワハギ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "タコ",
-        "signal": "other",
-        "amount": null
-      },
-      {
         "name": "ガザミ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "シロサバフグ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "スルメイカ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "ヤリイカ",
         "signal": "other",
         "amount": null
       }
