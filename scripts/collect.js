@@ -140,19 +140,11 @@ function extractDate(text='') {
   if (!m) return null;
   return `${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`;
 }
-function escapeRegex(s='') { return s.replace(/[-/\\^$*+?.()|[\]{}]/g,'\\function speciesFromText(text='') {
-  const names=[...new Set([...BAIT_SPECIES,...PREDATOR_SPECIES,...OTHER_SPECIES])];
-  return names.filter(n=>text.includes(n)).map(name=>({
-    name,
-    signal: name==='アオリイカ'?'target':BAIT_SPECIES.includes(name)?'direct_bait':PREDATOR_SPECIES.includes(name)?'indirect_predator_signal':'other',
-    amount:null
-  }));
-}'); }
 function speciesFromText(text='') {
   const names=[...new Set([...BAIT_SPECIES,...PREDATOR_SPECIES,...OTHER_SPECIES])].sort((a,b)=>b.length-a.length);
   const found=[]; let masked=text;
   for (const name of names) {
-    const pattern='(?<![一-龯ぁ-んァ-ヶー])'+escapeRegex(name)+'(?![一-龯ぁ-んァ-ヶー])';
+    const pattern='(?<![一-龯ぁ-んァ-ヶー])'+name+'(?![一-龯ぁ-んァ-ヶー])';
     const rx=new RegExp(pattern,'u');
     if (!rx.test(masked)) continue;
     found.push({
