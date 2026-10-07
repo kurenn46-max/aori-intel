@@ -165,6 +165,32 @@ async function fetchText(url,timeout=12000){
     return await r.text();
   }finally{clearTimeout(timer);}
 }
+
+async function braveSearch(query,key){
+  const u=new URL('https://api.search.brave.com/res/v1/web/search');
+  u.searchParams.set('q',query);
+  u.searchParams.set('count','20');
+  u.searchParams.set('country','JP');
+  u.searchParams.set('search_lang','ja');
+  u.searchParams.set('ui_lang','ja-JP');
+  u.searchParams.set('freshness','pm');
+  const ctl=new AbortController(); const timer=setTimeout(()=>ctl.abort(),12000);
+  try{
+    const r=await fetch(u,{signal:ctl.signal,headers:{
+      'accept':'application/json',
+      'x-subscription-token':key
+    }});
+    if(!r.ok)throw new Error('Brave '+r.status+' '+r.statusText);
+    const data=await r.json();
+    return (data.web?.results||[]).map(x=>({
+      query,
+      title:normalize(x.title||''),
+      url:canonical(x.url||''),
+      description:normalize(x.description||''),
+      pubDate:x.page_age||x.age||null
+    })).filter(x=>/^https?:\/\//.test(x.url)&&!rejected(x.url));
+  }finally{clearTimeout(timer);}
+}
 function candidateFrom(result,pageText){
   const combined=normalize([result.title,result.description,pageText].join(' '));
   const confirmedRegion=regionOf(combined);
@@ -211,16 +237,17 @@ function save(file,data){fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n')
 async function main(){
   const queries=queryList();
   const searchResults=[]; const errors=[]; let searchesOk=0;
-  for(const q of queries){
-    try{
-      const url=(cfg.provider.base_url||'https://www.bing.com/search?format=rss&q=')+encodeURIComponent(q);
-      const xml=await fetchText(url,10000);
-      const items=parseRss(xml,q); searchResults.push(...items); searchesOk++;
-    }catch(e){errors.push({stage:'search',query:q,error:String(e).slice(0,180)});}
-    await sleep(cfg.provider.delay_ms||500);
+  const braveKey=process.env.BRAVE_SEARCH_API_KEY||'';
+  if(braveKey){
+    for(const q of queries){
+      try{
+        const items=await braveSearch(q,braveKey);
+        searchResults.push(...items); searchesOk++;
+      }catch(e){errors.push({stage:'brave_search',query:q,error:String(e).slice(0,180)});}
+      await sleep(cfg.provider.delay_ms||350);
+    }
   }
   const uniq=[...new Map(searchResults.map(x=>[x.url,x])).values()];
-  if(process.env.DEBUG_DISCOVERY==='1') console.log('DISCOVERY_RESULTS',uniq.slice(0,20).map(x=>({q:x.query,title:x.title,url:x.url,description:x.description})));
   const ranked=uniq.sort((a,b)=>{
     const ta=trusted(a.url)?1:0,tb=trusted(b.url)?1:0; return tb-ta;
   }).slice(0,cfg.provider.fetch_limit||50);
@@ -255,13 +282,14 @@ async function main(){
   save(path.join(DATA,'catches.json'),catches);
   save(path.join(DATA,'discovery.json'),{updated_at:new Date().toISOString(),candidates:kept});
   save(path.join(DATA,'discovery-status.json'),{
-    checked_at:new Date().toISOString(),provider:cfg.provider.type||'bing_rss',
-    queries_planned:queries.length,queries_ok:searchesOk,raw_results:searchResults.length,
+    checked_at:new Date().toISOString(),provider:braveKey?'brave_search':'direct_feeds_only',
+    search_key_configured:Boolean(braveKey),
+    queries_planned:braveKey?queries.length:0,queries_ok:searchesOk,raw_results:searchResults.length,
     unique_results:uniq.length,pages_attempted:ranked.length,candidates:candidates.length,
     accepted:accepted.length,new_catches:additions.length,errors:errors.slice(0,30),
     sample_queries:queries.slice(0,8)
   });
-  console.log(JSON.stringify({queries:queries.length,searchesOk,raw:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
+  console.log(JSON.stringify({provider:braveKey?'brave_search':'direct_feeds_only',queries:braveKey?queries.length:0,searchesOk,raw:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
 }
 
 module.exports={queryList,parseRss,parseDate,regionOf,modeOf,methodOf,countInfo,candidateFrom};
