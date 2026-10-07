@@ -1,58 +1,65 @@
 {
-  "checked_at": "2026-10-07T10:27:43.767Z",
+  "checked_at": "2026-10-07T10:28:26.665Z",
   "sources": [
     {
       "source": "エギCOM 小浜",
-      "checked_at": "2026-10-07T10:27:35.451Z",
+      "checked_at": "2026-10-07T10:28:14.495Z",
       "status": "ok",
       "new_count": 4,
       "note": null
     },
     {
       "source": "エギCOM 敦賀",
-      "checked_at": "2026-10-07T10:27:36.037Z",
+      "checked_at": "2026-10-07T10:28:14.787Z",
       "status": "ok",
       "new_count": 4,
       "note": null
     },
     {
+      "source": "上州屋 新敦賀店",
+      "checked_at": "2026-10-07T10:28:14.952Z",
+      "status": "ok",
+      "new_count": 3,
+      "note": null
+    },
+    {
       "source": "魚速 福井県アオリイカ",
-      "checked_at": "2026-10-07T10:27:36.319Z",
+      "checked_at": "2026-10-07T10:28:16.247Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden"
     },
     {
       "source": "魚速 敦賀アオリイカ",
-      "checked_at": "2026-10-07T10:27:36.768Z",
+      "checked_at": "2026-10-07T10:28:16.598Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず"
     },
     {
       "source": "魚速 音海アオリイカ",
-      "checked_at": "2026-10-07T10:27:37.930Z",
+      "checked_at": "2026-10-07T10:28:18.581Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden"
     },
     {
       "source": "魚速 若狭湾アオリイカ",
-      "checked_at": "2026-10-07T10:27:37.956Z",
+      "checked_at": "2026-10-07T10:28:18.878Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず"
     },
     {
       "source": "小浜市漁業協同組合 水揚げ情報",
-      "checked_at": "2026-10-07T10:27:38.183Z",
+      "checked_at": "2026-10-07T10:28:20.812Z",
       "status": "ok",
       "new_count": 6,
       "note": null
     },
     {
       "source": "若狭小浜 おさかな探訪記",
-      "checked_at": "2026-10-07T10:27:39.922Z",
+      "checked_at": "2026-10-07T10:28:22.447Z",
       "status": "ok",
       "new_count": 7,
       "note": null
