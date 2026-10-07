@@ -1,12 +1,12 @@
 {
-  "checked_at": "2026-10-07T10:09:29.487Z",
+  "checked_at": "2026-10-07T10:11:23.660Z",
   "provider": "bing_rss",
   "queries_planned": 28,
   "queries_ok": 28,
-  "raw_results": 85,
-  "unique_results": 71,
+  "raw_results": 56,
+  "unique_results": 52,
   "pages_attempted": 50,
-  "candidates": 0,
+  "candidates": 2,
   "accepted": 0,
   "new_catches": 0,
   "errors": [
@@ -22,23 +22,8 @@
     },
     {
       "stage": "fetch",
-      "url": "https://support.google.com/youtube/answer/2853835?hl=en",
-      "error": "AbortError: This operation was aborted"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.avvo.com/legal-answers/i-received-a-email-is-this-scam-or-not--1785098.html",
-      "error": "Error: 403 Forbidden"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.avvo.com/legal-answers/where-to-serve-subpoenas-on-hotmail-and-outlook--2128445.html",
-      "error": "Error: 403 Forbidden"
-    },
-    {
-      "stage": "fetch",
-      "url": "https://www.social.technet.microsoft.com/",
-      "error": "TypeError: fetch failed"
+      "url": "https://www.linkedin.com/in/jeffrey-dunster-27a02537",
+      "error": "Error: 999 <none>"
     }
   ],
   "sample_queries": [

@@ -1,4 +1,47 @@
 {
-  "updated_at": "2026-10-07T10:09:29.487Z",
-  "candidates": []
+  "updated_at": "2026-10-07T10:11:23.659Z",
+  "candidates": [
+    {
+      "id": "discover-750729360e6d7a71",
+      "query": "site:anglers.jp アオリイカ 若狭 釣果 2026",
+      "title": "検索 News - Bing",
+      "url": "https://www.bing.com/news/?setlang=ja&cc=jp",
+      "domain": "bing.com",
+      "date": "2027-02-20",
+      "date_source": "explicit_full",
+      "region": "小浜湾",
+      "mode": "unknown",
+      "method": "不明",
+      "count": null,
+      "count_basis": "unknown",
+      "size_text": null,
+      "score": 8,
+      "status": "candidate",
+      "source": "bing.com",
+      "snippet": "日本テレビ系では、本日・9月30日に櫻井翔がMCを務める「SHOWチャンネル 大人の社会科見学スペシャル」（午後10：00）を放送。 櫻井、羽鳥慎一、小峠英二（バイきんぐ）、吉村崇（平成ノブシコブシ）が1泊2日で島根を巡り、日本の古代史完結編として、謎多き出雲大社に潜入する。 イケてない理由は「ひと手間」にあり! マネすれば誰でも垢抜ける! 美人メイクのポイント6選. メイクはしているのに、なんだか垢抜けない…。 その差は、ひとつひとつの工程のちょっとしたコツにあります。 今回は下地からファンデ・眉・チーク・アイシャドウ・アイラインまで、今日からマネできる垢抜けメイクのポイントを6つご紹介します♡ メイクはしているのに垢抜けない…そ",
+      "count_context": null,
+      "checked_at": "2026-10-07T10:11:19.017Z"
+    },
+    {
+      "id": "discover-8b4b16dc3243a06a",
+      "query": "site:anglers.jp アオリイカ 若狭 釣果 2026",
+      "title": "検索 News - Bing",
+      "url": "https://www.bing.com/news/?cc=jp",
+      "domain": "bing.com",
+      "date": "2026-09-29",
+      "date_source": "explicit_full",
+      "region": "小浜湾",
+      "mode": "unknown",
+      "method": "不明",
+      "count": null,
+      "count_basis": "unknown",
+      "size_text": null,
+      "score": 7,
+      "status": "candidate",
+      "source": "bing.com",
+      "snippet": "ワイルドカードシリーズ ホワイトソックス6-3アストロズ（2026年9月29日 ヒューストン） 値千金の1勝に貢献だ!ホワイトソックスの村上宗隆内野手（26）が29日（日本時間30日）、「ワイルドカードシリーズ（3試合2戦先勝）」の初戦アストロズ戦に「4番・一塁」で先発出場。",
+      "count_context": null,
+      "checked_at": "2026-10-07T10:11:19.413Z"
+    }
+  ]
 }
