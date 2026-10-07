@@ -2,10 +2,10 @@
   "version": 2,
   "provider": {
     "type": "bing_rss",
-    "base_url": "https://www.bing.com/search?format=rss&q=",
-    "max_queries": 28,
-    "fetch_limit": 50,
-    "delay_ms": 550
+    "base_url": "https://www.bing.com/search?format=rss&cc=JP&setlang=ja-JP&mkt=ja-JP&q=",
+    "max_queries": 40,
+    "fetch_limit": 70,
+    "delay_ms": 450
   },
   "regions": [
     {
@@ -84,18 +84,24 @@
     "\"{term}\" ティップラン アオリイカ"
   ],
   "targeted_queries": [
-    "site:anglers.jp アオリイカ 福井 釣果",
-    "site:anglers.jp アオリイカ 若狭 釣果",
+    "site:anglers.jp/catches \"小浜湾\" アオリイカ",
+    "site:anglers.jp/fishings \"小浜湾\" アオリイカ",
+    "site:anglers.jp/catches \"神子漁港\" アオリイカ",
+    "site:anglers.jp/fishings \"世久見湾\" アオリイカ",
+    "site:anglers.jp/catches \"敦賀\" アオリイカ",
+    "site:anglers.jp/fishings \"敦賀湾\" アオリイカ",
+    "site:anglers.jp/catches \"高浜\" アオリイカ",
+    "site:anglers.jp/catches \"美浜\" アオリイカ",
     "site:johshuya.co.jp アオリイカ 小浜",
     "site:johshuya.co.jp アオリイカ 敦賀",
     "site:ishiguro-gr.com アオリイカ 福井",
     "site:ameblo.jp アオリイカ 常神",
     "site:ameblo.jp アオリイカ 小浜",
-    "site:instagram.com アオリイカ 若狭",
-    "site:youtube.com アオリイカ 若狭 釣果",
+    "site:ameblo.jp ティップラン 若狭",
     "若狭 遊漁船 ティップラン アオリイカ",
     "小浜 遊漁船 ティップラン アオリイカ",
-    "敦賀 遊漁船 ティップラン アオリイカ"
+    "敦賀 遊漁船 ティップラン アオリイカ",
+    "福井 アオリイカ 釣果 ブログ"
   ],
   "trusted_domains": [
     "anglers.jp",
