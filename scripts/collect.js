@@ -203,6 +203,89 @@ function parseWakasaArticle(html, url, source) {
   };
 }
 
+
+function parseAnglersFishing(html,url,source,areaDef={}) {
+  const text=stripTags(html);
+  const start=text.indexOf('釣行の概要');
+  const end=text.indexOf('この釣行の釣り人について');
+  const main=(start>=0?text.slice(start,end>start?end:Math.min(text.length,start+7000)):text.slice(0,7000));
+  if(!/アオリイカ/.test(main)) return null;
+
+  const dm=main.match(/日時\s*(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日[^0-9]{0,12}(\d{2}:\d{2})(?:\s*[〜～~\-]\s*(\d{2}:\d{2}))?/);
+  if(!dm) return null;
+  const date=`${dm[1]}-${String(dm[2]).padStart(2,'0')}-${String(dm[3]).padStart(2,'0')}`;
+  const timeStart=dm[4], timeEnd=dm[5]||dm[4];
+
+  const contentStart=main.indexOf('釣行の内容');
+  const content=contentStart>=0?main.slice(contentStart):main;
+  let count=(content.match(/アオリイカ/g)||[]).length;
+  if(!count) count=1;
+
+  const am=main.match(/釣り人\s+(.+?)\s+日時/);
+  const areaM=main.match(/エリア\s+(.+?)\s+(?:潮名|マップ|釣行の内容|$)/);
+  const subregion=normalizeSpace(areaM?.[1]||areaDef.name||areaDef.region||source.region||'');
+  const region=normalizeRegion(subregion)||areaDef.region||source.region||'不明';
+
+  let mode='unknown';
+  if(/ティップラン|ボート|遊漁船|船中|船釣/.test(main)) mode='boat';
+  else if(/エギング|エギ|ヤエン|泳がせ|漁港|防波堤|堤防|磯|波止/.test(main+' '+subregion)) mode='shore';
+  else if(/漁港|港$/.test(subregion)) mode='shore';
+  if(mode==='unknown' && areaDef.default_mode) mode=areaDef.default_mode;
+
+  let method='不明';
+  if(/ティップラン/.test(main)) method='ティップラン';
+  else if(/ヤエン|泳がせ|活きアジ|活アジ/.test(main)) method='ヤエン・泳がせ';
+  else if(/エギング|エギ王|餌木|エギ/.test(main)) method='エギング';
+
+  const cm=[...main.matchAll(/(\d{1,2}(?:\.\d+)?)\s*cm/gi)].map(m=>Number(m[1])).filter(Number.isFinite);
+  const g=[...main.matchAll(/(\d{2,4}(?:\.\d+)?)\s*g\b/gi)].map(m=>Number(m[1])).filter(Number.isFinite);
+  const sizeParts=[];
+  if(cm.length) sizeParts.push(`最大${Math.max(...cm)}cm`);
+  if(g.length) sizeParts.push(`最大${Math.max(...g)}g`);
+
+  const toMin=t=>{const [h,m]=t.split(':').map(Number);return h*60+m;};
+  let dur=toMin(timeEnd)-toMin(timeStart); if(dur<0) dur+=1440;
+  const hours=dur>0?Number((dur/60).toFixed(2)):null;
+  const time=timeStart===timeEnd?timeStart:`${timeStart}〜${timeEnd}`;
+
+  return {
+    id:`anglers-fishing-${idFor([url,date])}`,
+    date,time,region,subregion,mode,method,
+    place_type:subregion,
+    catch_count:count,confirmed_events:count,claimed_count:null,
+    count_source:'anglers_fishing_events',
+    duration_hours:hours,
+    cpue:hours?Number((count/hours).toFixed(2)):null,
+    size_text:sizeParts.join(' / ')||null,
+    max_size_text:sizeParts.join(' / ')||null,
+    angler:normalizeSpace(am?.[1]||'')||null,
+    confidence:mode==='unknown'?'ANGLERS公開釣行・釣法不明':'ANGLERS公開釣行',
+    source:'ANGLERS',source_url:url,
+    notes:normalizeSpace(content).slice(0,260),
+    verified:true
+  };
+}
+
+async function collectAnglersAreas(source) {
+  const rows=[]; const seen=new Set();
+  for(const area of source.areas||[]){
+    try{
+      const html=await fetchText(area.url);
+      const links=extractAnchors(html)
+        .map(a=>a.href.startsWith('http')?a.href:new URL(a.href,area.url).toString())
+        .filter(u=>/anglers\.jp\/fishings\/\d+/.test(u));
+      for(const url of [...new Set(links)].slice(0,area.limit||6)){
+        if(seen.has(url)) continue; seen.add(url);
+        try{
+          const row=parseAnglersFishing(await fetchText(url),url,source,area);
+          if(row) rows.push(row);
+        }catch{}
+      }
+    }catch{}
+  }
+  return rows;
+}
+
 async function fetchText(url) {
   const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 AORI-INTEL/1.0 (+GitHub Actions)'}});
   if(!r.ok) throw new Error(`${r.status} ${r.statusText}`);
@@ -227,6 +310,9 @@ async function collect() {
           if(/アオリイカ\s*：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
           else st.status='no_new';
         }
+      } else if(source.adapter==='anglers_areas'){
+        const rows=await collectAnglersAreas(source); newSessions.push(...rows); st.new_count=rows.length;
+        if(!rows.length){st.status='no_new';st.note='公開エリアページは取得できたが直近アオリ釣行を抽出できず';}
       } else if(source.adapter==='jf_obama'){
         const html=await fetchText(source.url); const rows=parseJfObama(html,source); newSetnet.push(...rows); st.new_count=rows.length; if(!rows.length)st.status='no_new';
       } else if(source.adapter==='wakasa_osakana'){
@@ -251,5 +337,5 @@ async function collect() {
   console.log(`catches=${catches.length} setnet=${setnet.length}`);
 }
 
-module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,speciesFromText};
+module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,speciesFromText};
 if(require.main===module) collect().catch(e=>{console.error(e);process.exit(1);});
