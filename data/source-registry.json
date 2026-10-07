@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-10-07T10:07:56.836Z",
+  "updated_at": "2026-10-07T10:23:12.505Z",
   "sources": [
     {
       "id": "yamaria-obama",
@@ -23,12 +23,52 @@
       "enabled": true
     },
     {
+      "id": "uosoku-fukui-aori",
+      "name": "魚速 福井県アオリイカ",
+      "type": "discovery",
+      "priority": "A",
+      "adapter": "uosoku",
+      "region": "福井県",
+      "url": "https://plus.uosoku.com/search?er=24.0&fn=%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB",
+      "enabled": true
+    },
+    {
+      "id": "uosoku-tsuruga-aori",
+      "name": "魚速 敦賀アオリイカ",
+      "type": "discovery",
+      "priority": "A",
+      "adapter": "uosoku",
+      "region": "敦賀",
+      "url": "https://plus.uosoku.com/search?er=24.0&fn=%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB&lo=%E6%95%A6%E8%B3%80",
+      "enabled": true
+    },
+    {
+      "id": "uosoku-otomi-aori",
+      "name": "魚速 音海アオリイカ",
+      "type": "discovery",
+      "priority": "A",
+      "adapter": "uosoku",
+      "region": "高浜",
+      "url": "https://plus.uosoku.com/search?er=24.0&fn=%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB&lo=%E9%9F%B3%E6%B5%B7",
+      "enabled": true
+    },
+    {
+      "id": "uosoku-wakasa-aori",
+      "name": "魚速 若狭湾アオリイカ",
+      "type": "discovery",
+      "priority": "A",
+      "adapter": "uosoku",
+      "region": "若狭湾",
+      "url": "https://plus.uosoku.com/search?er=24.0&fn=%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB&lo=%E8%8B%A5%E7%8B%AD%E6%B9%BE",
+      "enabled": true
+    },
+    {
       "id": "anglers-wakasa-areas",
       "name": "ANGLERS 若狭・敦賀エリア",
       "type": "catch",
       "priority": "A",
       "adapter": "anglers_areas",
-      "enabled": true,
+      "enabled": false,
       "areas": [
         {
           "name": "小浜湾",
@@ -91,7 +131,7 @@
           "limit": 8
         }
       ],
-      "note": "エリア公開ページから最新釣行をたどり、アオリイカを含む釣行だけ採用。地図中心を釣果地点には使わない。"
+      "note": "GitHub ActionsからANGLERS公開エリア本文が空レスポンス。直接収集は停止し、探索検索または別経路で補完。"
     },
     {
       "id": "jf-obama",
