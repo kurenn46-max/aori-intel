@@ -1,19 +1,49 @@
 {
-  "checked_at": "2026-10-07T10:11:23.660Z",
+  "checked_at": "2026-10-07T10:16:23.241Z",
   "provider": "bing_rss",
   "queries_planned": 28,
   "queries_ok": 28,
-  "raw_results": 56,
-  "unique_results": 52,
-  "pages_attempted": 50,
-  "candidates": 2,
+  "raw_results": 59,
+  "unique_results": 45,
+  "pages_attempted": 45,
+  "candidates": 0,
   "accepted": 0,
   "new_catches": 0,
   "errors": [
     {
       "stage": "fetch",
-      "url": "https://www.ca.bing.com/",
+      "url": "https://www.storeopeninghours.com/walmart-plymouth-road-livonia-mi",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.mystore411.com/store/view/1898/Walmart-Livonia",
       "error": "TypeError: fetch failed"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.storesinfo.com/walmart/michigan/livonia/29555-plymouth-rd.html",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.storeopeninghours.com/walmart-mile-road-livonia-mi",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.storesinfo.com/walmart/michigan/livonia/29574-7-mile-rd.html",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.reverso.net/text-translation",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://apkpure.com/bing-your-ai-copilot/com.microsoft.bing/download",
+      "error": "Error: 403 Forbidden"
     },
     {
       "stage": "fetch",
@@ -22,8 +52,18 @@
     },
     {
       "stage": "fetch",
-      "url": "https://www.linkedin.com/in/jeffrey-dunster-27a02537",
-      "error": "Error: 999 <none>"
+      "url": "https://www.ghacks.net/2026/08/31/microsoft-ships-windows-11-tool-that-installs-a-bing-extension-in-chrome-firefox-and-brave/",
+      "error": "Error: 403 Forbidden"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.ca.bing.com/",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "stage": "fetch",
+      "url": "https://www.apk4fun.com/history/993/",
+      "error": "Error: 403 Forbidden"
     }
   ],
   "sample_queries": [
