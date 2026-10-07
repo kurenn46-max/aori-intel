@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated_at": "2026-10-07T14:30:00+09:00",
+  "version": 2,
+  "updated_at": "2026-10-07T10:07:56.836Z",
   "sources": [
     {
       "id": "yamaria-obama",
@@ -23,6 +23,77 @@
       "enabled": true
     },
     {
+      "id": "anglers-wakasa-areas",
+      "name": "ANGLERS 若狭・敦賀エリア",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "anglers_areas",
+      "enabled": true,
+      "areas": [
+        {
+          "name": "小浜湾",
+          "region": "小浜湾",
+          "url": "https://anglers.jp/areas/903",
+          "limit": 8
+        },
+        {
+          "name": "小浜港（福井）",
+          "region": "小浜湾",
+          "url": "https://anglers.jp/areas/1039",
+          "limit": 8
+        },
+        {
+          "name": "宇久湾",
+          "region": "小浜湾",
+          "url": "https://anglers.jp/areas/1040",
+          "limit": 8
+        },
+        {
+          "name": "犬熊漁港",
+          "region": "小浜湾",
+          "url": "https://anglers.jp/areas/1042",
+          "limit": 8
+        },
+        {
+          "name": "世久見湾",
+          "region": "常神半島",
+          "url": "https://anglers.jp/areas/904",
+          "limit": 8
+        },
+        {
+          "name": "神子漁港",
+          "region": "常神半島",
+          "url": "https://anglers.jp/areas/4313",
+          "limit": 8
+        },
+        {
+          "name": "日向漁港",
+          "region": "美浜",
+          "url": "https://anglers.jp/areas/1056",
+          "limit": 6
+        },
+        {
+          "name": "菅浜漁港",
+          "region": "美浜",
+          "url": "https://anglers.jp/areas/1058",
+          "limit": 6
+        },
+        {
+          "name": "敦賀湾",
+          "region": "敦賀",
+          "url": "https://anglers.jp/areas/914",
+          "limit": 8
+        },
+        {
+          "name": "高浜港",
+          "region": "高浜",
+          "url": "https://anglers.jp/areas/1036",
+          "limit": 8
+        }
+      ],
+      "note": "エリア公開ページから最新釣行をたどり、アオリイカを含む釣行だけ採用。地図中心を釣果地点には使わない。"
+    },
+    {
       "id": "jf-obama",
       "name": "小浜市漁業協同組合 水揚げ情報",
       "type": "setnet",
@@ -41,15 +112,6 @@
       "region": "小浜湾",
       "url": "https://seiza-design.com/blog/archives/category/mizuage",
       "enabled": true
-    },
-    {
-      "id": "anglers",
-      "name": "ANGLERS",
-      "type": "catch",
-      "priority": "A",
-      "adapter": "discovery",
-      "enabled": false,
-      "note": "地域ページ構造の安定確認後に自動化。検索断片だけでは登録しない。"
     },
     {
       "id": "local-shops",
