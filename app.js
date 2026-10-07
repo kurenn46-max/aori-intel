@@ -1,4 +1,4 @@
-const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],status:{checked_at:null,sources:[]}};
+const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
 const regions=['全地域','高浜','小浜湾','常神半島','美浜','敦賀','舞鶴','宮津','越前'];
 const $=s=>document.querySelector(s);
 const fmtDate=(d,t)=>`${d.replaceAll('-','/')} ${t||''}`.trim();
@@ -6,11 +6,12 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const todayJst=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 const daysDiff=(a,b)=>Math.round((new Date(`${a}T00:00:00+09:00`)-new Date(`${b}T00:00:00+09:00`))/86400000);
 
-async function json(url,fallback){try{const r=await fetch(`${url}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw 0;return await r.json();}catch{return fallback;}}
+const RAW='https://raw.githubusercontent.com/kurenn46-max/aori-intel/main/';
+async function json(url,fallback){try{const full=url.startsWith('data/')?RAW+url:url;const r=await fetch(`${full}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw 0;return await r.json();}catch{return fallback;}}
 async function load(){
   $('#statusStrip').textContent='最新データを読み込み中…';
-  const [catches,setnet,status]=await Promise.all([json('data/catches.json',[]),json('data/setnet.json',[]),json('data/source-status.json',{checked_at:null,sources:[]})]);
-  state.catches=catches;state.setnet=setnet;state.status=status;render();
+  const [catches,setnet,status,discovery]=await Promise.all([json('data/catches.json',[]),json('data/setnet.json',[]),json('data/source-status.json',{checked_at:null,sources:[]}),json('data/discovery-status.json',{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]})]);
+  state.catches=catches;state.setnet=setnet;state.status=status;state.discovery=discovery;render();
 }
 function selectedRecords(){
   const today=todayJst();
@@ -84,15 +85,20 @@ function recordCard(x){
   return `<article class="record card"><div class="record-top"><div><div class="record-date">${esc(fmtDate(x.date,x.time))}</div><h3>${esc(x.subregion||x.region)}${x.place_type?`・${esc(x.place_type)}`:''}</h3></div><span class="confidence pill ${x.is_user_data?'good':'neutral'}">${esc(x.confidence||'確認済み')}</span></div><div class="metrics">${tags}</div><p class="record-notes">${esc(x.notes||'')}</p><div class="record-foot"><span>${esc(x.source||'')}</span>${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">出典</a>`:''}</div></article>`;
 }
 function renderSources(){
-  const s=state.status.sources||[]; const checked=state.status.checked_at?new Date(state.status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
-  $('#sourceStatus').innerHTML=`<p class="fineprint">最終巡回: ${esc(checked)}</p>`+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)}${x.new_count!=null?` / ${x.new_count}`:''}</span></div>`).join(''):'<div class="source-row"><span>GitHub Actions初回実行待ち</span><span class="status-no_new">seed</span></div>');
+  const s=state.status.sources||[];
+  const checked=state.status.checked_at?new Date(state.status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
+  const d=state.discovery||{};
+  const dChecked=d.checked_at?new Date(d.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
+  const searchRow=`<div class="source-row"><span>探索検索 <small>(${esc(dChecked)})</small></span><span class="${(d.errors||[]).length?'status-error':'status-ok'}">検索 ${d.queries_ok||0}/${d.queries_planned||0}・候補 ${d.candidates||0}・採用 ${d.accepted||0}・新規 ${d.new_catches||0}</span></div>`;
+  $('#sourceStatus').innerHTML=`<p class="fineprint">固定情報源 最終巡回: ${esc(checked)}</p>`+searchRow+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)}${x.new_count!=null?` / ${x.new_count}`:''}</span></div>`).join(''):'<div class="source-row"><span>固定情報源 初回実行待ち</span><span class="status-no_new">seed</span></div>');
 }
 function render(){
   renderRegions(); const rows=selectedRecords(); renderSummary(rows);
   const names={shore:'岸釣果',boat:'船釣果',setnet:'定置網情報'}; $('#listTitle').textContent=`最新の${names[state.mode]}`;$('#resultCount').textContent=`${rows.length}件`;
   $('#records').innerHTML=rows.length?rows.map(recordCard).join(''):'<div class="empty card">条件に合う確認データなし</div>';
-  const checked=state.status.checked_at?new Date(state.status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'初回自動巡回前';
-  $('#statusStrip').textContent=`${state.region} / ${state.days===0?'今日':state.days===1?'昨日':state.days+'日'} / ${checked}`;
+  const times=[state.status.checked_at,state.discovery?.checked_at].filter(Boolean).map(x=>new Date(x).getTime());
+  const latest=times.length?new Date(Math.max(...times)).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'初回自動巡回前';
+  $('#statusStrip').textContent=`${state.region} / ${state.days===0?'今日':state.days===1?'昨日':state.days+'日'} / ${latest}`;
   renderSources();
   document.querySelectorAll('#modeTabs button').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));
   document.querySelectorAll('#rangeTabs button').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===state.days));
