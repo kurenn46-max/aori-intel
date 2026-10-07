@@ -1,0 +1,22 @@
+[
+  {
+    "id": "setnet-20261003-uku-sekumi",
+    "date": "2026-10-03",
+    "region": "小浜湾・若狭町",
+    "fishery": "宇久定置網・世久見",
+    "gear": "定置網",
+    "gear_attribution": "confirmed",
+    "aori_present": true,
+    "species": [
+      {"name":"アオリイカ","signal":"target","amount":null},
+      {"name":"ジンタ","signal":"direct_bait","amount":null},
+      {"name":"サゴシ","signal":"indirect_predator_signal","amount":null},
+      {"name":"カンパチ","signal":"indirect_predator_signal","amount":null},
+      {"name":"ツバス","signal":"indirect_predator_signal","amount":null}
+    ],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/26945",
+    "confidence": "定置網帰属が記事で明示",
+    "notes": "定置網は宇久定置網と世久見だけ入荷と明記。数量は公表されていないため補完しない。"
+  }
+]

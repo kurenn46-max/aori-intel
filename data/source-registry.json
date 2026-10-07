@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-07T14:30:00+09:00",
+  "sources": [
+    {
+      "id": "yamaria-obama",
+      "name": "エギCOM 小浜",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "小浜湾",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/84",
+      "enabled": true
+    },
+    {
+      "id": "yamaria-tsuruga",
+      "name": "エギCOM 敦賀",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "敦賀",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/85",
+      "enabled": true
+    },
+    {
+      "id": "jf-obama",
+      "name": "小浜市漁業協同組合 水揚げ情報",
+      "type": "setnet",
+      "priority": "A",
+      "adapter": "jf_obama",
+      "region": "小浜湾",
+      "url": "https://jf-obama.com/catchinfo/",
+      "enabled": true
+    },
+    {
+      "id": "wakasa-osakana",
+      "name": "若狭小浜 おさかな探訪記",
+      "type": "setnet",
+      "priority": "A",
+      "adapter": "wakasa_osakana",
+      "region": "小浜湾",
+      "url": "https://seiza-design.com/blog/archives/category/mizuage",
+      "enabled": true
+    },
+    {
+      "id": "anglers",
+      "name": "ANGLERS",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "discovery",
+      "enabled": false,
+      "note": "地域ページ構造の安定確認後に自動化。検索断片だけでは登録しない。"
+    },
+    {
+      "id": "local-shops",
+      "name": "現地釣具店・店舗ブログ",
+      "type": "catch",
+      "priority": "B",
+      "adapter": "discovery",
+      "enabled": false
+    },
+    {
+      "id": "charter-boats",
+      "name": "若狭湾遊漁船",
+      "type": "catch",
+      "priority": "B",
+      "adapter": "discovery",
+      "enabled": false
+    }
+  ]
+}

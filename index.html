@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0d1720" />
+  <title>アオリイカ釣果情報</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">AORI INTEL</p>
+      <h1>アオリイカ釣果情報</h1>
+      <p class="sub">小浜・若狭湾を中心に、岸・船・定置網を分離して見る</p>
+    </div>
+    <button id="refreshBtn" class="refresh" type="button" aria-label="最新データを読み直す">更新</button>
+  </header>
+
+  <main>
+    <section class="toolbar card">
+      <div class="seg" id="modeTabs" aria-label="情報種別">
+        <button class="active" data-mode="shore">岸</button>
+        <button data-mode="boat">船</button>
+        <button data-mode="setnet">定置網</button>
+      </div>
+      <div class="seg small" id="rangeTabs" aria-label="期間">
+        <button data-days="0">今日</button>
+        <button data-days="1">昨日</button>
+        <button class="active" data-days="7">7日</button>
+        <button data-days="30">30日</button>
+      </div>
+      <label class="searchbox">
+        <span>検索</span>
+        <input id="searchInput" type="search" placeholder="地域・釣法・サイズ…" autocomplete="off" />
+      </label>
+    </section>
+
+    <nav class="regions" id="regionTabs" aria-label="地域"></nav>
+
+    <section id="statusStrip" class="status-strip" aria-live="polite"></section>
+
+    <section class="summary-grid" id="summary"></section>
+
+    <section class="analysis card" id="analysisCard">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">NOW</p>
+          <h2>今の見え方</h2>
+        </div>
+        <span class="pill neutral" id="evidencePill">材料集計中</span>
+      </div>
+      <p id="analysisText">データを読み込み中…</p>
+    </section>
+
+    <section class="section-head list-head">
+      <div>
+        <p class="eyebrow">LATEST</p>
+        <h2 id="listTitle">最新の岸釣果</h2>
+      </div>
+      <span id="resultCount"></span>
+    </section>
+
+    <section id="records" class="records" aria-live="polite"></section>
+
+    <section class="sources card">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">COLLECTOR</p>
+          <h2>情報収集状況</h2>
+        </div>
+      </div>
+      <div id="sourceStatus"></div>
+      <p class="fineprint">検索語は「アオリイカ」「アオリ」「エギング」「新子」「秋イカ」を使用。「青り」は検索語に使いません。HIT数や投稿数を杯数として扱わず、確認できた捕獲イベントと本人の「○杯目」表記を区別します。</p>
+    </section>
+  </main>
+
+  <template id="recordTemplate">
+    <article class="record card">
+      <div class="record-top">
+        <div>
+          <div class="record-date"></div>
+          <h3 class="record-place"></h3>
+        </div>
+        <span class="confidence pill"></span>
+      </div>
+      <div class="metrics"></div>
+      <p class="record-notes"></p>
+      <div class="record-foot"></div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
