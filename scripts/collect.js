@@ -52,8 +52,8 @@ function parseYamaria(html, source) {
   const events=[];
   for (const a of extractAnchors(html)) {
     const t=normalizeSpace(a.text);
-    if (!t.includes('アオリイカ：') || !t.includes('釣果場所：')) continue;
-    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ：([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
+    if (!/アオリイカ\s*：/.test(t) || !t.includes('釣果場所：')) continue;
+    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
     if (!m) continue;
     const [,hit, angler,date,time,size,city,placeType,comment=''] = m;
     const region = normalizeRegion(city) || source.region || city;
@@ -74,7 +74,7 @@ function parseYamaria(html, source) {
   // Fallback: some responses flatten the latest cards instead of exposing the same anchor markup.
   // HIT is engagement, never catch count.
   const flat=stripTags(html);
-  const re=/(\\d+)\\s*HIT\\s+(.+?)\\s+さん\\s+(\\d{4}-\\d{2}-\\d{2})\\s+(\\d{2}:\\d{2})\\s+アオリイカ：([^ ]+)\\s+釣果場所：\\s*福井\\s+([^ ]+)\\s+釣り場所：([^ #]+)(?:\\s+(.*?))?(?=\\s+\\d+\\s*HIT\\s+.+?\\s+さん\\s+\\d{4}-\\d{2}-\\d{2}|$)/g;
+  const re=/(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*?))?(?=\s+\d+\s*HIT\s+.+?\s+さん\s+\d{4}-\d{2}-\d{2}|$)/g;
   let m;
   while ((m=re.exec(flat))) {
     const hit=m[1], angler=m[2], date=m[3], time=m[4], size=m[5], city=m[6], placeType=m[7], comment=m[8]||'';
@@ -224,7 +224,7 @@ async function collect() {
         const html=await fetchText(source.url); if(process.env.DEBUG_YAMARIA==='1'){const plain=stripTags(html);console.log('YAMARIA_DEBUG',source.name,'len='+html.length,'aori='+(plain.match(/アオリイカ/g)||[]).length,plain.slice(Math.max(0,plain.indexOf('最新釣果投稿')-200),Math.max(0,plain.indexOf('最新釣果投稿')-200)+3500));} const events=parseYamaria(html,source); const sessions=groupSessions(events);
         newSessions.push(...sessions); st.new_count=sessions.length;
         if(!sessions.length){
-          if(/アオリイカ：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
+          if(/アオリイカ\s*：/.test(stripTags(html))){st.status='error';st.note='釣果表示はあるが解析できず。no_new扱いにはしない。';}
           else st.status='no_new';
         }
       } else if(source.adapter==='jf_obama'){
@@ -240,8 +240,10 @@ async function collect() {
     }catch(e){st.status=/401|403|429/.test(String(e))?'blocked':'error';st.note=String(e).slice(0,200);}
     status.push(st);
   }
-  // Keep manual/user records; refresh auto records by ID.
-  const catches=dedupe([...currentCatches.filter(x=>x.is_user_data),...newSessions]).sort((a,b)=>`${b.date} ${b.time}`.localeCompare(`${a.date} ${a.time}`));
+  // Keep user data indefinitely and retain auto records for 30 days so entries do not disappear when they fall off a source's latest list.
+  const cutoff=new Date(); cutoff.setUTCDate(cutoff.getUTCDate()-30); const cutoffDate=cutoff.toISOString().slice(0,10);
+  const kept=currentCatches.filter(x=>x.is_user_data || (x.date && x.date>=cutoffDate));
+  const catches=dedupe([...kept,...newSessions]).sort((a,b)=>`${b.date} ${b.time}`.localeCompare(`${a.date} ${a.time}`));
   const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
   saveJson(path.join(DATA,'catches.json'),catches);
   saveJson(path.join(DATA,'setnet.json'),setnet);
