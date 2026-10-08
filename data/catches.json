@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-2a6bf6e56b36b6a1",
+    "date": "2026-10-08",
+    "time": "06:43",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょうじ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291119",
+    "notes": "少し深場できたよ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-4f34bf6ed8d98393"
+    ]
+  },
+  {
     "id": "session-46569e08e8d5fe7c",
     "date": "2026-10-08",
     "time": "06:40〜06:43",
@@ -26,6 +53,33 @@
       "yamaria-event-aa9ea200cc1b6e9a",
       "yamaria-event-2259e54ce8a7e2b3",
       "yamaria-event-4f34bf6ed8d98393"
+    ]
+  },
+  {
+    "id": "session-8f90337e501be58a",
+    "date": "2026-10-08",
+    "time": "05:00",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "uetin",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291246",
+    "notes": "#決戦#天下人ちょっと大きいのが釣れました☺️ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b3254abc9e52ef35"
     ]
   },
   {
@@ -85,6 +139,61 @@
     ]
   },
   {
+    "id": "session-dec19da4f744f65f",
+    "date": "2026-10-08",
+    "time": "03:35",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "j",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1291426",
+    "notes": "#決戦#天下人 夜しか釣れん 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-34ae1fb6063765c4"
+    ]
+  },
+  {
+    "id": "session-9918ced24b08f303",
+    "date": "2026-10-07",
+    "time": "17:29",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "uetin",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291242",
+    "notes": "#決戦#天下人なかなか連チャンしないです😭 詳細ページ → / #決戦#天下人小さいですが、まずは，一杯 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-028bb0500730daaf",
+      "yamaria-event-8ea091744b1c98ae"
+    ]
+  },
+  {
     "id": "session-5b55a83094046a0d",
     "date": "2026-10-07",
     "time": "07:10",
@@ -136,6 +245,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-f69f64ac93872ed1"
+    ]
+  },
+  {
+    "id": "session-67d456f8aaaed312",
+    "date": "2026-10-07",
+    "time": "06:00",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "イカちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291269",
+    "notes": "爆風ウネリ大荒れの中何とかｷﾀ━(ﾟ∀ﾟ)━! 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e25a67f7e3413b4c"
     ]
   },
   {
@@ -192,6 +328,33 @@
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
     "notes": "（火）若潮 アオリイカ 3～15匹 波高： 多少あり。こんばんは。昨夜のアオリイカ釣り、凪で風も吹かず穏やかで、釣れそうでしたが、活性がね。釣れたイカを横取りの魚が。少しポイント移動して帰って来ました。サイトのイカに無視された。アオリイカ１人、１５・１２・８・３。ティップランエギ他 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:55 日の入 17:34 月の出 00:52 月の入 15:08 天気 曇り 気温 25℃ / 17℃ 気圧 1011.4hPa 風 北北西 ",
     "verified": true
+  },
+  {
+    "id": "session-0c27720c0cbff8b6",
+    "date": "2026-10-06",
+    "time": "09:56",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "yuu",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1290387",
+    "notes": "中古エギ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-825d1c02f207c01f"
+    ]
   },
   {
     "id": "session-063d896d6fece97c",
