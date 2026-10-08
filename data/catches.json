@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-4384be47b30249a8",
+    "date": "2026-10-09",
+    "time": "00:40",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 2,
+    "confirmed_events": 1,
+    "claimed_count": 2,
+    "count_source": "claimed_ordinal",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "Y fishingclub",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291976",
+    "notes": "2杯目 さすが新月だいぶ渋い 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e4b2aedc1062d592"
+    ]
+  },
+  {
     "id": "session-5c4ade11fc48ea00",
     "date": "2026-10-08",
     "time": "22:12",
@@ -356,6 +383,33 @@
     "event_ids": [
       "yamaria-event-028bb0500730daaf",
       "yamaria-event-8ea091744b1c98ae"
+    ]
+  },
+  {
+    "id": "session-0bc184c2de210853",
+    "date": "2026-10-07",
+    "time": "17:29",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "uetin",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1291244",
+    "notes": "#決戦#天下人なかなか連チャンしないです😭 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-028bb0500730daaf"
     ]
   },
   {
