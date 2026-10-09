@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-a40f72143cce14a3",
+    "date": "2026-10-10",
+    "time": "01:54",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "だち",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1293005",
+    "notes": "＃決戦#天下人アオリイカ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9b97109f840eb449"
+    ]
+  },
+  {
     "id": "chowari-400b36cb71e5284e",
     "date": "2026-10-09",
     "time": null,
@@ -517,6 +544,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-fe9878fd9d6a6aa5"
+    ]
+  },
+  {
+    "id": "session-56b7bbf86eb930d7",
+    "date": "2026-10-08",
+    "time": "05:18",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "翠玉の騎士",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1291701",
+    "notes": "移動して2箇所目。エントリーして暫く無反応だったがベイトが入って来たタイミングで435gをアタマに3キャッチ。同行者も3キャッチしたが風が強くて寒いのでまた移動。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-952a0c434641bea4"
     ]
   },
   {
@@ -1148,6 +1202,33 @@
     "source_url": "https://www.chowari.jp/ship/00107/catch/",
     "notes": "（日）小潮 アオリイカ 久し振りの出船、 最初は良かったですが後半渋くなりました。 今日はよく魚に食われました。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:54 日の入 17:38 月の出 23:42 月の入 13:49 天気 雨のち曇り 気温 23℃ / 15℃ 気圧 1018.5hPa 風 東南東 1.9m/s 波 北 0.8m/s 水温 24.7℃ 潮 小潮 月齢 23.0 BI 6.6 潮見表・タイドグラフの詳細を見る 釣行",
     "verified": true
+  },
+  {
+    "id": "session-88faa79a357b6956",
+    "date": "2026-10-04",
+    "time": "11:22",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "akio_star",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1292950",
+    "notes": "#決戦 #天下人 やっとこさ当たってきた貴重な一杯。渋かった〜 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d64870f5b3c38ca4"
+    ]
   },
   {
     "id": "session-588a909cfdf5bf3f",
