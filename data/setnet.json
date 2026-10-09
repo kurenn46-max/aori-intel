@@ -1,5 +1,33 @@
 [
   {
+    "id": "setnet-jf-2026-10-09",
+    "date": "2026-10-09",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "おはようございます。明日からの三連休は行楽日和となるそうです☀小浜の三丁町周辺ではイベントも行われるので、みなさん遊びに行ってみてください！ 今日は延縄・底曳・定置その他の水揚げがありました。 現在、延縄・底曳（全船）出 [&hellip;]"
+  },
+  {
+    "id": "setnet-wakasa-5f505758671fa369",
+    "date": "2026-10-09",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/27089",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
     "id": "setnet-jf-2026-10-08",
     "date": "2026-10-08",
     "region": "小浜湾",
@@ -279,33 +307,5 @@
     "source_url": "https://seiza-design.com/blog/archives/26708",
     "confidence": "定置と他漁法が混在し魚種帰属不能",
     "notes": "混合集荷のため定置網指標には算入しない。"
-  },
-  {
-    "id": "setnet-wakasa-825fb10b78cbd23f",
-    "date": "2026-09-23",
-    "region": "小浜湾・若狭町",
-    "fishery": "定置網",
-    "gear": "定置網",
-    "gear_attribution": "mixed_or_general",
-    "aori_present": false,
-    "species": [],
-    "source": "若狭小浜 おさかな探訪記",
-    "source_url": "https://seiza-design.com/blog/archives/26675",
-    "confidence": "定置と他漁法が混在し魚種帰属不能",
-    "notes": "混合集荷のため定置網指標には算入しない。"
-  },
-  {
-    "id": "setnet-jf-2026-09-18",
-    "date": "2026-09-18",
-    "region": "小浜湾",
-    "fishery": "小浜市漁協 市場水揚げ",
-    "gear": "定置網",
-    "gear_attribution": "mixed_or_general",
-    "aori_present": false,
-    "species": [],
-    "source": "小浜市漁業協同組合 水揚げ情報",
-    "source_url": "https://jf-obama.com/catchinfo/",
-    "confidence": "定置水揚げあり・魚種帰属は限定",
-    "notes": "こんにちは。今日は定置その他の水揚げがありました。 明日から連休の方もいらっしゃると思います。小浜では放生祭やイベントがありますので、ぜひ小浜に遊びに来てください。 投稿のページ送り 1 2 &hellip; 68 次へ 月別アーカイブ 選択してください 2026年10月 (5) 2026年9月 (15) 2026年8月 (16) 2026年7月 (17) 2026年6月 (18) 2026年5月 (14) 2026年4月 (17) 2026年3月 (17) 2026年2月 "
   }
 ]
