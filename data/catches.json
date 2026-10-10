@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-fe68968b2df468cf",
+    "date": "2026-10-11",
+    "time": "05:17",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "かつくん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1294818",
+    "notes": "オカッパリからやっといいサイズが釣れました #決戦#天下人#初投稿 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6543d78ff0ca5669"
+    ]
+  },
+  {
     "id": "session-6b2e338138989af1",
     "date": "2026-10-11",
     "time": "04:49",
@@ -194,6 +221,33 @@
     ]
   },
   {
+    "id": "session-60f9848c954a837c",
+    "date": "2026-10-10",
+    "time": "07:20",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "もっ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1294729",
+    "notes": "胴長18センチでした。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-704bacaa7152351b"
+    ]
+  },
+  {
     "id": "session-8e7bd7d7a2a9eaa6",
     "date": "2026-10-10",
     "time": "06:55",
@@ -247,6 +301,33 @@
       "yamaria-event-47bf3e86cf243709",
       "yamaria-event-60fbcdf067640732",
       "yamaria-event-6c876d216d9fe348"
+    ]
+  },
+  {
+    "id": "session-5068992a1100ddb3",
+    "date": "2026-10-10",
+    "time": "04:45",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "エギクロ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1294190",
+    "notes": "イカパンチからのモゾモゾあわせで、暗闇には赤テープつよし💪 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f979ffce1560c3f6"
     ]
   },
   {
@@ -439,6 +520,33 @@
     "source_url": "https://www.chowari.jp/ship/00122/catch/",
     "notes": "（金）大潮 シオ 30～48cm 合計19匹 サワラ 76cm 合計1匹 ツバス 40cm 合計1匹 アイブリ 30cm 合計1匹 サゴシ 平均50cm アコウ 25～40cm 合計7匹 アオハタ 25～40cm 合計4匹 レンコダイ 20～35cm 合計5匹 アオリ 平均23cm ジギング＆ティップラン便(昼便)ジギングでいろいろとヒットしました！！シオ連発！！48cmまでの型のいいシオも混じる！！超久々にサワラも出ました！2度ほど、止められず根ズレでラインブレークもありました！！大型の何かも回っているようです！！アイブリも出ました。その他、ツバス、サゴシ、アコウ、アオハタ、ガシラ、レンコダイ等々、ティップランではなんとかアオリの顔見れた程度。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazo",
     "verified": true
+  },
+  {
+    "id": "session-43924e768f044c08",
+    "date": "2026-10-09",
+    "time": "23:08",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "もっ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1294724",
+    "notes": "胴長10センチでした。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-70c3c797ecdc44ec"
+    ]
   },
   {
     "id": "session-4e56eaf37f779871",
