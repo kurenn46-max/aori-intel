@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-6b2e338138989af1",
+    "date": "2026-10-11",
+    "time": "04:49",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "さわ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1294625",
+    "notes": "あ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-bcdc7d9b29ae7907"
+    ]
+  },
+  {
     "id": "session-2315e006e285f4c4",
     "date": "2026-10-10",
     "time": "22:44",
@@ -24,6 +51,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-c817cf20501a9dc6"
+    ]
+  },
+  {
+    "id": "session-786a6dd46f43063a",
+    "date": "2026-10-10",
+    "time": "20:04",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "りょりょ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1294468",
+    "notes": "#決戦#天下人 連日、渋渋、遠征するも なんとか1杯 イカさんどこ行ったんや、、 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d2294acfd9bd67ae"
     ]
   },
   {
@@ -80,6 +134,35 @@
     "event_ids": [
       "yamaria-event-d59456708e46067e",
       "yamaria-event-dbdd8164a64094b6"
+    ]
+  },
+  {
+    "id": "session-4f7686d99b966c26",
+    "date": "2026-10-10",
+    "time": "14:54〜18:14",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": 3.33,
+    "cpue": 0.9,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "コハク",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1294425",
+    "notes": "#決戦#天下人 詳細ページ → / #決戦#天下人 詳細ページ → / #決戦#天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d7e65c1bc6060b5c",
+      "yamaria-event-f126665ef28d9e82",
+      "yamaria-event-4e2fdb118bea516c"
     ]
   },
   {
@@ -524,6 +607,35 @@
     ]
   },
   {
+    "id": "session-a252137ee8fb992d",
+    "date": "2026-10-09",
+    "time": "10:46〜11:11",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 10,
+    "confirmed_events": 3,
+    "claimed_count": 10,
+    "count_source": "claimed_ordinal",
+    "duration_hours": 0.42,
+    "cpue": null,
+    "size_text": "100g〜300g / 300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "Y fishingclub",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1294500",
+    "notes": "7杯目 移動してすぐヒット 詳細ページ → / 8杯目にしてやっと10月らしいサイズヒット 胴長20cm 詳細ページ → / 10杯目にして終了 なかなか渋かった どこもイカがすれていてランガンしないと数が伸びない感じでした 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-cbb7acc364907c0d",
+      "yamaria-event-61593240f602d938",
+      "yamaria-event-5dcc32d67584ceb2"
+    ]
+  },
+  {
     "id": "session-3b1e2f91f65c856a",
     "date": "2026-10-09",
     "time": "07:49",
@@ -655,7 +767,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "かどや丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
-    "notes": "（木）中潮 アオリイカ 波高： 低い。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:56 日の入 17:31 月の出 03:10 月の入 16:06 天気 晴れ 気温 25℃ / 12℃ 気圧 1024.9hPa 風 北 1.8m/s 波 北 0.7m/s 水温 24.3℃ 潮 中潮 月齢 27.0 BI 7.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 4日前 釣り船",
+    "notes": "（木）中潮 アオリイカ 波高： 低い。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:56 日の入 17:31 月の出 03:10 月の入 16:06 天気 晴れ 気温 25℃ / 12℃ 気圧 1024.9hPa 風 北 1.8m/s 波 北 0.7m/s 水温 24.4℃ 潮 中潮 月齢 27.0 BI 7.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 5日前 釣り船",
     "verified": true
   },
   {
