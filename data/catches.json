@@ -1,5 +1,34 @@
 [
   {
+    "id": "session-8d9630cc13e8fab1",
+    "date": "2026-10-12",
+    "time": "00:07〜00:51",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": 0.73,
+    "cpue": 4.09,
+    "size_text": "100g〜300g / 300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "鹿児島のもっちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1296148",
+    "notes": "#決戦#天下人 渋い 詳細ページ → / #決戦#天下人 少し場所を変えたら簡単にヒット シャクリ方は変えてないから いるとこにいるね 詳細ページ → / #決戦#天下人 フォール中にゆっくり巻いて角度調整 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-624339df58da2f97",
+      "yamaria-event-f8396fc5b614ce91",
+      "yamaria-event-8f7eba82076d42c7"
+    ]
+  },
+  {
     "id": "session-3095c085719df2a6",
     "date": "2026-10-11",
     "time": "21:12",
@@ -24,6 +53,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-a2235ad2e5829b4d"
+    ]
+  },
+  {
+    "id": "session-4d780bf252a966c4",
+    "date": "2026-10-11",
+    "time": "20:18",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "まこっち",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1295918",
+    "notes": "#決戦 #天下人 ネオブラ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f6a3c0e76948c648"
     ]
   },
   {
@@ -130,7 +186,7 @@
     "confidence": "写真付き実釣",
     "source": "エギCOM 敦賀",
     "source_url": "https://www.yamaria.com/catches/1296066",
-    "notes": "久しぶりのTR釣行🦑 16時出船色々試しながら夕マヅメにて 詳細ページ → / サイズがイマイチ 2.5でも、3.5でも抱いて来ます❗️ まだ風が強い 詳細ページ → / 何とかつ抜けしました🦑 サイズも良くなってきました、晩秋期待したいな #PR #エギ王TR #エギ王TR投稿モニター 詳細ページ →",
+    "notes": "久しぶりのTR釣行🦑 16時出船色々試しながら夕マヅメにて 詳細ページ → / サイズがイマイチ 2.5でも、3.5でも抱いて来ます❗️ まだ風が強い #TR #エギ王TR #エギ王TR投稿モニター 詳細ページ → / 何とかつ抜けしました🦑 サイズも良くなってきました、晩秋期待したいな #PR #エギ王TR #エギ王TR投稿モニター 詳細ページ →",
     "verified": true,
     "event_ids": [
       "yamaria-event-58de4d982567f734",
@@ -605,6 +661,33 @@
     ]
   },
   {
+    "id": "session-c6da267da5159b2c",
+    "date": "2026-10-10",
+    "time": "08:38",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 1,
+    "claimed_count": 3,
+    "count_source": "claimed_ordinal",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょう",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1295454",
+    "notes": "3杯目 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-2ccf09f60b9963d0"
+    ]
+  },
+  {
     "id": "session-f7a6ab794ad9988a",
     "date": "2026-10-10",
     "time": "08:32〜08:38",
@@ -932,7 +1015,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "SUPER VIKING 釣果",
     "source_url": "https://www.chowari.jp/ship/00107/catch/",
-    "notes": "（金）大潮 アオリイカ アコウ 今日はベタ凪でアオリ釣りには最高の条件でしたが、 アオリンの機嫌が悪くお土産程度でした。 代わりにデカいアコウが良く釣れていました。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:58 日の入 17:31 月の出 04:15 月の入 16:33 天気 晴れ 気温 28℃ / 12℃ 気圧 1025.0hPa 風 東 0.5m/s 波 北 0.3m/s 水温 24.3℃ 潮 大潮 月齢 28.0 BI 9.",
+    "notes": "（金）大潮 アオリイカ アコウ 今日はベタ凪でアオリ釣りには最高の条件でしたが、 アオリンの機嫌が悪くお土産程度でした。 代わりにデカいアコウが良く釣れていました。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:58 日の入 17:31 月の出 04:15 月の入 16:33 天気 晴れ 気温 28℃ / 12℃ 気圧 1025.0hPa 風 東 0.5m/s 波 北 0.3m/s 水温 24.4℃ 潮 大潮 月齢 28.0 BI 9.",
     "verified": true
   },
   {
@@ -1344,7 +1427,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "かどや丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
-    "notes": "（木）中潮 アオリイカ 波高： 低い。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:56 日の入 17:31 月の出 03:10 月の入 16:06 天気 晴れ 気温 25℃ / 12℃ 気圧 1024.9hPa 風 北 1.8m/s 波 北 0.7m/s 水温 24.4℃ 潮 中潮 月齢 27.0 BI 7.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 5日前 釣り船",
+    "notes": "（木）中潮 アオリイカ 波高： 低い。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:56 日の入 17:31 月の出 03:10 月の入 16:06 天気 晴れ 気温 25℃ / 12℃ 気圧 1024.9hPa 風 北 1.8m/s 波 北 0.7m/s 水温 24.4℃ 潮 中潮 月齢 27.0 BI 7.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 6日前 釣り船",
     "verified": true
   },
   {
