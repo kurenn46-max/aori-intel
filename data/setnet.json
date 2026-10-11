@@ -1,5 +1,19 @@
 [
   {
+    "id": "setnet-wakasa-de25aa8717f1456a",
+    "date": "2026-10-12",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/27261",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
     "id": "setnet-wakasa-c76d7f2af8f972ab",
     "date": "2026-10-10",
     "region": "小浜湾・若狭町",
@@ -279,20 +293,6 @@
     "source_url": "https://jf-obama.com/catchinfo/",
     "confidence": "定置水揚げあり・魚種帰属は限定",
     "notes": "おはようございます。 今日から底曳きが解禁となりました。現在出漁中です。明日の朝、市場に底曳きの魚が並びます。 今朝は延縄、定置その他の水揚げがありました。"
-  },
-  {
-    "id": "setnet-wakasa-84cf19b1152fb1b7",
-    "date": "2026-09-30",
-    "region": "小浜湾・若狭町",
-    "fishery": "定置網",
-    "gear": "定置網",
-    "gear_attribution": "mixed_or_general",
-    "aori_present": false,
-    "species": [],
-    "source": "若狭小浜 おさかな探訪記",
-    "source_url": "https://seiza-design.com/blog/archives/26804",
-    "confidence": "定置と他漁法が混在し魚種帰属不能",
-    "notes": "混合集荷のため定置網指標には算入しない。"
   },
   {
     "id": "setnet-jf-2026-09-28",
