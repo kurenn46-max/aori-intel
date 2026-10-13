@@ -1,5 +1,19 @@
 [
   {
+    "id": "setnet-jf-2026-10-13",
+    "date": "2026-10-13",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "おはようございます。今日もいいお天気です。明日からは気温が下がってきますのでお気を付けください。 今日は底曳、定置その他の水揚げがありました。 そして、現在延縄が出漁中です。"
+  },
+  {
     "id": "setnet-wakasa-de25aa8717f1456a",
     "date": "2026-10-12",
     "region": "小浜湾・若狭町",
