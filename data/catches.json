@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-3af18dd4c4f6a8a8",
+    "date": "2026-10-14",
+    "time": "04:42",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "まこっち",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1298882",
+    "notes": "#決戦 #天下人 アモラ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-182563e9b12d988f"
+    ]
+  },
+  {
     "id": "chowari-6654aced862bc559",
     "date": "2026-10-13",
     "time": null,
@@ -160,6 +187,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-85c9119f29406432"
+    ]
+  },
+  {
+    "id": "session-ba87d69116094fa2",
+    "date": "2026-10-13",
+    "time": "12:08",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょうじ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1298013",
+    "notes": "デカイのいないな〜 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e1ac54ca9e4e677d"
     ]
   },
   {
@@ -546,6 +600,33 @@
     ]
   },
   {
+    "id": "session-d31e08d0a6ef7de5",
+    "date": "2026-10-12",
+    "time": "12:20",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "Yoshi",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1298393",
+    "notes": "#決戦#天下人 OK来たよ！ロープ周りを狙い撃ち！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-c12995ab35a96697"
+    ]
+  },
+  {
     "id": "session-8fbe7b7e5b2946a1",
     "date": "2026-10-12",
     "time": "11:41",
@@ -707,6 +788,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-f020ca32d6d6344d"
+    ]
+  },
+  {
+    "id": "session-990409bf009158f6",
+    "date": "2026-10-12",
+    "time": "05:38",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ささき",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1298823",
+    "notes": "ふぐだらけの中なんとか一杯😭 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-27e16262cd643471"
     ]
   },
   {
@@ -1533,6 +1641,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-05740533b12aaec1"
+    ]
+  },
+  {
+    "id": "session-e601ebbce94986ac",
+    "date": "2026-10-11",
+    "time": "05:24",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "anyushu",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1298948",
+    "notes": "#決戦 #天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f1e0e23ea88280b3"
     ]
   },
   {
