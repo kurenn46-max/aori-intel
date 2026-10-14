@@ -1587,6 +1587,33 @@
     ]
   },
   {
+    "id": "session-ec86dd6efa35900b",
+    "date": "2026-10-11",
+    "time": "08:45",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "y🦑s🦑o",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1299386",
+    "notes": "朝マヅメ寝坊…なんとか１杯🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-0f1b67d67844afaf"
+    ]
+  },
+  {
     "id": "session-02b58014dc949ad7",
     "date": "2026-10-11",
     "time": "08:30",
