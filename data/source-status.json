@@ -1,86 +1,86 @@
 {
-  "checked_at": "2026-10-14T20:11:41.543Z",
+  "checked_at": "2026-10-14T23:11:48.526Z",
   "sources": [
     {
       "source": "エギCOM 小浜",
-      "checked_at": "2026-10-14T20:11:24.994Z",
+      "checked_at": "2026-10-14T23:11:36.180Z",
       "status": "ok",
       "new_count": 7,
       "note": null
     },
     {
       "source": "エギCOM 敦賀",
-      "checked_at": "2026-10-14T20:11:25.357Z",
+      "checked_at": "2026-10-14T23:11:36.673Z",
       "status": "ok",
       "new_count": 6,
       "note": null
     },
     {
       "source": "上州屋 新敦賀店",
-      "checked_at": "2026-10-14T20:11:26.469Z",
+      "checked_at": "2026-10-14T23:11:36.961Z",
       "status": "ok",
       "new_count": 2,
       "note": null
     },
     {
       "source": "かどや丸 釣果",
-      "checked_at": "2026-10-14T20:11:30.940Z",
+      "checked_at": "2026-10-14T23:11:39.222Z",
       "status": "ok",
       "new_count": 5,
       "note": null
     },
     {
       "source": "川代丸 釣果",
-      "checked_at": "2026-10-14T20:11:32.242Z",
+      "checked_at": "2026-10-14T23:11:40.381Z",
       "status": "ok",
       "new_count": 4,
       "note": null
     },
     {
       "source": "SUPER VIKING 釣果",
-      "checked_at": "2026-10-14T20:11:33.185Z",
+      "checked_at": "2026-10-14T23:11:41.348Z",
       "status": "ok",
       "new_count": 5,
       "note": null
     },
     {
       "source": "魚速 福井県アオリイカ",
-      "checked_at": "2026-10-14T20:11:34.174Z",
+      "checked_at": "2026-10-14T23:11:42.386Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden"
     },
     {
       "source": "魚速 敦賀アオリイカ",
-      "checked_at": "2026-10-14T20:11:34.287Z",
+      "checked_at": "2026-10-14T23:11:42.512Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず"
     },
     {
       "source": "魚速 音海アオリイカ",
-      "checked_at": "2026-10-14T20:11:35.481Z",
+      "checked_at": "2026-10-14T23:11:43.641Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden"
     },
     {
       "source": "魚速 若狭湾アオリイカ",
-      "checked_at": "2026-10-14T20:11:35.510Z",
+      "checked_at": "2026-10-14T23:11:43.703Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず"
     },
     {
       "source": "小浜市漁業協同組合 水揚げ情報",
-      "checked_at": "2026-10-14T20:11:36.812Z",
+      "checked_at": "2026-10-14T23:11:44.827Z",
       "status": "ok",
       "new_count": 7,
       "note": null
     },
     {
       "source": "若狭小浜 おさかな探訪記",
-      "checked_at": "2026-10-14T20:11:38.553Z",
+      "checked_at": "2026-10-14T23:11:45.938Z",
       "status": "ok",
       "new_count": 7,
       "note": null
