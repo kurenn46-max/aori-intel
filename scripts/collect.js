@@ -222,7 +222,7 @@ function parseChowari(html, source) {
     let count=null,countMin=null,countMax=null,countBasis='unknown';
     // Do not read another species' quantity from a multi-species report.
     const header=(block.split(/(?:おはよう|こんばんは|潮：|波高：|風向：|天気|釣行当日)/)[0]||'');
-    const aori=(header.match(/アオリイカ\s*(?:[|：:]\s*)?([^]*?)(?=\s+(?:マイカ|モンゴウイカ|アコウ|サワラ|ハマチ|マハタ|カサゴ|サバ|イカメタル)\b|$)/)||[])[1]||'';
+    const aori=(header.split(/アオリイカ/)[1]||'').split(/マイカ|モンゴウイカ|アコウ|サワラ|ハマチ|マハタ|カサゴ|サバ|イカメタル/)[0];
     const aoriCounts=aori.slice(0,80);
     let mm=aoriCounts.match(/^(?:\s*\d{1,2}\s*[-〜～]\s*\d{1,2}\s*cm\s*)?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
     if(mm){
@@ -534,11 +534,14 @@ async function collect() {
   const cutoff=new Date(); cutoff.setUTCDate(cutoff.getUTCDate()-30); const cutoffDate=cutoff.toISOString().slice(0,10);
   const kept=currentCatches.filter(x=>x.is_user_data || (x.date && x.date>=cutoffDate));
   const catches=reconcileCatches(kept,newSessions,cutoffDate);
+  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
+  const oldSetnetIds=new Set(currentSetnet.map(x=>x.id));
   for(const st of status){
     st.parsed_count=st.new_count;
-    st.new_count=countNew(kept,catches,st.source);
+    st.new_count=st.source==='小浜市漁業協同組合 水揚げ情報'||st.source==='若狭小浜 おさかな探訪記'
+      ?setnet.filter(x=>x.source===st.source&&!oldSetnetIds.has(x.id)).length
+      :countNew(kept,catches,st.source);
   }
-  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
   saveJson(path.join(DATA,'catches.json'),catches);
   saveJson(path.join(DATA,'setnet.json'),setnet);
   saveJson(path.join(DATA,'source-status.json'),{checked_at:new Date().toISOString(),sources:status});
