@@ -534,7 +534,7 @@ async function collect() {
   const cutoff=new Date(); cutoff.setUTCDate(cutoff.getUTCDate()-30); const cutoffDate=cutoff.toISOString().slice(0,10);
   const kept=currentCatches.filter(x=>x.is_user_data || (x.date && x.date>=cutoffDate));
   const catches=reconcileCatches(kept,newSessions,cutoffDate);
-  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
+  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'||x.is_user_data||(x.date&&x.date>=cutoffDate)),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
   const oldSetnetIds=new Set(currentSetnet.map(x=>x.id));
   for(const st of status){
     st.parsed_count=st.new_count;
