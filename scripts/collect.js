@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const {reconcileCatches,countNew} = require('./quality');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -122,8 +123,8 @@ function groupSessions(events) {
       region:first.region, subregion:first.subregion, mode:first.mode, method:first.method,
       place_type:first.place_type, catch_count:count, confirmed_events:confirmed,
       claimed_count:claim, count_source:countSource,
-      duration_hours:duration>0?Number(duration.toFixed(2)):null,
-      cpue: duration>0 && countSource==='posted_events' ? Number((confirmed/duration).toFixed(2)) : null,
+      duration_hours:null,
+      cpue: null, // Posting timestamps cannot establish the actual fishing duration.
       size_text:[...new Set(arr.map(x=>x.size_text))].join(' / '),
       max_size_text:ranks[0]?.size_text || null,
       angler:first.angler, confidence:first.confidence, source:first.source,
@@ -219,14 +220,18 @@ function parseChowari(html, source) {
     if(!/アオリイカ|アオリ(?!ゾメ)/.test(block)) continue;
 
     let count=null,countMin=null,countMax=null,countBasis='unknown';
-    let mm=block.match(/アオリイカ[^。]{0,140}?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
+    // Do not read another species' quantity from a multi-species report.
+    const header=(block.split(/(?:おはよう|こんばんは|潮：|波高：|風向：|天気|釣行当日)/)[0]||'');
+    const aori=(header.match(/アオリイカ\s*(?:[|：:]\s*)?([^]*?)(?=\s+(?:マイカ|モンゴウイカ|アコウ|サワラ|ハマチ|マハタ|カサゴ|サバ|イカメタル)\b|$)/)||[])[1]||'';
+    const aoriCounts=aori.slice(0,80);
+    let mm=aoriCounts.match(/^(?:\s*\d{1,2}\s*[-〜～]\s*\d{1,2}\s*cm\s*)?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
     if(mm){
       countMin=Number(mm[1]);countMax=Number(mm[2]);count=countMax;countBasis='per_angler_range';
     } else {
-      mm=block.match(/アオリイカ[^。]{0,140}?竿頭\s*(\d{1,3})\s*匹/);
+      mm=aoriCounts.match(/竿頭\s*(\d{1,3})\s*匹/);
       if(mm){count=countMax=Number(mm[1]);countBasis='per_angler_max';}
       else {
-        mm=block.match(/アオリイカ[^。]{0,140}?合計\s*(\d{1,3})\s*匹/);
+        mm=aoriCounts.match(/合計\s*(\d{1,3})\s*匹/);
         if(mm){count=countMax=Number(mm[1]);countBasis='boat_total';}
       }
     }
@@ -528,7 +533,11 @@ async function collect() {
   // Keep user data indefinitely and retain auto records for 30 days so entries do not disappear when they fall off a source's latest list.
   const cutoff=new Date(); cutoff.setUTCDate(cutoff.getUTCDate()-30); const cutoffDate=cutoff.toISOString().slice(0,10);
   const kept=currentCatches.filter(x=>x.is_user_data || (x.date && x.date>=cutoffDate));
-  const catches=dedupe([...kept,...newSessions]).sort((a,b)=>`${b.date} ${b.time}`.localeCompare(`${a.date} ${a.time}`));
+  const catches=reconcileCatches(kept,newSessions,cutoffDate);
+  for(const st of status){
+    st.parsed_count=st.new_count;
+    st.new_count=countNew(kept,catches,st.source);
+  }
   const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
   saveJson(path.join(DATA,'catches.json'),catches);
   saveJson(path.join(DATA,'setnet.json'),setnet);
