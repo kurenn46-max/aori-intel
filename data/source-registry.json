@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updated_at": "2026-10-07T10:30:32.920Z",
   "sources": [
     {
@@ -20,6 +20,46 @@
       "adapter": "yamaria",
       "region": "敦賀",
       "url": "https://www.yamaria.com/community/catch/egiou/cities/85",
+      "enabled": true
+    },
+    {
+      "id": "yamaria-tango",
+      "name": "エギCOM 丹後",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "宮津",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/115",
+      "enabled": true
+    },
+    {
+      "id": "yamaria-miyazu",
+      "name": "エギCOM 宮津",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "宮津",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/113",
+      "enabled": true
+    },
+    {
+      "id": "yamaria-maizuru",
+      "name": "エギCOM 舞鶴",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "舞鶴",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/114",
+      "enabled": true
+    },
+    {
+      "id": "yamaria-echizen",
+      "name": "エギCOM 越前",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "yamaria",
+      "region": "越前",
+      "url": "https://www.yamaria.com/community/catch/egiou/cities/86",
       "enabled": true
     },
     {
