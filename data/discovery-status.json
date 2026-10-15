@@ -1,10 +1,11 @@
 {
-  "checked_at": "2026-10-15T23:03:57.124Z",
-  "provider": "direct_feeds_only",
+  "checked_at": "2026-10-15T23:09:11.017Z",
+  "provider": "search_irrelevant",
   "search_key_configured": false,
-  "queries_planned": 0,
-  "queries_ok": 0,
-  "raw_results": 0,
+  "queries_planned": 12,
+  "queries_ok": 12,
+  "raw_results": 59,
+  "relevant_results": 0,
   "unique_results": 0,
   "pages_attempted": 0,
   "candidates": 0,
@@ -12,13 +13,13 @@
   "new_catches": 0,
   "errors": [],
   "sample_queries": [
-    "site:anglers.jp/catches \"小浜湾\" アオリイカ 2026",
-    "site:anglers.jp/fishings \"小浜湾\" アオリイカ 2026",
-    "site:anglers.jp/catches \"神子漁港\" アオリイカ 2026",
-    "site:anglers.jp/fishings \"世久見湾\" アオリイカ 2026",
-    "site:anglers.jp/catches \"敦賀\" アオリイカ 2026",
-    "site:anglers.jp/fishings \"敦賀湾\" アオリイカ 2026",
-    "site:anglers.jp/catches \"高浜\" アオリイカ 2026",
-    "site:anglers.jp/catches \"美浜\" アオリイカ 2026"
+    "\"高浜\" アオリイカ エギング 釣果 2026 10",
+    "\"小浜\" アオリイカ エギング 釣果 2026 10",
+    "\"常神\" アオリイカ エギング 釣果 2026 10",
+    "\"美浜\" アオリイカ エギング 釣果 2026 10",
+    "\"敦賀\" アオリイカ エギング 釣果 2026 10",
+    "\"舞鶴\" アオリイカ エギング 釣果 2026 10",
+    "\"宮津\" アオリイカ エギング 釣果 2026 10",
+    "\"越前\" アオリイカ エギング 釣果 2026 10"
   ]
 }
