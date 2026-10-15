@@ -13,7 +13,7 @@ const REGION_RULES = [
   {region:'美浜', patterns:[/美浜/,/日向/,/菅浜/ ]},
   {region:'敦賀', patterns:[/敦賀/,/白木/,/色ヶ浜/ ]},
   {region:'舞鶴', patterns:[/舞鶴/,/白杉/,/小橋/ ]},
-  {region:'宮津', patterns:[/宮津/,/栗田/,/伊根/ ]},
+  {region:'宮津', patterns:[/宮津/,/丹後/,/栗田/,/伊根/ ]},
   {region:'越前', patterns:[/越前/,/厨/,/梅浦/ ]}
 ];
 
@@ -54,7 +54,7 @@ function parseYamaria(html, source) {
   for (const a of extractAnchors(html)) {
     const t=normalizeSpace(a.text);
     if (!/アオリイカ\s*：/.test(t) || !t.includes('釣果場所：')) continue;
-    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
+    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*(?:福井|京都)\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
     if (!m) continue;
     const [,hit, angler,date,time,size,city,placeType,comment=''] = m;
     const region = normalizeRegion(city) || source.region || city;
@@ -75,7 +75,7 @@ function parseYamaria(html, source) {
   // Fallback: some responses flatten the latest cards instead of exposing the same anchor markup.
   // HIT is engagement, never catch count.
   const flat=stripTags(html);
-  const re=/(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*?))?(?=\s+\d+\s*HIT\s+.+?\s+さん\s+\d{4}-\d{2}-\d{2}|$)/g;
+  const re=/(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*(?:福井|京都)\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*?))?(?=\s+\d+\s*HIT\s+.+?\s+さん\s+\d{4}-\d{2}-\d{2}|$)/g;
   let m;
   while ((m=re.exec(flat))) {
     const hit=m[1], angler=m[2], date=m[3], time=m[4], size=m[5], city=m[6], placeType=m[7], comment=m[8]||'';
