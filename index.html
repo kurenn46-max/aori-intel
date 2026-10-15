@@ -10,9 +10,9 @@
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">AORI INTEL · V2.2</p>
+      <p class="eyebrow">AORI INTEL · V2.3</p>
       <h1>アオリイカ釣果情報</h1>
-      <p class="sub">越前〜丹後の岸・船・定置網を分離。未取得地域は釣果ゼロ扱いしません</p>
+      <p class="sub">アオリイカ釣果に特化。岸と船を分離し、地域・日時・杯数を比較します</p>
     </div>
     <button id="refreshBtn" class="refresh" type="button" aria-label="最新データを読み直す">更新</button>
   </header>
@@ -22,7 +22,6 @@
       <div class="seg" id="modeTabs" aria-label="情報種別">
         <button class="active" data-mode="shore">岸</button>
         <button data-mode="boat">船</button>
-        <button data-mode="setnet">定置網</button>
       </div>
       <div class="seg small" id="rangeTabs" aria-label="期間">
         <button data-days="0">今日</button>
@@ -63,15 +62,21 @@
 
     <section id="records" class="records" aria-live="polite"></section>
 
+    <details id="netDetails" class="aori-net card">
+      <summary>参考：アオリイカの定置網入網 <span id="netCount" class="net-count"></span></summary>
+      <p class="fineprint">アオリの入網が記事で確認できた記録のみ。数量不明の場合は推定しません。岸・船の釣果や釣れやすさには合算しません。</p>
+      <div id="netRecords" class="net-records"></div>
+    </details>
+
     <section class="sources card">
       <div class="section-head">
         <div>
-          <p class="eyebrow">COLLECTOR</p>
+          <p class="eyebrow">AORI SOURCES</p>
           <h2>情報収集状況</h2>
         </div>
       </div>
       <div id="sourceStatus"></div>
-      <p class="fineprint">検索語は「アオリイカ」「アオリ」「エギング」「新子」「秋イカ」を使用。「青り」は検索語に使いません。HIT数や投稿数を杯数として扱わず、確認できた捕獲イベントと本人の「○杯目」表記を区別します。</p>
+      <p class="fineprint">アオリイカ釣果の出典を優先。釣果が拾えていない地域は「材料不足」であり、釣果ゼロではありません。巡回日時と実釣日も区別します。</p>
     </section>
   </main>
 

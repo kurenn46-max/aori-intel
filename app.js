@@ -16,7 +16,7 @@ async function load(){
 }
 function selectedRecords(){
   const today=todayJst();
-  let rows=state.mode==='setnet'?state.setnet:state.catches.filter(x=>x.mode===state.mode);
+  let rows=state.catches.filter(x=>x.mode===state.mode);
   rows=rows.filter(x=>{
     const dd=-daysDiff(x.date,today);
     if(state.days===0 && dd!==0)return false;
@@ -33,38 +33,23 @@ function renderRegions(){
   $('#regionTabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.region=b.dataset.region;render();});
 }
 function summaryCards(rows){
-  if(state.mode==='setnet'){
-    const confirmed=rows.filter(x=>x.gear_attribution==='confirmed');
-    const aori=confirmed.filter(x=>x.aori_present).length;
-    const bait=[...new Set(confirmed.flatMap(x=>(x.species||[]).filter(s=>s.signal==='direct_bait').map(s=>s.name)))];
-    const pred=[...new Set(confirmed.flatMap(x=>(x.species||[]).filter(s=>s.signal==='indirect_predator_signal').map(s=>s.name)))];
-    return [
-      ['定置網記録',confirmed.length,'帰属確認済み'],['アオリ入網日',aori,'数量不明は補完しない'],['ベイト魚種',bait.length,bait.slice(0,3).join('・')||'確認なし'],['捕食魚種',pred.length,pred.slice(0,3).join('・')||'確認なし']
-    ];
-  }
   const verified=rows.filter(x=>x.verified!==false);
   const perPerson=verified.filter(x=>state.mode!=='boat'||!['boat_total','reported_boat_total','report_only','reported_page','unknown'].includes(x.count_basis||x.count_source));
-  const counts=perPerson.map(x=>Number(x.catch_count)||0); const max=Math.max(0,...counts);
-  const sessions=verified.length; const multi=perPerson.filter(x=>(x.catch_count||0)>=3).length;
-  const knownCpue=verified.map(x=>x.cpue).filter(Number.isFinite); const best=knownCpue.length?Math.max(...knownCpue):null;
+  const counts=perPerson.map(x=>Number(x.catch_count)||0);
+  const max=Math.max(0,...counts);
+  const multi=perPerson.filter(x=>(x.catch_count||0)>=3).length;
+  const latest=verified.map(x=>x.date).filter(Boolean).sort().at(-1);
   return [
-    ['確認釣行',sessions,'探索未確認は除外'],['1人最多',max?`${max}杯`:'–','船中合計は除外'],['3杯以上',multi,'比較可能な記録'],['最高CPUE',best?`${best}/h`:'–','実釣時間が判明分のみ']
+    ['確認釣行',verified.length,'未確認の検索候補は除外'],
+    ['1人最多',max?`${max}杯`:'–','船中合計は除外'],
+    ['3杯以上',multi,'比較可能な釣行記録'],
+    ['最新釣果日',latest?latest.replaceAll('-','/'):'–','釣行日・投稿時刻と区別']
   ];
 }
 function analysis(rows){
-  if(!rows.length)return ['材料不足','条件に合う確認データがありません。投稿数の少なさを、そのまま魚影の薄さとは判断しません。','neutral'];
-  if(state.mode==='setnet'){
-    const confirmed=rows.filter(x=>x.gear_attribution==='confirmed'); const aori=confirmed.some(x=>x.aori_present);
-    const bait=[...new Set(confirmed.flatMap(x=>(x.species||[]).filter(s=>s.signal==='direct_bait').map(s=>s.name)))];
-    const pred=[...new Set(confirmed.flatMap(x=>(x.species||[]).filter(s=>s.signal==='indirect_predator_signal').map(s=>s.name)))];
-    let txt=`定置網帰属を確認できた記録は${confirmed.length}件。`;
-    txt+=aori?'アオリイカの入網あり。':'アオリイカ入網は確認できず。';
-    if(bait.length)txt+=` ベイト指標は${bait.join('・')}。`;
-    if(pred.length)txt+=` 捕食魚は${pred.join('・')}が確認材料。`;
-    txt+=' 定置網は設置場所と潮流の影響が大きいため、岸釣果の杯数には混ぜません。';
-    return [aori?'回遊材料あり':'定置網材料',txt,aori?'good':'neutral'];
-  }
+  if(!rows.length)return ['材料不足','条件に合うアオリ釣果が取得できていません。釣れていないという意味ではありません。','neutral'];
   const reliable=rows.filter(x=>x.verified!==false && (state.mode!=='boat'||!['boat_total','reported_boat_total','report_only','reported_page','unknown'].includes(x.count_basis||x.count_source)));
+  if(!reliable.length)return ['材料不足','確認できた杯数が不足しています。地域の魚影は判断できません。','neutral'];
   const max=Math.max(0,...reliable.map(x=>x.catch_count||0)); const good=reliable.filter(x=>(x.catch_count||0)>=5).length; const user=rows.find(x=>x.is_user_data);
   let txt=`直近条件内の最多は${max}杯。5杯以上の確認釣行は${good}件。`;
   if(user)txt+=` 本人実釣では${user.subregion}で${user.catch_count}杯、同行者${user.companion_catch_count??'不明'}杯。`;
@@ -77,11 +62,6 @@ function renderSummary(rows){
   const [label,txt,cls]=analysis(rows);$('#evidencePill').textContent=label;$('#evidencePill').className=`pill ${cls}`;$('#analysisText').textContent=txt;
 }
 function recordCard(x){
-  if(state.mode==='setnet'){
-    const species=(x.species||[]).map(s=>s.name).join('・')||'魚種帰属なし';
-    const badge=x.gear_attribution==='confirmed'?'定置網帰属確認':'混合集荷';
-    return `<article class="record card"><div class="record-top"><div><div class="record-date">${esc(fmtDate(x.date,''))}</div><h3>${esc(x.fishery||x.region)}</h3></div><span class="confidence pill ${x.gear_attribution==='confirmed'?'good':'neutral'}">${badge}</span></div><div class="metrics"><span class="metric"><b>${x.aori_present?'アオリあり':'アオリ未確認'}</b></span><span class="metric">${esc(species)}</span></div><p class="record-notes">${esc(x.notes||'')}</p><div class="record-foot"><span>${esc(x.source||'')}</span>${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">出典</a>`:''}</div></article>`;
-  }
   const countLabel=x.catch_count==null?'杯数不明':
     x.count_basis==='boat_total'||x.count_source==='reported_boat_total'? '船中合計'+x.catch_count+'杯':
     x.count_basis==='per_angler_range'? '1人'+x.catch_min+'〜'+x.catch_max+'杯':
@@ -91,6 +71,18 @@ function recordCard(x){
   const cp=x.cpue?`CPUE ${x.cpue}/h`:'';
   const tags=[`<span class="metric"><b>${esc(countLabel)}</b></span>`,x.size_text?`<span class="metric">${esc(x.size_text)}</span>`:'',x.method?`<span class="metric">${esc(x.method)}</span>`:'',cp?`<span class="metric">${esc(cp)}</span>`:'',ev?`<span class="metric">${esc(ev)}</span>`:''].filter(Boolean).join('');
   return `<article class="record card"><div class="record-top"><div><div class="record-date">${esc(fmtDate(x.date,x.time))}</div><h3>${esc(x.subregion||x.region)}${x.place_type?`・${esc(x.place_type)}`:''}</h3></div><span class="confidence pill ${x.is_user_data?'good':'neutral'}">${esc(x.confidence||'確認済み')}</span></div><div class="metrics">${tags}</div><p class="record-notes">${esc(x.notes||'')}</p><div class="record-foot"><span>${esc(x.source||'')}</span>${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">出典</a>`:''}</div></article>`;
+}
+function renderNetEvidence(){
+  const rows=state.setnet.filter(x=>x.gear_attribution==='confirmed' && x.aori_present===true)
+    .sort((a,b)=>b.date.localeCompare(a.date));
+  $('#netCount').textContent=rows.length+'件';
+  $('#netRecords').innerHTML=rows.length
+    ?rows.map(x=>`<div class="net-row">
+      <div class="net-date">${esc(x.date.replaceAll('-','/'))}・アオリ入網確認（数量不明）</div>
+      <div class="net-place">${esc(x.fishery||x.region||'詳細不明')}</div>
+      <div class="net-source">${esc(x.source||'出典不明')} ${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">元記事</a>`:''}</div>
+    </div>`).join('')
+    :'<p class="fineprint">アオリの入網を確認できた資料はありません。未確認は「入網なし」を意味しません。</p>';
 }
 function renderSources(){
   const s=state.status.sources||[];
@@ -102,11 +94,12 @@ function renderSources(){
 }
 function render(){
   renderRegions(); const rows=selectedRecords(); renderSummary(rows);
-  const names={shore:'岸釣果',boat:'船釣果',setnet:'定置網情報'}; $('#listTitle').textContent=`最新の${names[state.mode]}`;$('#resultCount').textContent=`${rows.length}件`;
+  renderNetEvidence();
+  const names={shore:'岸釣果',boat:'船釣果'}; $('#listTitle').textContent=`最新の${names[state.mode]}`;$('#resultCount').textContent=`${rows.length}件`;
   $('#records').innerHTML=rows.length?rows.map(recordCard).join(''):'<div class="empty card">条件に合う確認データなし</div>';
   const times=[state.status.checked_at,state.discovery?.checked_at].filter(Boolean).map(x=>new Date(x).getTime());
   const latest=times.length?new Date(Math.max(...times)).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'初回自動巡回前';
-  const latestCatch=state.catches.map(x=>x.date).filter(Boolean).sort().at(-1)||'情報なし';
+  const latestCatch=rows.map(x=>x.date).filter(Boolean).sort().at(-1)||'情報なし';
   const stale=state.loadErrors.length?' / 読込失敗:'+state.loadErrors.join(', '):'';
   $('#statusStrip').textContent=state.region+' / '+(state.days===0?'今日':state.days===1?'昨日':state.days+'日')+
     ' / 最終巡回:'+latest+' / 最新釣果日:'+latestCatch+stale;
