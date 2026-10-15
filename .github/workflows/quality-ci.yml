@@ -21,6 +21,7 @@ jobs:
       - name: Test no-key regional discovery (dry run)
         env:
           BRAVE_SEARCH_API_KEY: ''
+          DEBUG_DISCOVERY: '1'
         run: npm run discover
       - name: Verify discovery reported real attempts
         run: |
