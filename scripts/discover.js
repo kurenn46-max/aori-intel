@@ -254,7 +254,7 @@ async function main(){
       let items=braveKey
         ?await braveSearch(q,braveKey)
         :parseRss(await fetchText(cfg.provider.base_url+encodeURIComponent(q),9000),q);
-      const sm=q.match(/site:([^\\s/]+)/i);
+      const sm=q.match(/site:([^\s/]+)/i);
       if(sm){
         const host=sm[1].replace(/^www\\./,'').toLowerCase();
         items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
