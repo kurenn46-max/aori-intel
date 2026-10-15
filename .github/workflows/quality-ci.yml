@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: ['feature/v2.1-data-quality-and-discovery']
+    branches: ['feature/v2.1-data-quality-and-discovery', 'feature/v2.2-rotating-search-queries']
 permissions:
   contents: read
 jobs:
