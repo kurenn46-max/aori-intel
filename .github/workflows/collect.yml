@@ -8,6 +8,7 @@ on:
     paths:
       - 'scripts/collect.js'
       - 'scripts/discover.js'
+      - 'scripts/query-plan.js'
       - 'data/source-registry.json'
       - 'data/search-config.json'
       - '.github/workflows/collect.yml'
@@ -37,7 +38,7 @@ jobs:
         run: |
           git config user.name "aori-intel-bot"
           git config user.email "aori-intel-bot@users.noreply.github.com"
-          git add data/catches.json data/setnet.json data/source-status.json data/discovery.json data/discovery-status.json
+          git add data/catches.json data/setnet.json data/source-status.json data/discovery.json data/discovery-status.json data/search-rotation.json
           if git diff --cached --quiet; then
             echo "No changes"
           else

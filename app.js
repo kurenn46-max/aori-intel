@@ -97,7 +97,7 @@ function renderSources(){
   const checked=state.status.checked_at?new Date(state.status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
   const d=state.discovery||{};
   const dChecked=d.checked_at?new Date(d.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
-  const searchRow=`<div class="source-row"><span>探索検索（${esc(d.provider||'不明')}） <small>${esc(dChecked)}</small></span><span class="${(d.errors||[]).length||d.provider==='search_unavailable'?'status-error':'status-ok'}">実行 ${d.queries_ok||0}/${d.queries_planned||0}・候補 ${d.candidates||0}・新規 ${d.new_catches||0}</span></div>`;
+  const searchRow=`<div class="source-row"><span>探索検索（${esc(d.provider||'不明')}） <small>${esc(dChecked)}</small></span><span class="${(d.errors||[]).length||['search_unavailable','search_irrelevant'].includes(d.provider)?'status-error':'status-ok'}">検索回 ${d.search_round??'–'}・実行 ${d.queries_ok||0}/${d.queries_planned||0}・関連 ${d.relevant_results??0}/${d.raw_results??0}・候補 ${d.candidates||0}・新規 ${d.new_catches||0}</span></div>`;
   $('#sourceStatus').innerHTML=`<p class="fineprint">固定情報源 最終巡回: ${esc(checked)}</p>`+searchRow+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)} / 新規${x.new_count??0}件${x.parsed_count!=null?`（照合${x.parsed_count}）`:''}</span></div>`).join(''):'<div class="source-row"><span>固定情報源 初回実行待ち</span><span class="status-no_new">seed</span></div>');
 }
 function render(){
