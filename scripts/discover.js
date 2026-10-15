@@ -268,14 +268,19 @@ async function main(){
     const ta=trusted(a.url)?1:0,tb=trusted(b.url)?1:0; return tb-ta;
   }).slice(0,braveKey?(cfg.provider.fetch_limit||50):16);
 
-  const candidates=[];
+  const candidates=[]; const diagnostics=[];
+  if(process.env.DEBUG_DISCOVERY==='1')
+    console.log('SEARCH_SAMPLE',JSON.stringify(searchResults.slice(0,12).map(x=>({title:x.title,url:x.url,description:x.description.slice(0,100)}))));
   for(const r of ranked){
     let page='';
     try{page=stripTags(await fetchText(r.url,12000));}
     catch(e){errors.push({stage:'fetch',url:r.url,error:String(e).slice(0,180)});}
     const c=candidateFrom(r,page);
+    if(process.env.DEBUG_DISCOVERY==='1') diagnostics.push({title:r.title.slice(0,65),url:r.url,score:c.score,date:c.date,region:c.region,confirmed:c.region_confirmed,aori:c.has_aori,mode:c.mode,count:c.count,pageLength:page.length});
     if(c.score>=4 && c.has_aori && c.region_confirmed)candidates.push(c);
   }
+  if(process.env.DEBUG_DISCOVERY==='1')
+    console.log('SEARCH_DIAGNOSTICS',JSON.stringify(diagnostics));
 
   const current=load(path.join(DATA,'catches.json'),[]);
   const accepted=candidates.filter(x=>x.status==='accepted');
