@@ -139,6 +139,11 @@ function queryList(){
   }
   return [...new Set(out)].slice(0,cfg.provider.max_queries||40);
 }
+function fallbackQueries() {
+  const p=jstParts();
+  const regional=cfg.regions.map(r=>'"'+r.terms[0]+'" アオリイカ エギング 釣果 '+p.year+' '+p.month);
+  return [...new Set([...regional,...cfg.targeted_queries.slice(0,4).map(q=>q+' '+p.year)])].slice(0,12);
+}
 function parseRss(xml,query){
   const items=[];
   const re=/<item>([\s\S]*?)<\/item>/gi; let m;
@@ -211,7 +216,11 @@ function candidateFrom(result,pageText){
   if(trusted(result.url))score+=1;
   if(daysAgo(d.date)<=7)score+=1;
   if(/通販|商品|中古販売|ランキング|レシピ|図鑑|飼育/.test(combined))score-=4;
-  const auto=score>=12 && hasAori && confirmedRegion && ci.count && mode!=='unknown' && d.kind==='explicit_full' && daysAgo(d.date)>=0 && daysAgo(d.date)<=30 && ci.basis!=='post_count';
+  // Snippets alone cannot establish a verified fishing event.
+  const auto=score>=12 && pageText.length>=100 && trusted(result.url) &&
+    hasAori && confirmedRegion && ci.count && mode!=='unknown' &&
+    d.kind==='explicit_full' && daysAgo(d.date)>=0 && daysAgo(d.date)<=14 &&
+    ci.basis!=='post_count';
   return {
     id:'discover-'+hash(result.url+'|'+(d.date||'')+'|'+(region||'')+'|'+(ci.count||'')),
     query:result.query,title:result.title,url:result.url,domain:domain(result.url),
@@ -228,35 +237,36 @@ function toCatch(c){
     place_type:c.mode==='boat'?'船/沖':'岸/詳細不明',catch_count:c.count,confirmed_events:null,
     claimed_count:null,count_source:c.count_basis==='boat_total'?'reported_boat_total':'reported_page',
     count_basis:c.count_basis,duration_hours:null,cpue:null,size_text:c.size_text,max_size_text:c.size_text,
-    angler:null,confidence:'探索収集・本文確認',source:c.source,source_url:c.url,notes:c.snippet,
-    verified:true,discovery:true,discovery_score:c.score
+    angler:null,confidence:'探索自動抽出・原文要確認',source:c.source,source_url:c.url,notes:c.snippet,
+    verified:false,discovery:true,discovery_score:c.score
   };
 }
 function load(file,fallback){try{return JSON.parse(fs.readFileSync(file,'utf8'));}catch{return fallback;}}
 function save(file,data){fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n');}
 
 async function main(){
-  const queries=queryList();
-  const searchResults=[]; const errors=[]; let searchesOk=0;
   const braveKey=process.env.BRAVE_SEARCH_API_KEY||'';
-  if(braveKey){
-    for(const q of queries){
-      try{
-        let items=await braveSearch(q,braveKey);
-        const sm=q.match(/site:([^\s/]+)/i);
-        if(sm){
-          const host=sm[1].replace(/^www\./,'').toLowerCase();
-          items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
-        }
-        searchResults.push(...items); searchesOk++;
-      }catch(e){errors.push({stage:'brave_search',query:q,error:String(e).slice(0,180)});}
-      await sleep(cfg.provider.delay_ms||350);
-    }
+  const queries=braveKey?queryList():fallbackQueries();
+  const provider=braveKey?'brave_search':'bing_rss_fallback';
+  const searchResults=[]; const errors=[]; let searchesOk=0;
+  for(const q of queries){
+    try{
+      let items=braveKey
+        ?await braveSearch(q,braveKey)
+        :parseRss(await fetchText(cfg.provider.base_url+encodeURIComponent(q),9000),q);
+      const sm=q.match(/site:([^\\s/]+)/i);
+      if(sm){
+        const host=sm[1].replace(/^www\\./,'').toLowerCase();
+        items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
+      }
+      searchResults.push(...items); searchesOk++;
+    }catch(e){errors.push({stage:provider,query:q,error:String(e).slice(0,180)});}
+    await sleep(cfg.provider.delay_ms||350);
   }
   const uniq=[...new Map(searchResults.map(x=>[x.url,x])).values()];
   const ranked=uniq.sort((a,b)=>{
     const ta=trusted(a.url)?1:0,tb=trusted(b.url)?1:0; return tb-ta;
-  }).slice(0,cfg.provider.fetch_limit||50);
+  }).slice(0,braveKey?(cfg.provider.fetch_limit||50):16);
 
   const candidates=[];
   for(const r of ranked){
@@ -288,15 +298,15 @@ async function main(){
   save(path.join(DATA,'catches.json'),catches);
   save(path.join(DATA,'discovery.json'),{updated_at:new Date().toISOString(),candidates:kept});
   save(path.join(DATA,'discovery-status.json'),{
-    checked_at:new Date().toISOString(),provider:braveKey?'brave_search':'direct_feeds_only',
+    checked_at:new Date().toISOString(),provider:searchesOk?provider:'search_unavailable',
     search_key_configured:Boolean(braveKey),
-    queries_planned:braveKey?queries.length:0,queries_ok:searchesOk,raw_results:searchResults.length,
+    queries_planned:queries.length,queries_ok:searchesOk,raw_results:searchResults.length,
     unique_results:uniq.length,pages_attempted:ranked.length,candidates:candidates.length,
     accepted:accepted.length,new_catches:additions.length,errors:errors.slice(0,30),
     sample_queries:queries.slice(0,8)
   });
-  console.log(JSON.stringify({provider:braveKey?'brave_search':'direct_feeds_only',queries:braveKey?queries.length:0,searchesOk,raw:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
+  console.log(JSON.stringify({provider:searchesOk?provider:'search_unavailable',queries:queries.length,searchesOk,raw:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
 }
 
-module.exports={queryList,parseRss,parseDate,regionOf,modeOf,methodOf,countInfo,candidateFrom};
+module.exports={queryList,fallbackQueries,parseRss,parseDate,regionOf,modeOf,methodOf,countInfo,candidateFrom};
 if(require.main===module)main().catch(e=>{console.error(e);process.exit(1);});
