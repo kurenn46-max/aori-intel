@@ -130,6 +130,10 @@ function sourceName(url){
 }
 function trusted(url){const d=domain(url);return cfg.trusted_domains.some(x=>d===x||d.endsWith('.'+x));}
 function rejected(url){const d=domain(url);return cfg.reject_domains.some(x=>d===x||d.endsWith('.'+x));}
+function relevantSearchHit(x){
+  const text=[x.title,x.description].join(' ');
+  return /アオリイカ|秋イカ|エギング|ティップラン/.test(text) && Boolean(regionOf(text));
+}
 function queryList(){
   const p=jstParts(); const ym=`${p.year} ${p.month}`;
   const out=[...cfg.targeted_queries.map(q=>q+' '+p.year)];
@@ -248,7 +252,7 @@ async function main(){
   const braveKey=process.env.BRAVE_SEARCH_API_KEY||'';
   const queries=braveKey?queryList():fallbackQueries();
   const provider=braveKey?'brave_search':'bing_rss_fallback';
-  const searchResults=[]; const errors=[]; let searchesOk=0;
+  const searchResults=[]; const errors=[]; let searchesOk=0; let rawCount=0;
   for(const q of queries){
     try{
       let items=braveKey
@@ -259,7 +263,8 @@ async function main(){
         const host=sm[1].replace(/^www\\./,'').toLowerCase();
         items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
       }
-      searchResults.push(...items); searchesOk++;
+      rawCount+=items.length;
+      searchResults.push(...items.filter(relevantSearchHit)); searchesOk++;
     }catch(e){errors.push({stage:provider,query:q,error:String(e).slice(0,180)});}
     await sleep(cfg.provider.delay_ms||350);
   }
@@ -303,15 +308,15 @@ async function main(){
   save(path.join(DATA,'catches.json'),catches);
   save(path.join(DATA,'discovery.json'),{updated_at:new Date().toISOString(),candidates:kept});
   save(path.join(DATA,'discovery-status.json'),{
-    checked_at:new Date().toISOString(),provider:searchesOk?provider:'search_unavailable',
+    checked_at:new Date().toISOString(),provider:searchesOk?(searchResults.length?provider:'search_irrelevant'):'search_unavailable',
     search_key_configured:Boolean(braveKey),
-    queries_planned:queries.length,queries_ok:searchesOk,raw_results:searchResults.length,
+    queries_planned:queries.length,queries_ok:searchesOk,raw_results:rawCount,relevant_results:searchResults.length,
     unique_results:uniq.length,pages_attempted:ranked.length,candidates:candidates.length,
     accepted:accepted.length,new_catches:additions.length,errors:errors.slice(0,30),
     sample_queries:queries.slice(0,8)
   });
-  console.log(JSON.stringify({provider:searchesOk?provider:'search_unavailable',queries:queries.length,searchesOk,raw:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
+  console.log(JSON.stringify({provider:searchesOk?(searchResults.length?provider:'search_irrelevant'):'search_unavailable',queries:queries.length,searchesOk,raw:rawCount,relevant:searchResults.length,unique:uniq.length,candidates:candidates.length,accepted:accepted.length,new:additions.length,errors:errors.length}));
 }
 
-module.exports={queryList,fallbackQueries,parseRss,parseDate,regionOf,modeOf,methodOf,countInfo,candidateFrom};
+module.exports={queryList,fallbackQueries,relevantSearchHit,parseRss,parseDate,regionOf,modeOf,methodOf,countInfo,candidateFrom};
 if(require.main===module)main().catch(e=>{console.error(e);process.exit(1);});
