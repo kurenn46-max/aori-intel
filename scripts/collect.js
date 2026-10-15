@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const {reconcileCatches,countNew} = require('./quality');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -12,7 +13,7 @@ const REGION_RULES = [
   {region:'美浜', patterns:[/美浜/,/日向/,/菅浜/ ]},
   {region:'敦賀', patterns:[/敦賀/,/白木/,/色ヶ浜/ ]},
   {region:'舞鶴', patterns:[/舞鶴/,/白杉/,/小橋/ ]},
-  {region:'宮津', patterns:[/宮津/,/栗田/,/伊根/ ]},
+  {region:'宮津', patterns:[/宮津/,/丹後/,/栗田/,/伊根/ ]},
   {region:'越前', patterns:[/越前/,/厨/,/梅浦/ ]}
 ];
 
@@ -53,7 +54,7 @@ function parseYamaria(html, source) {
   for (const a of extractAnchors(html)) {
     const t=normalizeSpace(a.text);
     if (!/アオリイカ\s*：/.test(t) || !t.includes('釣果場所：')) continue;
-    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
+    const m=t.match(/^(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*(?:福井|京都)\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*))?$/);
     if (!m) continue;
     const [,hit, angler,date,time,size,city,placeType,comment=''] = m;
     const region = normalizeRegion(city) || source.region || city;
@@ -74,7 +75,7 @@ function parseYamaria(html, source) {
   // Fallback: some responses flatten the latest cards instead of exposing the same anchor markup.
   // HIT is engagement, never catch count.
   const flat=stripTags(html);
-  const re=/(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*福井\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*?))?(?=\s+\d+\s*HIT\s+.+?\s+さん\s+\d{4}-\d{2}-\d{2}|$)/g;
+  const re=/(\d+)\s*HIT\s+(.+?)\s+さん\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})\s+アオリイカ\s*：\s*([^ ]+)\s+釣果場所：\s*(?:福井|京都)\s+([^ ]+)\s+釣り場所：([^ #]+)(?:\s+(.*?))?(?=\s+\d+\s*HIT\s+.+?\s+さん\s+\d{4}-\d{2}-\d{2}|$)/g;
   let m;
   while ((m=re.exec(flat))) {
     const hit=m[1], angler=m[2], date=m[3], time=m[4], size=m[5], city=m[6], placeType=m[7], comment=m[8]||'';
@@ -122,8 +123,8 @@ function groupSessions(events) {
       region:first.region, subregion:first.subregion, mode:first.mode, method:first.method,
       place_type:first.place_type, catch_count:count, confirmed_events:confirmed,
       claimed_count:claim, count_source:countSource,
-      duration_hours:duration>0?Number(duration.toFixed(2)):null,
-      cpue: duration>0 && countSource==='posted_events' ? Number((confirmed/duration).toFixed(2)) : null,
+      duration_hours:null,
+      cpue: null, // Posting timestamps cannot establish the actual fishing duration.
       size_text:[...new Set(arr.map(x=>x.size_text))].join(' / '),
       max_size_text:ranks[0]?.size_text || null,
       angler:first.angler, confidence:first.confidence, source:first.source,
@@ -219,14 +220,18 @@ function parseChowari(html, source) {
     if(!/アオリイカ|アオリ(?!ゾメ)/.test(block)) continue;
 
     let count=null,countMin=null,countMax=null,countBasis='unknown';
-    let mm=block.match(/アオリイカ[^。]{0,140}?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
+    // Do not read another species' quantity from a multi-species report.
+    const header=(block.split(/(?:おはよう|こんばんは|潮：|波高：|風向：|天気|釣行当日)/)[0]||'');
+    const aori=(header.split(/アオリイカ/)[1]||'').split(/マイカ|モンゴウイカ|アコウ|サワラ|ハマチ|マハタ|カサゴ|サバ|イカメタル/)[0];
+    const aoriCounts=aori.slice(0,80).trim();
+    let mm=aoriCounts.match(/^(?:\s*\d{1,2}\s*[-〜～]\s*\d{1,2}\s*cm\s*)?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
     if(mm){
       countMin=Number(mm[1]);countMax=Number(mm[2]);count=countMax;countBasis='per_angler_range';
     } else {
-      mm=block.match(/アオリイカ[^。]{0,140}?竿頭\s*(\d{1,3})\s*匹/);
+      mm=aoriCounts.match(/竿頭\s*(\d{1,3})\s*匹/);
       if(mm){count=countMax=Number(mm[1]);countBasis='per_angler_max';}
       else {
-        mm=block.match(/アオリイカ[^。]{0,140}?合計\s*(\d{1,3})\s*匹/);
+        mm=aoriCounts.match(/合計\s*(\d{1,3})\s*匹/);
         if(mm){count=countMax=Number(mm[1]);countBasis='boat_total';}
       }
     }
@@ -528,8 +533,15 @@ async function collect() {
   // Keep user data indefinitely and retain auto records for 30 days so entries do not disappear when they fall off a source's latest list.
   const cutoff=new Date(); cutoff.setUTCDate(cutoff.getUTCDate()-30); const cutoffDate=cutoff.toISOString().slice(0,10);
   const kept=currentCatches.filter(x=>x.is_user_data || (x.date && x.date>=cutoffDate));
-  const catches=dedupe([...kept,...newSessions]).sort((a,b)=>`${b.date} ${b.time}`.localeCompare(`${a.date} ${a.time}`));
-  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
+  const catches=reconcileCatches(kept,newSessions,cutoffDate);
+  const setnet=dedupe([...currentSetnet.filter(x=>x.source==='ユーザー実釣'||x.is_user_data||(x.date&&x.date>=cutoffDate)),...newSetnet]).sort((a,b)=>b.date.localeCompare(a.date));
+  const oldSetnetIds=new Set(currentSetnet.map(x=>x.id));
+  for(const st of status){
+    st.parsed_count=st.new_count;
+    st.new_count=st.source==='小浜市漁業協同組合 水揚げ情報'||st.source==='若狭小浜 おさかな探訪記'
+      ?setnet.filter(x=>x.source===st.source&&!oldSetnetIds.has(x.id)).length
+      :countNew(kept,catches,st.source);
+  }
   saveJson(path.join(DATA,'catches.json'),catches);
   saveJson(path.join(DATA,'setnet.json'),setnet);
   saveJson(path.join(DATA,'source-status.json'),{checked_at:new Date().toISOString(),sources:status});

@@ -1,4 +1,4 @@
-const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
+const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],loadErrors:[],status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
 const regions=['全地域','高浜','小浜湾','常神半島','美浜','敦賀','舞鶴','宮津','越前'];
 const $=s=>document.querySelector(s);
 const fmtDate=(d,t)=>`${d.replaceAll('-','/')} ${t||''}`.trim();
@@ -7,8 +7,9 @@ const todayJst=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',year:'
 const daysDiff=(a,b)=>Math.round((new Date(`${a}T00:00:00+09:00`)-new Date(`${b}T00:00:00+09:00`))/86400000);
 
 const RAW='https://raw.githubusercontent.com/kurenn46-max/aori-intel/main/';
-async function json(url,fallback){try{const full=url.startsWith('data/')?RAW+url:url;const r=await fetch(`${full}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw 0;return await r.json();}catch{return fallback;}}
+async function json(url,fallback){try{const full=url.startsWith('data/')?RAW+url:url;const r=await fetch(`${full}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}catch{state.loadErrors.push(url);return fallback;}}
 async function load(){
+  state.loadErrors=[];
   $('#statusStrip').textContent='最新データを読み込み中…';
   const [catches,setnet,status,discovery]=await Promise.all([json('data/catches.json',[]),json('data/setnet.json',[]),json('data/source-status.json',{checked_at:null,sources:[]}),json('data/discovery-status.json',{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]})]);
   state.catches=catches;state.setnet=setnet;state.status=status;state.discovery=discovery;render();
@@ -41,11 +42,13 @@ function summaryCards(rows){
       ['定置網記録',confirmed.length,'帰属確認済み'],['アオリ入網日',aori,'数量不明は補完しない'],['ベイト魚種',bait.length,bait.slice(0,3).join('・')||'確認なし'],['捕食魚種',pred.length,pred.slice(0,3).join('・')||'確認なし']
     ];
   }
-  const counts=rows.map(x=>Number(x.catch_count)||0); const max=Math.max(0,...counts);
-  const sessions=rows.length; const multi=rows.filter(x=>(x.catch_count||0)>=3).length;
-  const knownCpue=rows.map(x=>x.cpue).filter(Number.isFinite); const best=knownCpue.length?Math.max(...knownCpue):null;
+  const verified=rows.filter(x=>x.verified!==false);
+  const perPerson=verified.filter(x=>state.mode!=='boat'||!['boat_total','reported_boat_total','report_only','reported_page','unknown'].includes(x.count_basis||x.count_source));
+  const counts=perPerson.map(x=>Number(x.catch_count)||0); const max=Math.max(0,...counts);
+  const sessions=verified.length; const multi=perPerson.filter(x=>(x.catch_count||0)>=3).length;
+  const knownCpue=verified.map(x=>x.cpue).filter(Number.isFinite); const best=knownCpue.length?Math.max(...knownCpue):null;
   return [
-    ['確認釣行',sessions,'重複統合後'],['1人最多',max?`${max}杯`:'–','本人表記は別管理'],['3杯以上',multi,'釣行'],['最高CPUE',best?`${best}/h`:'–','時間判明分のみ']
+    ['確認釣行',sessions,'探索未確認は除外'],['1人最多',max?`${max}杯`:'–','船中合計は除外'],['3杯以上',multi,'比較可能な記録'],['最高CPUE',best?`${best}/h`:'–','実釣時間が判明分のみ']
   ];
 }
 function analysis(rows){
@@ -61,7 +64,8 @@ function analysis(rows){
     txt+=' 定置網は設置場所と潮流の影響が大きいため、岸釣果の杯数には混ぜません。';
     return [aori?'回遊材料あり':'定置網材料',txt,aori?'good':'neutral'];
   }
-  const max=Math.max(...rows.map(x=>x.catch_count||0)); const good=rows.filter(x=>(x.catch_count||0)>=5).length; const user=rows.find(x=>x.is_user_data);
+  const reliable=rows.filter(x=>x.verified!==false && (state.mode!=='boat'||!['boat_total','reported_boat_total','report_only','reported_page','unknown'].includes(x.count_basis||x.count_source)));
+  const max=Math.max(0,...reliable.map(x=>x.catch_count||0)); const good=reliable.filter(x=>(x.catch_count||0)>=5).length; const user=rows.find(x=>x.is_user_data);
   let txt=`直近条件内の最多は${max}杯。5杯以上の確認釣行は${good}件。`;
   if(user)txt+=` 本人実釣では${user.subregion}で${user.catch_count}杯、同行者${user.companion_catch_count??'不明'}杯。`;
   if(state.mode==='boat')txt+=' 船釣果は沖の魚影・水深の参考に使い、岸の好調判定には加えません。';
@@ -78,7 +82,11 @@ function recordCard(x){
     const badge=x.gear_attribution==='confirmed'?'定置網帰属確認':'混合集荷';
     return `<article class="record card"><div class="record-top"><div><div class="record-date">${esc(fmtDate(x.date,''))}</div><h3>${esc(x.fishery||x.region)}</h3></div><span class="confidence pill ${x.gear_attribution==='confirmed'?'good':'neutral'}">${badge}</span></div><div class="metrics"><span class="metric"><b>${x.aori_present?'アオリあり':'アオリ未確認'}</b></span><span class="metric">${esc(species)}</span></div><p class="record-notes">${esc(x.notes||'')}</p><div class="record-foot"><span>${esc(x.source||'')}</span>${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">出典</a>`:''}</div></article>`;
   }
-  const countLabel=x.count_source==='claimed_ordinal'?`${x.catch_count}杯（本人表記）`:`${x.catch_count??'–'}杯`;
+  const countLabel=x.catch_count==null?'杯数不明':
+    x.count_basis==='boat_total'||x.count_source==='reported_boat_total'? '船中合計'+x.catch_count+'杯':
+    x.count_basis==='per_angler_range'? '1人'+x.catch_min+'〜'+x.catch_max+'杯':
+    x.count_basis==='per_angler_max'? '1人最多'+x.catch_count+'杯':
+    x.count_source==='claimed_ordinal'?x.catch_count+'杯（本人表記）':x.catch_count+'杯';
   const ev=x.confirmed_events!=null?`写真/投稿確認 ${x.confirmed_events}`:'';
   const cp=x.cpue?`CPUE ${x.cpue}/h`:'';
   const tags=[`<span class="metric"><b>${esc(countLabel)}</b></span>`,x.size_text?`<span class="metric">${esc(x.size_text)}</span>`:'',x.method?`<span class="metric">${esc(x.method)}</span>`:'',cp?`<span class="metric">${esc(cp)}</span>`:'',ev?`<span class="metric">${esc(ev)}</span>`:''].filter(Boolean).join('');
@@ -89,8 +97,8 @@ function renderSources(){
   const checked=state.status.checked_at?new Date(state.status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
   const d=state.discovery||{};
   const dChecked=d.checked_at?new Date(d.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'未実行';
-  const searchRow=`<div class="source-row"><span>探索検索 <small>(${esc(dChecked)})</small></span><span class="${(d.errors||[]).length?'status-error':'status-ok'}">検索 ${d.queries_ok||0}/${d.queries_planned||0}・候補 ${d.candidates||0}・採用 ${d.accepted||0}・新規 ${d.new_catches||0}</span></div>`;
-  $('#sourceStatus').innerHTML=`<p class="fineprint">固定情報源 最終巡回: ${esc(checked)}</p>`+searchRow+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)}${x.new_count!=null?` / ${x.new_count}`:''}</span></div>`).join(''):'<div class="source-row"><span>固定情報源 初回実行待ち</span><span class="status-no_new">seed</span></div>');
+  const searchRow=`<div class="source-row"><span>探索検索（${esc(d.provider||'不明')}） <small>${esc(dChecked)}</small></span><span class="${(d.errors||[]).length||d.provider==='search_unavailable'?'status-error':'status-ok'}">実行 ${d.queries_ok||0}/${d.queries_planned||0}・候補 ${d.candidates||0}・新規 ${d.new_catches||0}</span></div>`;
+  $('#sourceStatus').innerHTML=`<p class="fineprint">固定情報源 最終巡回: ${esc(checked)}</p>`+searchRow+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)} / 新規${x.new_count??0}件${x.parsed_count!=null?`（照合${x.parsed_count}）`:''}</span></div>`).join(''):'<div class="source-row"><span>固定情報源 初回実行待ち</span><span class="status-no_new">seed</span></div>');
 }
 function render(){
   renderRegions(); const rows=selectedRecords(); renderSummary(rows);
@@ -98,7 +106,10 @@ function render(){
   $('#records').innerHTML=rows.length?rows.map(recordCard).join(''):'<div class="empty card">条件に合う確認データなし</div>';
   const times=[state.status.checked_at,state.discovery?.checked_at].filter(Boolean).map(x=>new Date(x).getTime());
   const latest=times.length?new Date(Math.max(...times)).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'初回自動巡回前';
-  $('#statusStrip').textContent=`${state.region} / ${state.days===0?'今日':state.days===1?'昨日':state.days+'日'} / ${latest}`;
+  const latestCatch=state.catches.map(x=>x.date).filter(Boolean).sort().at(-1)||'情報なし';
+  const stale=state.loadErrors.length?' / 読込失敗:'+state.loadErrors.join(', '):'';
+  $('#statusStrip').textContent=state.region+' / '+(state.days===0?'今日':state.days===1?'昨日':state.days+'日')+
+    ' / 最終巡回:'+latest+' / 最新釣果日:'+latestCatch+stale;
   renderSources();
   document.querySelectorAll('#modeTabs button').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));
   document.querySelectorAll('#rangeTabs button').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===state.days));

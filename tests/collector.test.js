@@ -73,3 +73,17 @@ test('魚速索引は岸と船を別レコードとして扱える',()=>{
   assert.ok(rows.some(x=>x.mode==='shore'));
   assert.ok(rows.some(x=>x.mode==='boat'));
 });
+
+test('京都の舞鶴・宮津・丹後の投稿を正しい地域で収集する',()=>{
+ const tpl=(place,i)=>'<a href="/catches/'+i+'">9 HIT 釣り人'+i+' さん 2026-10-15 16:20 アオリイカ：100g〜300g 釣果場所： 京都 '+place+' 釣り場所：防波堤 アオリ釣れた 詳細ページ →</a>';
+ const source={name:'エギCOM 京都',url:'https://www.yamaria.com/community/catch/egiou/cities/114',region:'舞鶴'};
+ const rows=c.parseYamaria(tpl('舞鶴',1)+tpl('宮津',2)+tpl('丹後',3),source);
+ assert.equal(rows.length,3);
+ assert.deepEqual(rows.map(r=>r.region),['舞鶴','宮津','宮津']);
+});
+test('越前投稿も福井県として認識する',()=>{
+ const row=c.parseYamaria('<a href="/catches/4">3 HIT テスター さん 2026-10-15 05:11 アオリイカ：300g〜500g 釣果場所： 福井 越前 釣り場所：磯 釣れた 詳細ページ →</a>',
+ {name:'越前',url:'https://www.yamaria.com/community/catch/egiou/cities/86',region:'越前'});
+ assert.equal(row.length,1);
+ assert.equal(row[0].region,'越前');
+});

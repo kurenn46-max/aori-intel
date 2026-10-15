@@ -24,11 +24,19 @@ test('地域・釣法・杯数・実釣日を抽出する',()=>{
   assert.equal(c.mode,'shore');
   assert.equal(c.count,5);
   assert.equal(c.date,'2026-10-07');
-  assert.equal(c.status,'accepted');
+  assert.equal(c.status,'candidate'); // short excerpt is not sufficient for auto-validation
 });
 
 test('船中釣果を1人釣果にしない',()=>{
   const x=d.countInfo('2026/10/07 敦賀のティップランでアオリイカ、船中42杯。');
   assert.equal(x.count,42);
   assert.equal(x.basis,'boat_total');
+});
+
+test('no API key still generates a region-balanced public RSS query list',()=>{
+  const q=d.fallbackQueries();
+  assert.ok(q.length>=8 && q.length<=12);
+  assert.ok(q.some(x=>x.includes('越前')));
+  assert.ok(q.some(x=>x.includes('舞鶴')));
+  assert.ok(q.some(x=>x.includes('常神')));
 });
