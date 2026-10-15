@@ -1,0 +1,34 @@
+name: AORI INTEL quality gate
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ['feature/v2.1-data-quality-and-discovery']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm run validate
+      - name: Test real source ingestion (dry run)
+        run: npm run collect
+      - name: Test no-key regional discovery (dry run)
+        env:
+          BRAVE_SEARCH_API_KEY: ''
+        run: npm run discover
+      - name: Verify discovery reported real attempts
+        run: |
+          node - <<'JS'
+          const s=require('./data/discovery-status.json');
+          if(s.queries_planned<8 || s.queries_ok<1) {
+            console.error('RSS discovery was not functional',s);
+            process.exit(1);
+          }
+          console.log({provider:s.provider,attempted:s.queries_planned,success:s.queries_ok,results:s.raw_results,accepted:s.accepted});
+          JS
