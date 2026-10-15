@@ -1,5 +1,59 @@
 [
   {
+    "id": "session-8a32ca2e51eed493",
+    "date": "2026-10-15",
+    "time": "21:57",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "みっちー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300012",
+    "notes": "#決戦 #天下人 スロー巻きで喰ってきました🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-82ef4e4d3ca30352"
+    ]
+  },
+  {
+    "id": "session-bc1de3c57cda3eba",
+    "date": "2026-10-15",
+    "time": "16:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "はなと",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300043",
+    "notes": "やる気ある子はいいねぇ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-2f12d62aafd79a56"
+    ]
+  },
+  {
     "id": "session-437a7c3725c3a228",
     "date": "2026-10-15",
     "time": "12:04〜12:10",
@@ -161,6 +215,61 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-183887029e9d13e8"
+    ]
+  },
+  {
+    "id": "session-dce1020ce51bb4fa",
+    "date": "2026-10-14",
+    "time": "08:58",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "翠玉の騎士",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300025",
+    "notes": "風が収まってきた時間帯。 4箇所目に移動直後のドシャローでようやく3連発、合計6キャッチで終了、、疲れました😮‍💨 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-2e40548d7da3c237"
+    ]
+  },
+  {
+    "id": "session-c029d23fb1cf1978",
+    "date": "2026-10-14",
+    "time": "05:32〜08:04",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": 2.53,
+    "cpue": 0.79,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "翠玉の騎士",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300024",
+    "notes": "風が強くて釣りにくいが同行者はドンドン釣ってるので自分が未熟者、というコトですね、、修行が足りない😓 詳細ページ → / 明るくなって2箇所目が不発。 3箇所目でサーチにチェイスしてきたイカを何とかキャッチ、、今日は厳しい〜やっと合計3キャッチ😓 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b1db82bb382c390f",
+      "yamaria-event-78cc00712f3292c5"
     ]
   },
   {
@@ -517,6 +626,33 @@
     "event_ids": [
       "yamaria-event-aa51ca57e418cce9",
       "yamaria-event-6f5ae180c2797589"
+    ]
+  },
+  {
+    "id": "session-85b7c29878da8d29",
+    "date": "2026-10-13",
+    "time": "09:28",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "j",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1299084",
+    "notes": "#決戦 #天下人 ついてきた奴をサイトで 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-aa51ca57e418cce9"
     ]
   },
   {
