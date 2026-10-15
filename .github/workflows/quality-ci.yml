@@ -21,7 +21,7 @@ jobs:
       - name: Test no-key regional discovery (dry run)
         env:
           BRAVE_SEARCH_API_KEY: ''
-          DEBUG_DISCOVERY: '1'
+          DEBUG_DISCOVERY: '0'
         run: npm run discover
       - name: Verify discovery reported real attempts
         run: |
@@ -31,5 +31,5 @@ jobs:
             console.error('RSS discovery was not functional',s);
             process.exit(1);
           }
-          console.log({provider:s.provider,attempted:s.queries_planned,success:s.queries_ok,results:s.raw_results,accepted:s.accepted});
+          console.log({provider:s.provider,attempted:s.queries_planned,success:s.queries_ok,raw:s.raw_results,relevant:s.relevant_results,accepted:s.accepted});
           JS
