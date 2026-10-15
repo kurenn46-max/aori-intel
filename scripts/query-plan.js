@@ -37,7 +37,8 @@ function createPlan(config,round=0,limit=12,shoreCounts={},date=new Date()){
  regions.forEach((r,i)=>{
    const loc=r.terms[(safeRound+i*2)%r.terms.length];
    const wording=families[(safeRound+i)%families.length];
-   add('"'+loc+'" '+r.region+' '+wording.text+' '+year+' '+month,r.region,wording.id);
+   const phrase=wording.id==='shore-seasonal'?seasonalTerms(month)[0]+' エギング':wording.text;
+   add('"'+loc+'" '+r.region+' '+phrase+' '+year+' '+month,r.region,wording.id);
  });
  // 2 extra queries prioritize observed blind spots without claiming low catch rate.
  const scarcity=regions.map((r,i)=>({...r,i,n:Number(shoreCounts[r.region])||0}))
