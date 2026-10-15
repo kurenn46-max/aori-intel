@@ -223,7 +223,7 @@ function parseChowari(html, source) {
     // Do not read another species' quantity from a multi-species report.
     const header=(block.split(/(?:おはよう|こんばんは|潮：|波高：|風向：|天気|釣行当日)/)[0]||'');
     const aori=(header.split(/アオリイカ/)[1]||'').split(/マイカ|モンゴウイカ|アコウ|サワラ|ハマチ|マハタ|カサゴ|サバ|イカメタル/)[0];
-    const aoriCounts=aori.slice(0,80);
+    const aoriCounts=aori.slice(0,80).trim();
     let mm=aoriCounts.match(/^(?:\s*\d{1,2}\s*[-〜～]\s*\d{1,2}\s*cm\s*)?(\d{1,3})\s*[-〜～]\s*(\d{1,3})\s*匹/);
     if(mm){
       countMin=Number(mm[1]);countMax=Number(mm[2]);count=countMax;countBasis='per_angler_range';
