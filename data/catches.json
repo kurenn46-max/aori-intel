@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-c7aea5c9c6e60f8a",
+    "date": "2026-10-16",
+    "time": "17:40",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": 1,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ほり",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1300590",
+    "notes": "#決戦 #天下人 幸先よく1杯目。夕方の、ぶちこ！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1a00e67a752ed70b"
+    ]
+  },
+  {
     "id": "session-9747446dff8e8e04",
     "date": "2026-10-16",
     "time": "13:05",
@@ -79,6 +106,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-d2c48be9ebcc615a"
+    ]
+  },
+  {
+    "id": "session-b22df01cf9bfb693",
+    "date": "2026-10-16",
+    "time": "05:39",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ひっくり",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300598",
+    "notes": "#決戦#天下人 アタリはこれだけでした 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b2ba24da9995d1f2"
     ]
   },
   {
@@ -3879,6 +3933,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-7900b8f6f638b1ca"
+    ]
+  },
+  {
+    "id": "session-ab4dca6e5619cc4a",
+    "date": "2026-10-09",
+    "time": "17:58",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "PaPaT",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1300552",
+    "notes": "久々に来て、良い形を狙って3.5にしたのにまだこのサイズで残念。また大きくなって戻って来いよとリリース。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-78414febdfac08be"
     ]
   },
   {
