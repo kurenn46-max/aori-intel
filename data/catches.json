@@ -1,8 +1,8 @@
 [
   {
-    "id": "session-c7aea5c9c6e60f8a",
+    "id": "session-06eb99f1a0eba2ed",
     "date": "2026-10-16",
-    "time": "17:40",
+    "time": "23:31",
     "region": "宮津",
     "subregion": "宮津",
     "mode": "shore",
@@ -10,20 +10,187 @@
     "place_type": "防波堤",
     "catch_count": 1,
     "confirmed_events": 1,
-    "claimed_count": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "クク",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1300873",
+    "notes": "重くなってグングングーン🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e41ffd2ad5ba173b"
+    ]
+  },
+  {
+    "id": "session-3cce48c4712d8a25",
+    "date": "2026-10-16",
+    "time": "23:14",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
     "count_source": "posted_events",
     "duration_hours": null,
     "cpue": null,
     "size_text": "100g〜300g",
     "max_size_text": "100g〜300g",
+    "angler": "エディ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1300879",
+    "notes": "#決戦 仕事で遅くなりポイントに着いて30分。波も高めでうねりもあって当たりは全くわからず。 しゃくろうとしたら重みが！フッキング！ 坊主覚悟だったので釣れて良かったー🦑 リリースして帰宅。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-de60e4fa07e9a602"
+    ]
+  },
+  {
+    "id": "session-43cdb8b880e6c87f",
+    "date": "2026-10-16",
+    "time": "20:48〜22:04",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 4,
+    "confirmed_events": 4,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "鹿児島のもっちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300890",
+    "notes": "#決戦#天下人 ロッドを立ててカーブフォール中に コツコツっと軽い当たり、ゆるーく2回シャクって逃がしたら本当たりがきました 詳細ページ → / #決戦#天下人 詳細ページ → / #決戦#天下人 シャクリ後にフォールじゃなく巻きで 詳細ページ → / #決戦#天下人 巻きで！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-265067f9a23afc19",
+      "yamaria-event-42056233e56b784e",
+      "yamaria-event-1b792039aa6886fc",
+      "yamaria-event-8640e96c5513d97b"
+    ]
+  },
+  {
+    "id": "session-80eef9d9562c9521",
+    "date": "2026-10-16",
+    "time": "20:43",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "タカヒロ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300820",
+    "notes": "＃決戦 ＃天下人 久しぶりの良型。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-eb439595b3fe3acd"
+    ]
+  },
+  {
+    "id": "session-ccdaf5df5d21eb9f",
+    "date": "2026-10-16",
+    "time": "19:13",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "☆ 特攻隊長 が〜すけ ☆",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1300755",
+    "notes": "ナミナミウネウネ… そんな中、何とか一杯🦑 ん〜ポイント変えようかなあ… 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6ad73e4119a24966"
+    ]
+  },
+  {
+    "id": "session-3499a511c4e8c187",
+    "date": "2026-10-16",
+    "time": "17:40〜18:15",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": 2,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g / 100g以下 / 500g〜800g",
+    "max_size_text": "500g〜800g",
     "angler": "ほり",
     "confidence": "写真付き実釣",
     "source": "エギCOM 宮津",
-    "source_url": "https://www.yamaria.com/catches/1300590",
-    "notes": "#決戦 #天下人 幸先よく1杯目。夕方の、ぶちこ！ 詳細ページ →",
+    "source_url": "https://www.yamaria.com/catches/1300886",
+    "notes": "#決戦 #天下人 幸先よく1杯目。夕方の、ぶちこ！ 詳細ページ → / #決戦 #天下人 あまりエギングに行く時間がないので、なんとなくですが、今年はちょっと渋め？？ でも軍艦グリーンでなんとか2杯目。 詳細ページ → / #決戦 #天下人 急に良型。なかなか引きました。 上着を忘れてしまい、寒くなってきたので 2時間も釣りできてないですが、終了しました。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-1a00e67a752ed70b"
+      "yamaria-event-1a00e67a752ed70b",
+      "yamaria-event-a1109907aee4039a",
+      "yamaria-event-e93e7c80a1cc0767"
+    ]
+  },
+  {
+    "id": "session-49cfe410a6ec5d3e",
+    "date": "2026-10-16",
+    "time": "17:38",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "タカヒロ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300813",
+    "notes": "＃決戦 ＃天下人 夕マヅメにリリースサイズ連チャン。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5a45d9209aaea66c"
     ]
   },
   {
@@ -109,6 +276,35 @@
     ]
   },
   {
+    "id": "session-bc521c291114d654",
+    "date": "2026-10-16",
+    "time": "06:42〜09:16",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "カト",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1300852",
+    "notes": "#決戦 #天下人 うねりが高かった 詳細ページ → / #決戦 #天下人 頼りになります軍艦グリーン 詳細ページ → / #決戦 #天下人 波がおとなしいところを狙いました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-77eeef166b14ae28",
+      "yamaria-event-beb994600781013c",
+      "yamaria-event-855e5088752e24fb"
+    ]
+  },
+  {
     "id": "session-b22df01cf9bfb693",
     "date": "2026-10-16",
     "time": "05:39",
@@ -160,6 +356,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-3d5563d1e757b6df"
+    ]
+  },
+  {
+    "id": "session-54e7b4548cb6de5a",
+    "date": "2026-10-16",
+    "time": "02:31",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "タカヒロ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300804",
+    "notes": "＃決戦 ＃天下人 開始1投目でヒット！ その後、隣にサーチライトが現れ夜明けまで続き、当たりも遠のきました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a82a96231befe678"
     ]
   },
   {
@@ -242,6 +465,61 @@
     "event_ids": [
       "yamaria-event-b02246900fe69161",
       "yamaria-event-ebbbcc631b6bb7bd"
+    ]
+  },
+  {
+    "id": "session-fa34a6d50ff61fe8",
+    "date": "2026-10-15",
+    "time": "20:19〜21:24",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下 / 300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "つれないノブタ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1300771",
+    "notes": "知り合いの方と待ち合わせてｿｲﾔｻ三╰( `•ω•)╮-=ﾆ=一＝三ｴｷﾞ ウネリが強く場所移動しサビキながら探ってるとサビく合間にHIT🎶 だけと小さい。。。周りも渋いし今日も苦戦な予感💦 詳細ページ → / その後も投げ続けるも当たりもなく無の時間が経過し、、、納竿を考え集中してラスト一投！ からのﾇｰﾝと持ってく当たり🎯 ドラグも出て楽しみながら巻き巻き🎶 んで無事にGET👍 20cm強のナイスサイズでした😊 今日はこのまま納得の納竿☺️ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-0e06ce69ada8ae3d",
+      "yamaria-event-beffdabe78ea8466"
+    ]
+  },
+  {
+    "id": "session-f3491606e979a55b",
+    "date": "2026-10-15",
+    "time": "19:07",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "のんさん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300833",
+    "notes": "なんとか440g一杯。目の前を800g位のが3杯泳いでました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ab0c214dda4d3df3"
     ]
   },
   {
@@ -380,6 +658,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-2f12d62aafd79a56"
+    ]
+  },
+  {
+    "id": "session-4b4a1d79a08a52de",
+    "date": "2026-10-15",
+    "time": "15:58",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "hiro3",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1300653",
+    "notes": "人は多いしマナー悪いし激シブやし… 巻いてると乗った感じ。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-572413bd95fbc15a"
     ]
   },
   {
@@ -544,7 +849,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "かどや丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
-    "notes": "（木）中潮 アオリイカ 波高： 多少あり。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:02 日の入 17:21 月の出 10:29 月の入 19:54 天気 晴れ 気温 23℃ / 14℃ 気圧 1021.0hPa 風 北 2.9m/s 波 北 1.4m/s 水温 23.9℃ 潮 中潮 月齢 4.5 BI 10.2 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 2日前 釣り船詳細を見る お気",
+    "notes": "（木）中潮 アオリイカ 波高： 多少あり。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:02 日の入 17:21 月の出 10:29 月の入 19:54 天気 晴れ 気温 23℃ / 14℃ 気圧 1021.0hPa 風 北 2.9m/s 波 北 1.4m/s 水温 23.9℃ 潮 中潮 月齢 4.5 BI 10.2 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 3日前 釣り船詳細を見る お気",
     "verified": true
   },
   {
@@ -2124,6 +2429,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-d0243a938645fd1f"
+    ]
+  },
+  {
+    "id": "session-457961342eeb2bf2",
+    "date": "2026-10-11",
+    "time": "20:14",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "ゆたか",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300862",
+    "notes": "足元でしつこく誘いドーン！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-01e127f5058adc86"
     ]
   },
   {
