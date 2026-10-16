@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: ['feature/v2.1-data-quality-and-discovery', 'feature/v2.2-rotating-search-queries', 'feature/v2.3-aori-catch-focus']
+    branches: ['feature/v2.1-data-quality-and-discovery', 'feature/v2.2-rotating-search-queries', 'feature/v2.3-aori-catch-focus', 'fix/v2.3.1-refresh-behavior']
 permissions:
   contents: read
 jobs:
