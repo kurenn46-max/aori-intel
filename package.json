@@ -1,6 +1,6 @@
 {
   "name": "aori-intel",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "private": true,
   "description": "アオリイカ釣果情報収集・分析アプリ",
   "scripts": {

@@ -478,6 +478,52 @@ async function collectAnglersAreas(source) {
   return rows;
 }
 
+
+// Public daily vessel records aggregated by Tsurirepo. Do not infer daily aori
+// counts from another species' adjacent entry or overall vessel statistics.
+function parseTsurirepo(html, source, now=new Date()){
+  const full=stripTags(html);
+  const first=full.indexOf('釣果履歴（');
+  if(first<0)return [];
+  const section=full.slice(first+5).split('スポンサーリンク')[0];
+  const dates=[...section.matchAll(/(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日(?:（[^）]*）)?/g)];
+  const today=new Date(now.toLocaleString('en-US',{timeZone:'Asia/Tokyo'}));
+  today.setHours(0,0,0,0);
+  const results=[];
+  for(let i=0;i<dates.length;i++){
+    const m=dates[i];
+    const date=m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0');
+    const block=section.slice(m.index+m[0].length,dates[i+1]?.index??section.length);
+    // Explicit species mention must be in this dated trip section.
+    if(!/(?:^|\s)アオリイカ(?:\s|$)/.test(block))continue;
+    const t=new Date(date+'T00:00:00+09:00');
+    if(!Number.isFinite(t.getTime()))continue;
+    const age=(today.getTime()-t.getTime())/86400000;
+    if(age < -1 || age > 30)continue;
+    // e.g. "アオリイカ 🔗 アオリイカ 〜16匹", never
+    // simply grab the next "〜N匹" (which could be another fish).
+    const aori=block.match(/(?:^|\s)アオリイカ(?:\s*🔗)?\s*(?:アオリイカ)?\s*[〜～]\s*(\d{1,3})\s*(?:匹|杯)/);
+    const count=aori?Number(aori[1]):null;
+    const validCount=count!==null&&count>=1&&count<=200?count:null;
+    const method=/ティップラン/.test(block)?'ティップラン':'船釣り・詳細不明';
+    const sourceUrl=source.url.split('#')[0]+'#d-'+date;
+    results.push({
+      id:'tsurirepo-'+idFor([source.id,date,'アオリイカ']),
+      date,time:null,region:source.region,subregion:source.subregion||source.region,
+      mode:'boat',method,place_type:'船/沖',catch_count:validCount,
+      count_basis:validCount!==null?'per_angler_max':'unknown',
+      count_source:'secondary_boat_listing',catch_min:null,catch_max:validCount,
+      confirmed_events:null,claimed_count:null,duration_hours:null,cpue:null,
+      size_text:null,max_size_text:null,angler:null,
+      confidence:'船釣果の二次集約・元船報告推奨',
+      verified:false,source:source.name,source_url:sourceUrl,
+      notes:validCount===null?'アオリ入網でなく船釣果掲載あり・数量不明':
+        '集約ページ記載の最多'+validCount+'杯。船中総数・平均ではありません。'
+    });
+  }
+  return results;
+}
+
 async function fetchText(url) {
   const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 AORI-INTEL/1.0 (+GitHub Actions)'}});
   if(!r.ok) throw new Error(`${r.status} ${r.statusText}`);
@@ -506,6 +552,10 @@ async function collect() {
         const html=await fetchText(source.url); const rows=parseChowari(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
         if(!rows.length){st.status='no_new';st.note='公開釣果一覧にアオリ情報なし';}
+      } else if(source.adapter==='tsurirepo'){
+        const html=await fetchText(source.url);const rows=parseTsurirepo(html,source);
+        newSessions.push(...rows);st.new_count=rows.length;
+        if(!rows.length){st.status='no_new';st.note='直近のアオリ釣果記録を確認できず';}
       } else if(source.adapter==='johshuya'){
         const html=await fetchText(source.url); const rows=parseJohshuya(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
@@ -548,5 +598,5 @@ async function collect() {
   console.log(`catches=${catches.length} setnet=${setnet.length}`);
 }
 
-module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseChowari,parseJohshuya,parseUosoku,speciesFromText};
+module.exports={normalizeSpace,stripTags,classifyMode,normalizeRegion,ordinalClaim,parseYamaria,groupSessions,parseJfObama,parseWakasaArticle,parseAnglersFishing,parseChowari,parseJohshuya,parseUosoku,parseTsurirepo,speciesFromText};
 if(require.main===module) collect().catch(e=>{console.error(e);process.exit(1);});

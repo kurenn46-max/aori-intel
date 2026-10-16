@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "updated_at": "2026-10-07T10:30:32.920Z",
   "sources": [
     {
@@ -105,6 +105,30 @@
       "subregion": "小浜新港沖",
       "url": "https://www.chowari.jp/ship/00107/catch/",
       "enabled": true
+    },
+    {
+      "id": "tsurirepo-miyamotomaru",
+      "name": "つりれぽ 宮本丸（舞鶴）",
+      "type": "catch",
+      "priority": "B",
+      "adapter": "tsurirepo",
+      "region": "舞鶴",
+      "subregion": "舞鶴沖",
+      "url": "https://tsurirepo.com/boats/kyoto_miyamotomaru/",
+      "enabled": true,
+      "note": "船釣果の二次集約。岸とは別。元の船宿報告との照合を推奨。"
+    },
+    {
+      "id": "tsurirepo-kaiseimaru",
+      "name": "つりれぽ 海生丸（若狭大島）",
+      "type": "catch",
+      "priority": "B",
+      "adapter": "tsurirepo",
+      "region": "小浜湾",
+      "subregion": "若狭大島沖",
+      "url": "https://tsurirepo.com/boats/fukui_kaiseimaru/",
+      "enabled": true,
+      "note": "船釣果の二次集約。実釣日・アオリの表記が明瞭なものだけ、未検証の参考レコードとして表示。"
     },
     {
       "id": "uosoku-fukui-aori",
