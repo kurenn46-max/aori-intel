@@ -499,7 +499,7 @@ function parseTsurirepo(html, source, now=new Date()){
     const t=new Date(date+'T00:00:00+09:00');
     if(!Number.isFinite(t.getTime()))continue;
     const age=(today.getTime()-t.getTime())/86400000;
-    if(age < -1 || age > 35)continue;
+    if(age < -1 || age > 30)continue;
     // e.g. "アオリイカ 🔗 アオリイカ 〜16匹", never
     // simply grab the next "〜N匹" (which could be another fish).
     const aori=block.match(/(?:^|\s)アオリイカ(?:\s*🔗)?\s*(?:アオリイカ)?\s*[〜～]\s*(\d{1,3})\s*(?:匹|杯)/);
