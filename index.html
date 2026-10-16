@@ -10,11 +10,11 @@
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">AORI INTEL · V2.3</p>
+      <p class="eyebrow">AORI INTEL · V2.3.1</p>
       <h1>アオリイカ釣果情報</h1>
       <p class="sub">アオリイカ釣果に特化。岸と船を分離し、地域・日時・杯数を比較します</p>
     </div>
-    <button id="refreshBtn" class="refresh" type="button" aria-label="最新データを読み直す">更新</button>
+    <button id="refreshBtn" class="refresh" type="button" aria-label="GitHubの保存済み釣果を再取得する">更新確認</button>
   </header>
 
   <main>
@@ -38,6 +38,12 @@
     <nav class="regions" id="regionTabs" aria-label="地域"></nav>
 
     <section id="statusStrip" class="status-strip" aria-live="polite"></section>
+    <p id="refreshNotice" class="refresh-notice" role="status" aria-live="polite">「更新確認」はGitHub上の保存済みデータを読み直します。</p>
+    <details class="manual-refresh card">
+      <summary>新しい釣果を今すぐ収集するには</summary>
+      <p>この公開サイトからGitHubの収集プログラムを直接起動することはできません。</p>
+      <p><a href="https://github.com/kurenn46-max/aori-intel/actions/workflows/collect.yml" target="_blank" rel="noopener noreferrer">GitHubの収集画面を開く</a> → ログイン → 「Run workflow」 → もう一度「Run workflow」を押してください。完了後にこの画面の「更新確認」を押すと結果が反映されます。</p>
+    </details>
 
     <section class="summary-grid" id="summary"></section>
 
