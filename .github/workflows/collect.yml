@@ -6,6 +6,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'app.js'
       - 'scripts/collect.js'
       - 'scripts/discover.js'
       - 'scripts/query-plan.js'

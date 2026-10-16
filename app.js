@@ -1,4 +1,4 @@
-const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],loadErrors:[],status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
+const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],loadErrors:[],isRefreshing:false,loadedOnce:false,refreshNotice:'',status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
 const regions=['全地域','高浜','小浜湾','常神半島','美浜','敦賀','舞鶴','宮津','越前'];
 const $=s=>document.querySelector(s);
 const fmtDate=(d,t)=>`${d.replaceAll('-','/')} ${t||''}`.trim();
@@ -8,11 +8,42 @@ const daysDiff=(a,b)=>Math.round((new Date(`${a}T00:00:00+09:00`)-new Date(`${b}
 
 const RAW='https://raw.githubusercontent.com/kurenn46-max/aori-intel/main/';
 async function json(url,fallback){try{const full=url.startsWith('data/')?RAW+url:url;const r=await fetch(`${full}?v=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);return await r.json();}catch{state.loadErrors.push(url);return fallback;}}
+function refreshMessage(previous,catches,status,errors,hadLoaded){
+  if(errors.length)return '取得失敗：'+errors.join('、')+'。取得できなかった項目は前回表示を維持しました。';
+  const checked=status?.checked_at
+    ?new Date(status.checked_at).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'})
+    :'収集履歴なし';
+  if(!hadLoaded)return '保存済みの釣果'+catches.length+'件を読み込みました。最終自動収集：'+checked+'。';
+  const before=new Set(previous.map(x=>x.id));
+  const added=catches.filter(x=>!before.has(x.id)).length;
+  return (added?'保存データに新着'+added+'件を確認しました。':'保存データに新着なし。')+
+    '最終自動収集：'+checked+'。このボタンは新たな収集を起動しません。';
+}
 async function load(){
+  if(state.isRefreshing)return;
+  state.isRefreshing=true;
   state.loadErrors=[];
-  $('#statusStrip').textContent='最新データを読み込み中…';
-  const [catches,setnet,status,discovery]=await Promise.all([json('data/catches.json',[]),json('data/setnet.json',[]),json('data/source-status.json',{checked_at:null,sources:[]}),json('data/discovery-status.json',{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]})]);
-  state.catches=catches;state.setnet=setnet;state.status=status;state.discovery=discovery;render();
+  const hadLoaded=state.loadedOnce,previous=state.catches;
+  const btn=$('#refreshBtn');
+  if(btn){btn.disabled=true;btn.textContent='確認中…';}
+  const notice=$('#refreshNotice');
+  if(notice)notice.textContent='GitHubの保存済み釣果を確認しています…';
+  try{
+    const [catches,setnet,status,discovery]=await Promise.all([
+      json('data/catches.json',state.catches),
+      json('data/setnet.json',state.setnet),
+      json('data/source-status.json',state.status),
+      json('data/discovery-status.json',state.discovery)
+    ]);
+    state.catches=catches;state.setnet=setnet;state.status=status;state.discovery=discovery;
+    state.refreshNotice=refreshMessage(previous,catches,status,state.loadErrors,hadLoaded);
+    state.loadedOnce=true;
+    render();
+    if(notice)notice.textContent=state.refreshNotice;
+  }finally{
+    state.isRefreshing=false;
+    if(btn){btn.disabled=false;btn.textContent='更新確認';}
+  }
 }
 function selectedRecords(){
   const today=todayJst();
