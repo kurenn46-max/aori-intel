@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-1112acc7ee8a00dd",
+    "date": "2026-10-17",
+    "time": "03:12",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "𝕟𝕠̆̈𝕒",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1301007",
+    "notes": "行けない予定でしたが、、周りの釣果に影響されてついつい無理して行ってしもた。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-7d98e49b5555b383"
+    ]
+  },
+  {
     "id": "session-06eb99f1a0eba2ed",
     "date": "2026-10-16",
     "time": "23:31",
@@ -24,6 +51,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-e41ffd2ad5ba173b"
+    ]
+  },
+  {
+    "id": "session-db773bb9cd8e6ccc",
+    "date": "2026-10-16",
+    "time": "23:27",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ムミムー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300986",
+    "notes": "あたり分からずしゃくりがけ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3ac77c2b4d283c55"
     ]
   },
   {
@@ -54,7 +108,7 @@
     ]
   },
   {
-    "id": "session-43cdb8b880e6c87f",
+    "id": "session-749430a31b0f223f",
     "date": "2026-10-16",
     "time": "20:48〜22:04",
     "region": "敦賀",
@@ -77,9 +131,9 @@
     "notes": "#決戦#天下人 ロッドを立ててカーブフォール中に コツコツっと軽い当たり、ゆるーく2回シャクって逃がしたら本当たりがきました 詳細ページ → / #決戦#天下人 詳細ページ → / #決戦#天下人 シャクリ後にフォールじゃなく巻きで 詳細ページ → / #決戦#天下人 巻きで！ 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-1b792039aa6886fc",
       "yamaria-event-265067f9a23afc19",
       "yamaria-event-42056233e56b784e",
-      "yamaria-event-1b792039aa6886fc",
       "yamaria-event-8640e96c5513d97b"
     ]
   },
@@ -135,6 +189,60 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-6ad73e4119a24966"
+    ]
+  },
+  {
+    "id": "session-3d66cc1427366cc6",
+    "date": "2026-10-16",
+    "time": "19:12",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "まつ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1300973",
+    "notes": "ファーストフォール中にふけあたりました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-4a3fc3a6e41834ef"
+    ]
+  },
+  {
+    "id": "session-6496ee022a5bedc8",
+    "date": "2026-10-16",
+    "time": "18:21",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しゅちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1300985",
+    "notes": "#開戦#天下人 久しぶりのエギングで久しぶりに行くポイント。去年おなじ時期にキロアップを釣った実績があるのでワクワク☺️すると先行者が2人。しかも1番投げたかったポイントが既に…😭まぁええかと釣り開始。 ウネリと追い風、潮はなく。しばらく投げているとゴンッととても強く硬いあたり。恐らく青物系か？と思いボトム狙いに変更。 水深は浅めなので根掛からないようにギリギリを攻める。手前のかけ上がりまで反応ないため一気にシャクリを入れてエギを上げてステイ。すると重く柔らかいお待ちかねの感触♪期待してたサイズではなかったけど楽しく釣れました♪ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8f0a99673acac657"
     ]
   },
   {
@@ -276,7 +384,7 @@
     ]
   },
   {
-    "id": "session-bc521c291114d654",
+    "id": "session-bd1e68133fb117e8",
     "date": "2026-10-16",
     "time": "06:42〜09:16",
     "region": "越前",
@@ -300,8 +408,8 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-77eeef166b14ae28",
-      "yamaria-event-beb994600781013c",
-      "yamaria-event-855e5088752e24fb"
+      "yamaria-event-855e5088752e24fb",
+      "yamaria-event-beb994600781013c"
     ]
   },
   {
@@ -1151,6 +1259,33 @@
     ]
   },
   {
+    "id": "session-7ddb28ef103f1073",
+    "date": "2026-10-13",
+    "time": "23:00",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "K",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300998",
+    "notes": "#決戦 #天下人 来たよ！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-c04ddd85bbccce90"
+    ]
+  },
+  {
     "id": "session-de47bd15b84bbfbc",
     "date": "2026-10-13",
     "time": "21:33",
@@ -1615,6 +1750,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-a1f58483f17efce1"
+    ]
+  },
+  {
+    "id": "session-6a5e7b86c2f0c807",
+    "date": "2026-10-12",
+    "time": "23:00",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "K",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300995",
+    "notes": "#決戦 #天下人 来たよ！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9bd707f1ff2877b6"
     ]
   },
   {
