@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: ['feature/v2.1-data-quality-and-discovery', 'feature/v2.2-rotating-search-queries', 'feature/v2.3-aori-catch-focus', 'fix/v2.3.1-refresh-behavior']
+    branches: ['feature/v2.1-data-quality-and-discovery', 'feature/v2.2-rotating-search-queries', 'feature/v2.3-aori-catch-focus', 'fix/v2.3.1-refresh-behavior', 'feature/v2.4-new-public-aori-sources']
 permissions:
   contents: read
 jobs:
@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '24'
       - run: npm run validate
+      - run: node scripts/probe-sources.js
       - name: Test real source ingestion (dry run)
         run: npm run collect
       - name: Test no-key regional discovery (dry run)
