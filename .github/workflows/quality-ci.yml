@@ -16,9 +16,22 @@ jobs:
         with:
           node-version: '24'
       - run: npm run validate
-      - run: node scripts/probe-sources.js
+      - name: Check extra aori source contribution
+        run: |
+          node - <<'JS'
+          const fs=require('fs'); const x=JSON.parse(fs.readFileSync('data/source-registry.json')); console.log('Secondary source registrations:',x.sources.filter(s=>s.adapter==='tsurirepo').map(s=>s.name));
+          JS
       - name: Test real source ingestion (dry run)
         run: npm run collect
+      - name: Show verified-vs-secondary Aori records in live dry run
+        run: |
+          node - <<'JS'
+          const fs=require('fs'),c=JSON.parse(fs.readFileSync('data/catches.json'));
+          const records=c.filter(x=>x.source?.includes('つりれぽ'));
+          const counts=Object.fromEntries([...new Set(records.map(x=>x.source))].map(s=>[s,records.filter(x=>x.source===s).length]));
+          console.log('EXTRA_SOURCE_REPORT',JSON.stringify({records:records.length,bySource:counts,dates:records.slice(0,8).map(x=>({date:x.date,region:x.region,source:x.source,catch_count:x.catch_count,count_basis:x.count_basis,verified:x.verified}))}));
+          if(records.some(x=>x.mode!=='boat'||x.verified!==false))process.exit(1);
+          JS
       - name: Test no-key regional discovery (dry run)
         env:
           BRAVE_SEARCH_API_KEY: ''
