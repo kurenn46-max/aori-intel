@@ -1,5 +1,19 @@
 [
   {
+    "id": "setnet-jf-2026-10-16",
+    "date": "2026-10-16",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "species_explicit",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置対象魚種が本文で明示",
+    "notes": "おはようございます。 今朝は、えびこぎ網と定置その他の水揚げがありました。定置ではサワラが多めです。 現在、底曳と延縄が出漁中です。"
+  },
+  {
     "id": "setnet-jf-2026-10-15",
     "date": "2026-10-15",
     "region": "小浜湾",
