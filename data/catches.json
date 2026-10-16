@@ -55,6 +55,33 @@
     ]
   },
   {
+    "id": "session-7cc2ad1842c2dc92",
+    "date": "2026-10-16",
+    "time": "05:30",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "korokkemjn",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1300466",
+    "notes": "釣れてた 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3d5563d1e757b6df"
+    ]
+  },
+  {
     "id": "chowari-2849239d12b4a5c6",
     "date": "2026-10-16",
     "time": null,
@@ -109,7 +136,7 @@
     ]
   },
   {
-    "id": "session-1b749a454cc4ac56",
+    "id": "session-562fc00316d86824",
     "date": "2026-10-15",
     "time": "21:28〜21:45",
     "region": "敦賀",
@@ -132,8 +159,8 @@
     "notes": "足一本 詳細ページ → / とてもサイズダウン 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-ebbbcc631b6bb7bd",
-      "yamaria-event-b02246900fe69161"
+      "yamaria-event-b02246900fe69161",
+      "yamaria-event-ebbbcc631b6bb7bd"
     ]
   },
   {
