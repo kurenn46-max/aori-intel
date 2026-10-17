@@ -81,6 +81,60 @@
     ]
   },
   {
+    "id": "session-627afe662c25286d",
+    "date": "2026-10-17",
+    "time": "19:14",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "エギスキ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1301997",
+    "notes": "#決戦#天下人 フケあたりを確認！！ 鬼合わせでゲットです！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-78bb2233366c1974"
+    ]
+  },
+  {
+    "id": "session-50fdc8a13012007f",
+    "date": "2026-10-17",
+    "time": "19:01",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "パワフル🦑",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1301990",
+    "notes": "宮津に前回のリベンジで出撃🚙13時スタートで明るいうちは何もなし｡夕マズメにタアリがあり掛けたけど途中でスコンと抜けて痛恨のバラシ😩暫く無の時間があり今度はしっかり持っていくアタリで久々の１杯に出会えリベンジ成功🦑胴長23cmの良型ゲット出来ました😁その後、アタリもなく２時間粘って終了としました😊 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-72fdd2ae2bcdcef6"
+    ]
+  },
+  {
     "id": "session-c1a35f59696115b0",
     "date": "2026-10-17",
     "time": "18:30",
@@ -105,6 +159,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-5b082c7cca7e16f5"
+    ]
+  },
+  {
+    "id": "session-4123c814211f81df",
+    "date": "2026-10-17",
+    "time": "18:06",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "ワーゲン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1301942",
+    "notes": "夕マズメ狙いに出撃。 大御所さん2人登場され、挨拶してシャクシャク… シャローからスーパーシャローに変えてすぐにヒット〜！ 慎重にタモ入れして、約１週間ぶりのアオリイカゲット〜😭 坊主続きでしたので、めっちゃ嬉しい1杯となりました…😂 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ef1e611a79059545"
     ]
   },
   {
@@ -463,6 +544,33 @@
     ]
   },
   {
+    "id": "session-b8cfa95a8b0e94cb",
+    "date": "2026-10-17",
+    "time": "01:25",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "鹿児島のもっちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1301958",
+    "notes": "#決戦#天下人 エギをラトル入りに変えたらきた！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-fbf9f508a640f76e"
+    ]
+  },
+  {
     "id": "session-0836af4e2022d302",
     "date": "2026-10-17",
     "time": "00:05〜00:15",
@@ -542,6 +650,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-3ac77c2b4d283c55"
+    ]
+  },
+  {
+    "id": "session-209b9e635000f035",
+    "date": "2026-10-16",
+    "time": "23:19",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "鹿児島のもっちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1301956",
+    "notes": "#決戦#天下人 足元付近でほぼステイさせてたら乗ってました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f6899d60d24616a3"
     ]
   },
   {
