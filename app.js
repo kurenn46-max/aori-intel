@@ -1,6 +1,8 @@
 const state={mode:'shore',days:7,region:'全地域',query:'',catches:[],setnet:[],loadErrors:[],isRefreshing:false,loadedOnce:false,refreshNotice:'',status:{checked_at:null,sources:[]},discovery:{checked_at:null,queries_planned:0,queries_ok:0,raw_results:0,candidates:0,accepted:0,new_catches:0,errors:[]}};
 const regions=['全地域','高浜','小浜湾','常神半島','美浜','敦賀','舞鶴','宮津','越前'];
 const $=s=>document.querySelector(s);
+const AUTO_REFRESH_MS=5*60*1000;
+let lastLoadStarted=0;
 const fmtDate=(d,t)=>`${d.replaceAll('-','/')} ${t||''}`.trim();
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const todayJst=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
@@ -22,6 +24,7 @@ function refreshMessage(previous,catches,status,errors,hadLoaded){
 async function load(){
   if(state.isRefreshing)return;
   state.isRefreshing=true;
+  lastLoadStarted=Date.now();
   state.loadErrors=[];
   const hadLoaded=state.loadedOnce,previous=state.catches;
   const btn=$('#refreshBtn');
@@ -132,8 +135,12 @@ function render(){
   const latest=times.length?new Date(Math.max(...times)).toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'}):'初回自動巡回前';
   const latestCatch=rows.map(x=>x.date).filter(Boolean).sort().at(-1)||'情報なし';
   const stale=state.loadErrors.length?' / 読込失敗:'+state.loadErrors.join(', '):'';
+  const lastRunMs=times.length?Math.max(...times):0;
+  const ageMinutes=lastRunMs?Math.max(0,Math.floor((Date.now()-lastRunMs)/60000)):null;
+  const scheduleStatus=ageMinutes===null?' / 自動収集履歴なし':
+    ageMinutes>150?' / 自動収集遅延の可能性（前回'+ageMinutes+'分前）':' / 自動収集予定:約1時間ごと';
   $('#statusStrip').textContent=state.region+' / '+(state.days===0?'今日':state.days===1?'昨日':state.days+'日')+
-    ' / 最終巡回:'+latest+' / 最新釣果日:'+latestCatch+stale;
+    ' / 最終巡回:'+latest+' / 最新釣果日:'+latestCatch+scheduleStatus+stale;
   renderSources();
   document.querySelectorAll('#modeTabs button').forEach(b=>b.classList.toggle('active',b.dataset.mode===state.mode));
   document.querySelectorAll('#rangeTabs button').forEach(b=>b.classList.toggle('active',Number(b.dataset.days)===state.days));
@@ -144,4 +151,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   $('#searchInput').oninput=e=>{state.query=e.target.value.trim();render();};
   $('#refreshBtn').onclick=load;
   load();
+  setInterval(()=>{if(!document.hidden)load();},AUTO_REFRESH_MS);
+  document.addEventListener('visibilitychange',()=>{
+    if(!document.hidden && Date.now()-lastLoadStarted>=AUTO_REFRESH_MS)load();
+  });
 });
