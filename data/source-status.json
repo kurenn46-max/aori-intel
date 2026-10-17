@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-10-17T19:29:07.439Z",
+  "checked_at": "2026-10-17T22:26:20.474Z",
   "sources": [
     {
       "source": "エギCOM 小浜",
-      "checked_at": "2026-10-17T19:28:52.240Z",
+      "checked_at": "2026-10-17T22:26:07.852Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -11,23 +11,23 @@
     },
     {
       "source": "エギCOM 敦賀",
-      "checked_at": "2026-10-17T19:28:52.781Z",
+      "checked_at": "2026-10-17T22:26:08.214Z",
       "status": "ok",
-      "new_count": 2,
+      "new_count": 1,
       "note": null,
-      "parsed_count": 6
+      "parsed_count": 5
     },
     {
       "source": "エギCOM 丹後",
-      "checked_at": "2026-10-17T19:28:53.088Z",
+      "checked_at": "2026-10-17T22:26:08.410Z",
       "status": "ok",
-      "new_count": 1,
+      "new_count": 0,
       "note": null,
       "parsed_count": 4
     },
     {
       "source": "エギCOM 宮津",
-      "checked_at": "2026-10-17T19:28:53.258Z",
+      "checked_at": "2026-10-17T22:26:08.583Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -35,23 +35,23 @@
     },
     {
       "source": "エギCOM 舞鶴",
-      "checked_at": "2026-10-17T19:28:53.421Z",
+      "checked_at": "2026-10-17T22:26:08.710Z",
       "status": "ok",
       "new_count": 3,
       "note": null,
-      "parsed_count": 6
+      "parsed_count": 5
     },
     {
       "source": "エギCOM 越前",
-      "checked_at": "2026-10-17T19:28:53.584Z",
+      "checked_at": "2026-10-17T22:26:08.863Z",
       "status": "ok",
-      "new_count": 2,
+      "new_count": 1,
       "note": null,
       "parsed_count": 5
     },
     {
       "source": "上州屋 新敦賀店",
-      "checked_at": "2026-10-17T19:28:53.745Z",
+      "checked_at": "2026-10-17T22:26:09.057Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -59,7 +59,7 @@
     },
     {
       "source": "かどや丸 釣果",
-      "checked_at": "2026-10-17T19:28:54.721Z",
+      "checked_at": "2026-10-17T22:26:10.238Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -67,7 +67,7 @@
     },
     {
       "source": "川代丸 釣果",
-      "checked_at": "2026-10-17T19:28:55.746Z",
+      "checked_at": "2026-10-17T22:26:11.485Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -75,7 +75,7 @@
     },
     {
       "source": "SUPER VIKING 釣果",
-      "checked_at": "2026-10-17T19:28:56.312Z",
+      "checked_at": "2026-10-17T22:26:12.288Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -83,7 +83,7 @@
     },
     {
       "source": "つりれぽ 宮本丸（舞鶴）",
-      "checked_at": "2026-10-17T19:28:57.035Z",
+      "checked_at": "2026-10-17T22:26:13.090Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -91,7 +91,7 @@
     },
     {
       "source": "つりれぽ 海生丸（若狭大島）",
-      "checked_at": "2026-10-17T19:28:57.281Z",
+      "checked_at": "2026-10-17T22:26:13.232Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -99,7 +99,7 @@
     },
     {
       "source": "魚速 福井県アオリイカ",
-      "checked_at": "2026-10-17T19:28:57.383Z",
+      "checked_at": "2026-10-17T22:26:13.265Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -107,7 +107,7 @@
     },
     {
       "source": "魚速 敦賀アオリイカ",
-      "checked_at": "2026-10-17T19:28:57.540Z",
+      "checked_at": "2026-10-17T22:26:13.338Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず",
@@ -115,7 +115,7 @@
     },
     {
       "source": "魚速 音海アオリイカ",
-      "checked_at": "2026-10-17T19:28:58.294Z",
+      "checked_at": "2026-10-17T22:26:14.569Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -123,7 +123,7 @@
     },
     {
       "source": "魚速 若狭湾アオリイカ",
-      "checked_at": "2026-10-17T19:28:58.385Z",
+      "checked_at": "2026-10-17T22:26:14.599Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず",
@@ -131,7 +131,7 @@
     },
     {
       "source": "小浜市漁業協同組合 水揚げ情報",
-      "checked_at": "2026-10-17T19:28:59.628Z",
+      "checked_at": "2026-10-17T22:26:15.353Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -139,7 +139,7 @@
     },
     {
       "source": "若狭小浜 おさかな探訪記",
-      "checked_at": "2026-10-17T19:29:01.488Z",
+      "checked_at": "2026-10-17T22:26:17.226Z",
       "status": "ok",
       "new_count": 0,
       "note": null,

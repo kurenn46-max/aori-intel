@@ -1,5 +1,88 @@
 [
   {
+    "id": "session-9aae2056143249fe",
+    "date": "2026-10-18",
+    "time": "07:06",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "みね",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1302130",
+    "notes": "#決戦 #天下人 やっとアオリきた！ちょっとかわいいサイズでしたが、、 やっぱり潮の効いてるところじゃないとダメですね。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8b6d2ff479c74dcc"
+    ]
+  },
+  {
+    "id": "session-a732a959200a5bd5",
+    "date": "2026-10-18",
+    "time": "05:55〜06:38",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 100g〜300g",
+    "max_size_text": "300g〜500g",
+    "angler": "おもち",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1302153",
+    "notes": "#天下人 #決戦 活性ﾀｶｼ カンナにかかってない 詳細ページ → / #天下人 #決戦 詳細ページ → / #天下人 #決戦 エギのサイズダウンとカラーチェンジが功を奏し 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3d635ae8495ffdaf",
+      "yamaria-event-4e5fb9b89313dbf6",
+      "yamaria-event-a69063fbadf7224e"
+    ]
+  },
+  {
+    "id": "session-a4e9d674f5f1a2df",
+    "date": "2026-10-18",
+    "time": "02:15",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "やっちー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1302070",
+    "notes": "久しぶりの一杯。潮が効いた瞬間。表層より。2バラシが残念。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-13d94b3fda61909f"
+    ]
+  },
+  {
     "id": "session-409e8ab8f8dcd56d",
     "date": "2026-10-17",
     "time": "23:00",
@@ -27,7 +110,7 @@
     ]
   },
   {
-    "id": "session-8da108d62e619457",
+    "id": "session-f91050b3b37c5398",
     "date": "2026-10-17",
     "time": "22:34〜23:10",
     "region": "越前",
@@ -50,8 +133,8 @@
     "notes": "#決戦#天下人 初のティップランへ行って来ました！ 数釣りは出来ませんでしたが楽しかったのでまた行きたい釣りでした 詳細ページ → / #決戦#天下人 周りが釣れてたサイズより少し小さいですが釣れて良かった 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-535b8a495fb75e8f",
-      "yamaria-event-291e8069b5fb2613"
+      "yamaria-event-291e8069b5fb2613",
+      "yamaria-event-535b8a495fb75e8f"
     ]
   },
   {
@@ -7553,32 +7636,5 @@
     "source": "つりれぽ 海生丸（若狭大島）",
     "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-18",
     "notes": "集約ページ記載の最多13杯。船中総数・平均ではありません。"
-  },
-  {
-    "id": "session-dd598bb335038c0b",
-    "date": "2026-09-11",
-    "time": "22:31",
-    "region": "敦賀",
-    "subregion": "敦賀",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "防波堤",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g〜300g",
-    "max_size_text": "100g〜300g",
-    "angler": "Joo",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 敦賀",
-    "source_url": "https://www.yamaria.com/catches/1301823",
-    "notes": "しぶい 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-eb61ec715d3b3414"
-    ]
   }
 ]
