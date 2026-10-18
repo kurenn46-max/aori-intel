@@ -138,6 +138,35 @@
     ]
   },
   {
+    "id": "session-6802db5fdc1fe281",
+    "date": "2026-10-17",
+    "time": "21:27〜22:53",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "フタチマル",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1302252",
+    "notes": "開始一投目からキタコレ！ 詳細ページ → / 1時間くらい無の時間が続き、3号にサイズダウンしてみると、一投目でキタコレ！ 詳細ページ → / アモラスでスローにマキマキしてたら、引ったくりバイト🦑こっちもナイスサイズ✨ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-4a08e394df5413d7",
+      "yamaria-event-087877665a277b77",
+      "yamaria-event-2189ee31e086c9a0"
+    ]
+  },
+  {
     "id": "session-1512c13b0b53f282",
     "date": "2026-10-17",
     "time": "21:19",
@@ -408,29 +437,30 @@
     ]
   },
   {
-    "id": "session-f1812d887f39404c",
+    "id": "session-2d8d1aa518c16ccf",
     "date": "2026-10-17",
-    "time": "16:46〜16:50",
+    "time": "16:46〜17:00",
     "region": "越前",
     "subregion": "越前",
     "mode": "boat",
     "method": "エギング",
     "place_type": "ボート・船",
-    "catch_count": 2,
-    "confirmed_events": 2,
+    "catch_count": 3,
+    "confirmed_events": 3,
     "claimed_count": null,
     "count_source": "posted_events",
     "duration_hours": null,
     "cpue": null,
-    "size_text": "300g〜500g",
-    "max_size_text": "300g〜500g",
+    "size_text": "300g〜500g / 500g〜800g",
+    "max_size_text": "500g〜800g",
     "angler": "こざえもん",
     "confidence": "写真付き実釣",
     "source": "エギCOM 越前",
-    "source_url": "https://www.yamaria.com/catches/1301608",
-    "notes": "#決戦 #天下人 波が高くボトムが取りにくい！ シンカー30g用意しないと… 詳細ページ → / #決戦 #天下人 ムラムラチェリー様々です🍒 詳細ページ →",
+    "source_url": "https://www.yamaria.com/catches/1302189",
+    "notes": "#決戦 #天下人 波が高くボトムが取りにくい！ シンカー30g用意しないと… 詳細ページ → / #決戦 #天下人 ムラムラチェリー様々です🍒 詳細ページ → / #決戦 #天下人 着底からの5秒カウントで今年一の強い引き！ 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-296f93dcd565bfc3",
       "yamaria-event-3c8aed6a8ec03567",
       "yamaria-event-aef1c4a482af06e7"
     ]
@@ -517,6 +547,33 @@
     "event_ids": [
       "yamaria-event-27c1b15d7049d0db",
       "yamaria-event-fe8c4fdf371de930"
+    ]
+  },
+  {
+    "id": "session-f03718b4556da869",
+    "date": "2026-10-17",
+    "time": "07:45",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "おまちゃ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1302165",
+    "notes": "♯決戦 いやー！爆風すぎる中の貴重な1杯！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-4ee6d999b079dcf2"
     ]
   },
   {
