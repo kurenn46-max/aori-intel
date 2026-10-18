@@ -243,7 +243,7 @@
     ]
   },
   {
-    "id": "session-c9c35a50a5c69518",
+    "id": "session-cf04d53564cdd885",
     "date": "2026-10-18",
     "time": "06:40〜09:43",
     "region": "越前",
@@ -266,9 +266,9 @@
     "notes": "#決戦 #天下人 足元でヒット 詳細ページ → / #決戦 #天下人 釣れない時はこのエギで！ 詳細ページ → / #決戦 #天下人 まだまだ小さいのがいますね・・・ 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-0b756573ae2a0b30",
       "yamaria-event-8bdbc03ecca882d9",
-      "yamaria-event-a3d635fc029f505c",
-      "yamaria-event-0b756573ae2a0b30"
+      "yamaria-event-a3d635fc029f505c"
     ]
   },
   {
@@ -1480,7 +1480,7 @@
     ]
   },
   {
-    "id": "session-58da6b29812f667e",
+    "id": "session-7b0957e0f000c39e",
     "date": "2026-10-16",
     "time": "19:18〜20:12",
     "region": "舞鶴",
@@ -1503,8 +1503,8 @@
     "notes": "＃決戦 ＃天下人 潮通しの良いサーフで1発でした 詳細ページ → / ＃決戦 ＃天下人 居れば喰ってきますね。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-9369516faecab328",
-      "yamaria-event-6a166d10109a2d7b"
+      "yamaria-event-6a166d10109a2d7b",
+      "yamaria-event-9369516faecab328"
     ]
   },
   {
