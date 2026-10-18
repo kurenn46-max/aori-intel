@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-1e4745692967ab75",
+    "date": "2026-10-18",
+    "time": "16:53",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "けん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1302874",
+    "notes": "当たりが有り、もう一度投げてひとシャクリ目で糸の違和感で合わせるときました。横抱きだったみたいでエギを掴んだ時にカンナにかかりました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-df23472f4c5d3edc"
+    ]
+  },
+  {
     "id": "session-abc1f4ef046ea773",
     "date": "2026-10-18",
     "time": "12:49",
@@ -51,6 +78,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-bbf015a56bc90258"
+    ]
+  },
+  {
+    "id": "session-61f37aeb156bdd60",
+    "date": "2026-10-18",
+    "time": "08:26",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "しーちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1302598",
+    "notes": "#決戦 #天下人 ラインを引っ張る当たりオッケー来たよ🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8f0597000c28b595"
     ]
   },
   {
@@ -110,7 +164,7 @@
     ]
   },
   {
-    "id": "session-8bcfd34212411c3d",
+    "id": "session-659001af7820e354",
     "date": "2026-10-18",
     "time": "05:43〜05:48",
     "region": "敦賀",
@@ -133,8 +187,8 @@
     "notes": "#決戦 #天下人 活性高くひったくるようなあたり 詳細ページ → / #決戦 #天下人 イカパンチからのステイで抱き 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-c57143d6e1b1685b",
-      "yamaria-event-910c6f00c824a913"
+      "yamaria-event-910c6f00c824a913",
+      "yamaria-event-c57143d6e1b1685b"
     ]
   },
   {
@@ -684,6 +738,33 @@
       "yamaria-event-1dda2db64e26f45b",
       "yamaria-event-897df5009b062895",
       "yamaria-event-ea89950a0d23325b"
+    ]
+  },
+  {
+    "id": "session-e060389f131ab590",
+    "date": "2026-10-17",
+    "time": "14:06",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "鍋男",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1302719",
+    "notes": "こちらは息子の釣果。やはりムラチェ。ラスト1流しで何とかGET👍 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ac03a468e4ecbe9b"
     ]
   },
   {
@@ -7941,5 +8022,32 @@
     "source": "つりれぽ 海生丸（若狭大島）",
     "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-18",
     "notes": "集約ページ記載の最多13杯。船中総数・平均ではありません。"
+  },
+  {
+    "id": "session-d9f1c913fe617ad6",
+    "date": "2026-09-16",
+    "time": "21:21",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "かーくん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1302720",
+    "notes": "デカイカ狙いで磯に行きました。 3.5号の強気のエギで底までじっくり探しました。短時間釣行だったので1キャッチできてよかった😓 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b5ab4e9d9f456e7c"
+    ]
   }
 ]
