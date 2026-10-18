@@ -301,6 +301,33 @@
     ]
   },
   {
+    "id": "session-3d30e72593a5ed75",
+    "date": "2026-10-18",
+    "time": "05:48",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "駆け出しエギンガー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1303326",
+    "notes": "エギを回収しようと思ったらまさかの足元でヒット！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-66e06cada54f4e96"
+    ]
+  },
+  {
     "id": "session-659001af7820e354",
     "date": "2026-10-18",
     "time": "05:43〜05:48",
@@ -7598,6 +7625,33 @@
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
     "notes": "（水）中潮 アオリイカ マイカ 合計1匹 モンゴウイカ 合計1匹 潮： ゆるい。波高： 低い。おはようございます。昨夜最近のいつものポイントへ行きましたが、大きなうねりが有りました。あんまり弾まず、ビタ止まりしたので、移動して帰って来ました。アオリイカ１人、８・４・４・２・・＋２。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:50 日の入 17:42 月の出 19:34 月の入 09:34 天気 晴れ 気温 25℃ / 16℃ 気圧 1014.3",
     "verified": true
+  },
+  {
+    "id": "session-50d3c9a9d57189ee",
+    "date": "2026-09-28",
+    "time": "04:28",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "Ryoji",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1303270",
+    "notes": "🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a37d2719be480951"
+    ]
   },
   {
     "id": "tsurirepo-0123586e7d94e658",
