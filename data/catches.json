@@ -81,6 +81,33 @@
     ]
   },
   {
+    "id": "session-b328f1a19f301d95",
+    "date": "2026-10-18",
+    "time": "17:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "Rize",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1303180",
+    "notes": "風が強かったけど何とか 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b2d48054ff27b922"
+    ]
+  },
+  {
     "id": "session-1e4745692967ab75",
     "date": "2026-10-18",
     "time": "16:53",
@@ -213,6 +240,35 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-8b6d2ff479c74dcc"
+    ]
+  },
+  {
+    "id": "session-c9c35a50a5c69518",
+    "date": "2026-10-18",
+    "time": "06:40〜09:43",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g / 100g以下",
+    "max_size_text": "100g〜300g",
+    "angler": "やま",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1303192",
+    "notes": "#決戦 #天下人 足元でヒット 詳細ページ → / #決戦 #天下人 釣れない時はこのエギで！ 詳細ページ → / #決戦 #天下人 まだまだ小さいのがいますね・・・ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8bdbc03ecca882d9",
+      "yamaria-event-a3d635fc029f505c",
+      "yamaria-event-0b756573ae2a0b30"
     ]
   },
   {
@@ -683,7 +739,7 @@
     ]
   },
   {
-    "id": "session-dc0c22655cbe1122",
+    "id": "session-c2de109e3e181b7b",
     "date": "2026-10-17",
     "time": "18:00〜18:20",
     "region": "越前",
@@ -706,8 +762,8 @@
     "notes": "今日はホタル 詳細ページ → / ホタルエビが無双でした。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-eae86568ad01df52",
-      "yamaria-event-811b003560646800"
+      "yamaria-event-811b003560646800",
+      "yamaria-event-eae86568ad01df52"
     ]
   },
   {
@@ -1421,6 +1477,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-eb439595b3fe3acd"
+    ]
+  },
+  {
+    "id": "session-58da6b29812f667e",
+    "date": "2026-10-16",
+    "time": "19:18〜20:12",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 100g以下",
+    "max_size_text": "300g〜500g",
+    "angler": "ちゃんなお",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1303168",
+    "notes": "＃決戦 ＃天下人 潮通しの良いサーフで1発でした 詳細ページ → / ＃決戦 ＃天下人 居れば喰ってきますね。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9369516faecab328",
+      "yamaria-event-6a166d10109a2d7b"
     ]
   },
   {
