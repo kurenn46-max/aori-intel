@@ -1,5 +1,59 @@
 [
   {
+    "id": "session-bd498d6edda62a73",
+    "date": "2026-10-20",
+    "time": "01:10",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "moto",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1304036",
+    "notes": "根掛かりかと思ったら釣れてました。自分史上最大のアオリイカ。やっぱりエギングは楽しい〜 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3f75a83edf58adfa"
+    ]
+  },
+  {
+    "id": "session-82b0a2f14ae1b582",
+    "date": "2026-10-19",
+    "time": "23:48",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": 1,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "moto",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1304035",
+    "notes": "軍艦グリーンで1杯目 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-bcd4f0c80728b0d0"
+    ]
+  },
+  {
     "id": "session-a1273ca2167d1d47",
     "date": "2026-10-19",
     "time": "23:00",
@@ -27,7 +81,7 @@
     ]
   },
   {
-    "id": "session-96b6965665ffcedb",
+    "id": "session-44acd7fa20afb030",
     "date": "2026-10-19",
     "time": "21:40〜22:40",
     "region": "敦賀",
@@ -50,9 +104,9 @@
     "notes": "先ほどのヒットから反対の左側のシャローへ投げシャクったら乗っていた。未熟… 詳細ページ → / エギングを開始して、アタリがないためシャローでやる気がいるのは居ないかと探っていたら引っ張るアタリでヒット！ 600gちょっとの良いサイズ❗ 詳細ページ → / 横風が強くなってきたので巻きの釣りをしていたらイカパンチ❗ゲソイチで掛かっていた。何とか無事に取り込めて良かった。 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-633a5a263e41e68d",
       "yamaria-event-78ffe854ba606e8f",
-      "yamaria-event-f8b3caf5cbdfe5ca",
-      "yamaria-event-633a5a263e41e68d"
+      "yamaria-event-f8b3caf5cbdfe5ca"
     ]
   },
   {
@@ -83,7 +137,7 @@
     ]
   },
   {
-    "id": "session-975b88945aad9557",
+    "id": "session-de61d1a033e98792",
     "date": "2026-10-19",
     "time": "18:26〜19:32",
     "region": "宮津",
@@ -106,8 +160,8 @@
     "notes": "18日の大きな任務も無事に終わり今日は代休でした☺️ ただせっかくの休みも南の爆風でつりばも舷梯されてしまい朝の部は当たり無しの坊主😅 まぁ代休ってこんなもんだとは思ってはいますが😅 そして雨予報の夕まずめをどうするか考えた結果南風爆風の中出撃💨 まずめパワーいただきました🦑 ものすごい元気なイカで弾きを楽しめました💨 詳細ページ → / 1つ目釣れてから、バラシが続き😥 そして爆風になり波も出てきましたが、なんとか仕留めようと20時まで粘って今秋最大良型追加！ その後18センチほどのも追加しました！ パタパタや軍艦でもバラし💦 結局釣ったのはムラチ笑 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-d359cf43865626b9",
-      "yamaria-event-7c970c43b5c1eee1"
+      "yamaria-event-7c970c43b5c1eee1",
+      "yamaria-event-d359cf43865626b9"
     ]
   },
   {
@@ -900,6 +954,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-d75d343a45bd3610"
+    ]
+  },
+  {
+    "id": "session-63cb11f41069dd08",
+    "date": "2026-10-17",
+    "time": "23:00",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "twimkko",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1304051",
+    "notes": "3杯釣れましたが、全体に先週までよりサイズダウン。。なんでー？頑張ってサイズアップ目指します！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f400d1e3aa84cb0d"
     ]
   },
   {
