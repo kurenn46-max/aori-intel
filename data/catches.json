@@ -1,5 +1,88 @@
 [
   {
+    "id": "session-11e042cfe8a229ff",
+    "date": "2026-10-19",
+    "time": "14:03",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "エディ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1303599",
+    "notes": "#決戦 雨が降ってくる前に3時間だけ⏰ しゃくり終わってふけを取るのに巻いた時にガツンとひったくってきました🦑 風の方向がコロコロ変わってやりにくい状況でした。 見えイカも数杯、ベイトもあって悪くないけど釣れたのは一杯だけでしたぁ 風がもう少し落ち着いてくれてたら釣果も変わってくれたかなぁ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-c4e654ca5f81cbf5"
+    ]
+  },
+  {
+    "id": "session-a41afdd358387b47",
+    "date": "2026-10-19",
+    "time": "12:45〜12:51",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょうじ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1303559",
+    "notes": "一つ目来たよ➖ 詳細ページ → / また来たよ〜 詳細ページ → / 3連ちゃん 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9842782b064b59aa",
+      "yamaria-event-73c82c67398baa90",
+      "yamaria-event-e8c946ad0812e604"
+    ]
+  },
+  {
+    "id": "session-cc8deb3996c06cae",
+    "date": "2026-10-19",
+    "time": "10:17",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ひとりの釣り人",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1303487",
+    "notes": "#決戦 #天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9db3f0d853f5af49"
+    ]
+  },
+  {
     "id": "session-349166ba1ea990ff",
     "date": "2026-10-18",
     "time": "22:23",
@@ -24,6 +107,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-b9215a541c01ddbe"
+    ]
+  },
+  {
+    "id": "session-5e2ba8d03fc6d76e",
+    "date": "2026-10-18",
+    "time": "20:10",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "シン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1303518",
+    "notes": "越前へやって来ました。ここは敦賀と違いフグが居なくて快適でした😀 しかし南風暴風。予定していたポイントは横に飛んでしまうため追い風になる場所へ移動。 着底後4シャクリ、4巻き巻き、4カウント停止を繰り返したら重くなり合わせました。 ほぼ引きが無く藻かと思いましたが良いサイズのアオリイカでした😀 ランディングした瞬間に大量の墨を吐き、暴れました。水中で暴れてほしかった😑 新作の白銀エビは久々のベール起こし忘れ発動により、はるか沖へ飛んでいきました😭 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e59506e36f86dff8"
     ]
   },
   {
@@ -186,6 +296,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-2e9011936ec69fbb"
+    ]
+  },
+  {
+    "id": "session-04faa2800687f4a8",
+    "date": "2026-10-18",
+    "time": "10:10",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "HIBIKI",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1303522",
+    "notes": "風が強くサイトで何とか１杯キャッチ！！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-325d8877b393d8b9"
     ]
   },
   {
@@ -2550,6 +2687,33 @@
     "verified": true
   },
   {
+    "id": "session-5f53f7b1afdbfdf9",
+    "date": "2026-10-14",
+    "time": "23:30",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "やまぴー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1303540",
+    "notes": "#決戦#天下人 二杯目が遠かったです😑😑 久々の100gオーバー 😓 これにて撤収しました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-cff2f930101df423"
+    ]
+  },
+  {
     "id": "session-b2de52a405903500",
     "date": "2026-10-14",
     "time": "22:12",
@@ -2574,6 +2738,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-1cc0dd10ebb6c11b"
+    ]
+  },
+  {
+    "id": "session-87b470e6357a8927",
+    "date": "2026-10-14",
+    "time": "19:00",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "やまぴー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1303537",
+    "notes": "#決戦#天下人 今日はさい先よく開始すぐに釣れました♪ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d4740b9c9787df4b"
     ]
   },
   {
@@ -7790,6 +7981,33 @@
     ]
   },
   {
+    "id": "session-6898c978a27862fb",
+    "date": "2026-09-28",
+    "time": "04:28",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "®️0421",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1303270",
+    "notes": "🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1b1027d9b5417cd4"
+    ]
+  },
+  {
     "id": "tsurirepo-0123586e7d94e658",
     "date": "2026-09-28",
     "time": null,
@@ -7842,6 +8060,33 @@
     "source": "つりれぽ 海生丸（若狭大島）",
     "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-28",
     "notes": "集約ページ記載の最多14杯。船中総数・平均ではありません。"
+  },
+  {
+    "id": "session-1b9bcb61ed7573c9",
+    "date": "2026-09-27",
+    "time": "20:10",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "かーくん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1303545",
+    "notes": "地磯にデカイカ狙いで。 釣行開始すぐにあたりがあり、その後ポツポツと釣れだしました。 やっぱ軍艦最強やね笑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-30ed8aa7c437d790"
+    ]
   },
   {
     "id": "session-043b5a2df22ca44d",
