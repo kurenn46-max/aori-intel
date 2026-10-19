@@ -162,6 +162,33 @@
     ]
   },
   {
+    "id": "session-b0396b1a4efbbda6",
+    "date": "2026-10-18",
+    "time": "12:10",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "bossumi",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1303334",
+    "notes": "なんとか1杯ゲット🥺 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-2e9011936ec69fbb"
+    ]
+  },
+  {
     "id": "session-ace539753679e5c0",
     "date": "2026-10-18",
     "time": "08:40",
@@ -240,6 +267,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-8b6d2ff479c74dcc"
+    ]
+  },
+  {
+    "id": "session-3f5464f72fff1919",
+    "date": "2026-10-18",
+    "time": "06:41",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "おもち",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1303402",
+    "notes": "#天下人 #決戦 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d6b4c619ea5f52e6"
     ]
   },
   {
@@ -325,6 +379,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-66e06cada54f4e96"
+    ]
+  },
+  {
+    "id": "session-9ad85943eca93904",
+    "date": "2026-10-18",
+    "time": "05:45",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "たっちょん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1303445",
+    "notes": "#決戦 #天下人 クーラーボックス盗まれてやる気を失うも朝マズメ かかったと思ったら引に違和感を感じてあげるとこの有様…なんて日だっ😑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1d3ceccd163e057c"
     ]
   },
   {
@@ -545,6 +626,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-838c36f162794a9c"
+    ]
+  },
+  {
+    "id": "session-51f67b10a5b0ba08",
+    "date": "2026-10-17",
+    "time": "21:35〜23:59",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "たっちょん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1303440",
+    "notes": "#決戦 #天下人 ファーストキャストからのファーストキャッチ✨ 詳細ページ → / #決戦 #天下人 手前まで来たところで乗りました！ 日付け変わる前に２杯目キャッチ🙆‍♂️ このあと1時間しない後にクーラーボックスへ戻ると盗まれてやる気を喪失… 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-006131513e4aa1eb",
+      "yamaria-event-e22ecfd0e2c77407"
     ]
   },
   {
@@ -791,6 +900,33 @@
     "event_ids": [
       "yamaria-event-811b003560646800",
       "yamaria-event-eae86568ad01df52"
+    ]
+  },
+  {
+    "id": "session-ac7764ef81e0c87d",
+    "date": "2026-10-17",
+    "time": "18:00",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "シャクリーマン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1303386",
+    "notes": "ツレの用意している間に うねりの内側のドシャローを探るといました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5de62995f916f5da"
     ]
   },
   {
@@ -8244,58 +8380,6 @@
     "source_url": "https://www.chowari.jp/ship/00107/catch/",
     "notes": "（土）小潮 アオリイカ マイカ 今日はアンカートラブルで早仕舞いでした。 今日のお客様申し訳ありません。 リベンジ券でまた挑戦お待ちしています。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:42 日の入 17:59 月の出 13:33 月の入 22:55 天気 晴れ後時々曇り 気温 30℃ / 22℃ 気圧 1018.5hPa 風 北 2.1m/s 波 北 0.5m/s 水温 26.9℃ 潮 小潮 月齢 8.0 BI 7.0 潮見表・",
     "verified": true
-  },
-  {
-    "id": "johshuya-d96722ad754afc51",
-    "date": "2026-09-18",
-    "time": null,
-    "region": "敦賀",
-    "subregion": "敦賀半島",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "敦賀半島",
-    "catch_count": null,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "count_source": "report_only",
-    "count_basis": "reported",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": "スタッフ中村",
-    "confidence": "現地釣具店・実釣/持込情報",
-    "source": "上州屋 新敦賀店",
-    "source_url": "https://johshuya.co.jp/shop/choka.php?s=151",
-    "notes": "雨 釣り場 敦賀半島 釣り人 スタッフ中村 スタッフ中村です。 あいにくの雨ですが風弱く釣り日和。 早朝より敦賀半島各所へアオリイカのエギングにってきました。 １か所で粘らず色んなところを広く探りこまめな移動でアオリイカＧＥＴして釣り遊び！ 夕方にはカミナリイカ（モンゴイカ）も追加！ ポイントによってはチェイスも見られ激アツですね（＾＾） 雨の日は水潮となり釣れにくいと悪いと言われていますが、そんな事ありません！ 逆に釣り人少なくて狙い時ですので、皆様も是非チャレンジしてみてください。 詳しい釣り方等は、ご来店のうえスタッフまでお気軽にお尋ねください。 ‘26 09月15日 福井県 新敦賀店 --> 登録日：2026年09月15日 画像をクリックすると、拡大画像が表示されます",
-    "verified": true
-  },
-  {
-    "id": "tsurirepo-eb33eb565dee0f27",
-    "date": "2026-09-18",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "若狭大島沖",
-    "mode": "boat",
-    "method": "船釣り・詳細不明",
-    "place_type": "船/沖",
-    "catch_count": 13,
-    "count_basis": "per_angler_max",
-    "count_source": "secondary_boat_listing",
-    "catch_min": null,
-    "catch_max": 13,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "船釣果の二次集約・元船報告推奨",
-    "verified": false,
-    "source": "つりれぽ 海生丸（若狭大島）",
-    "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-18",
-    "notes": "集約ページ記載の最多13杯。船中総数・平均ではありません。"
   },
   {
     "id": "session-d9f1c913fe617ad6",
