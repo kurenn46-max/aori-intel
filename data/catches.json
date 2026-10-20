@@ -1,5 +1,59 @@
 [
   {
+    "id": "session-3bbabe7f9a532882",
+    "date": "2026-10-20",
+    "time": "18:11",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ハーレー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1304457",
+    "notes": "久しぶりに1パイ 底でしゃくり当たりでした 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-301a77f8aee3ada6"
+    ]
+  },
+  {
+    "id": "session-c6575d83382adbf5",
+    "date": "2026-10-20",
+    "time": "17:50",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "𝕟𝕠̆̈𝕒",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1304469",
+    "notes": "グロいの釣れました。 今日は開始早々アタリ2回、空振り。 やっと乗った！！じーーーーーースポ。 その後アタリなくなる😭 30分ほどしてやっと１つ釣れて、そのすぐ後にじーースポこれは小そう。 2バラし1キャッチで✖️でした！ けどキロか思うくらい元気に引いてくれたので楽しかったです 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6d16c13426c34add"
+    ]
+  },
+  {
     "id": "session-3c2c5e731d0b9ba6",
     "date": "2026-10-20",
     "time": "11:37",
@@ -133,6 +187,35 @@
     "event_ids": [
       "yamaria-event-5682e6e7c66ac433",
       "yamaria-event-448cb309b2f0105e"
+    ]
+  },
+  {
+    "id": "session-9e5fed4becdd5ed3",
+    "date": "2026-10-20",
+    "time": "05:30〜06:54",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 100g〜300g",
+    "max_size_text": "300g〜500g",
+    "angler": "アンタレス",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1304472",
+    "notes": "朝マズメ狙い、横風が気になるなかラインに違和感があり合わせてヒット！ ナイスサイズ😁 詳細ページ → / オチパク❗初シャクリで乗っていた。 詳細ページ → / 風が横風がおさまってきてラインのアタリが分かりやすくなりフケアタリでヒット❗一昔のキンアジエギ、まだまだ現役 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-2a3fc177e41527aa",
+      "yamaria-event-ffe45aaa86e259da",
+      "yamaria-event-155ae5487045a70b"
     ]
   },
   {
@@ -520,7 +603,7 @@
     ]
   },
   {
-    "id": "session-d2042435d665349b",
+    "id": "session-b2f97f6561e16099",
     "date": "2026-10-19",
     "time": "06:00〜07:00",
     "region": "小浜湾",
@@ -543,9 +626,9 @@
     "notes": "マヅメでやっと 詳細ページ → / キンアジ 詳細ページ → / 続かないけども… 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-575992c6c1be374d",
       "yamaria-event-6e376f6e412b884f",
-      "yamaria-event-d43a256bdce50c14",
-      "yamaria-event-575992c6c1be374d"
+      "yamaria-event-d43a256bdce50c14"
     ]
   },
   {
@@ -8611,6 +8694,33 @@
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
     "notes": "（水）中潮 アオリイカ マイカ 合計1匹 モンゴウイカ 合計1匹 潮： ゆるい。波高： 低い。おはようございます。昨夜最近のいつものポイントへ行きましたが、大きなうねりが有りました。あんまり弾まず、ビタ止まりしたので、移動して帰って来ました。アオリイカ１人、８・４・４・２・・＋２。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:50 日の入 17:42 月の出 19:34 月の入 09:34 天気 晴れ 気温 25℃ / 16℃ 気圧 1014.3",
     "verified": true
+  },
+  {
+    "id": "session-a7f02a5dd64f08c9",
+    "date": "2026-09-28",
+    "time": "11:18",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "みっちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1304350",
+    "notes": "人生初のアオリイカゲット🦑 #初心者#emeraldas#daiwa#エギ王 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-78d18a8e8694a169"
+    ]
   },
   {
     "id": "session-50d3c9a9d57189ee",
