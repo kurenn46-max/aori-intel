@@ -1,5 +1,86 @@
 [
   {
+    "id": "session-3c2c5e731d0b9ba6",
+    "date": "2026-10-20",
+    "time": "11:37",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "つりキチ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1304225",
+    "notes": "渋い中釣れました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ddd9d9ed1e1348a9"
+    ]
+  },
+  {
+    "id": "session-fd3aa8556742ba76",
+    "date": "2026-10-20",
+    "time": "09:47",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "史上最強の釣師",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1304299",
+    "notes": "＃決戦＃天下人 風あり、波あり、ニゴリはあまり無いかな。 釣り人無し。 霧雨みたいなのが少しかかる😢 最近良いサイズが釣れてるらしいので、３号を投げる。 ……反応無し😢 3投でエギチェンジ。 サーチの2.5号を投げる。 1投目、反応無し。 2投目、根を越えた辺りでフォール（イメージです） そしてチョンチョンとアクションを入れたら、来ました！ 手応えは小さい。元気良く引く。こんな時は片手でしょう。 慎重に巻いてくると、やはり片手でした😅 小さいです。しかし、到着後、5投目で釣れたので良かったです✌ この後、エギを変えたり移動してみたけど、釣れず、今日は1杯だけでした。なんとか坊主を回避しました👍 小さい追尾も見えましたが、釣れず、厳しくなってきました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-f34e2c291334e18f"
+    ]
+  },
+  {
+    "id": "session-1ec7aec3eddbba76",
+    "date": "2026-10-20",
+    "time": "07:33",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "Boze",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1304250",
+    "notes": "やっと釣れたアオリイカはコロッケサイズでした🫠 もっと勉強します 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-db9c439ae1a9e606"
+    ]
+  },
+  {
     "id": "session-635d053048e21c8f",
     "date": "2026-10-20",
     "time": "06:50",
@@ -190,6 +271,33 @@
       "yamaria-event-633a5a263e41e68d",
       "yamaria-event-78ffe854ba606e8f",
       "yamaria-event-f8b3caf5cbdfe5ca"
+    ]
+  },
+  {
+    "id": "session-92b8c96564f3f6f8",
+    "date": "2026-10-19",
+    "time": "21:08",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "だい",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1304226",
+    "notes": "雨風の強い中頑張って来ました😄 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a3094c8fd3e345b2"
     ]
   },
   {
@@ -412,6 +520,35 @@
     ]
   },
   {
+    "id": "session-d2042435d665349b",
+    "date": "2026-10-19",
+    "time": "06:00〜07:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "りょう",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1304180",
+    "notes": "マヅメでやっと 詳細ページ → / キンアジ 詳細ページ → / 続かないけども… 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6e376f6e412b884f",
+      "yamaria-event-d43a256bdce50c14",
+      "yamaria-event-575992c6c1be374d"
+    ]
+  },
+  {
     "id": "session-349166ba1ea990ff",
     "date": "2026-10-18",
     "time": "22:23",
@@ -436,6 +573,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-b9215a541c01ddbe"
+    ]
+  },
+  {
+    "id": "session-437c7d701f3cad1a",
+    "date": "2026-10-18",
+    "time": "20:35〜22:30",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 100g〜300g",
+    "max_size_text": "300g〜500g",
+    "angler": "ちゃんなお",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1304249",
+    "notes": "＃決戦 ＃天下人 カクテルオレンジに見向きもしないイカが反応していただきました。 詳細ページ → / ＃決戦 ＃天下人 ブレイクただ巻きでイタダキました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-35acf959ae05f6d9",
+      "yamaria-event-a2ff423ae57d7190"
     ]
   },
   {
@@ -1886,6 +2051,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-2f6f0ef9c0b4cbf7"
+    ]
+  },
+  {
+    "id": "session-1b3eed6450415193",
+    "date": "2026-10-17",
+    "time": "04:58〜06:37",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "とにぃ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1304171",
+    "notes": "いいサイズが来てくれた💜 今シーズン初の20cmオーバー🦑 詳細ページ → / しばし休憩( ´Д`)y━･~~ してからの1投目、遠投して、カウントして、しゃくって、フォールで ラインがスっ♡ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9f0baf29cb5553f8",
+      "yamaria-event-f4d3bcdcf0e1e267"
     ]
   },
   {
