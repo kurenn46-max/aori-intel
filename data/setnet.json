@@ -1,5 +1,19 @@
 [
   {
+    "id": "setnet-jf-2026-10-20",
+    "date": "2026-10-20",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置水揚げあり・魚種帰属は限定",
+    "notes": "おはようございます。今朝は定置の水揚げがありました。 シイラが中心でした。 現在、底曳1隻出漁中です。"
+  },
+  {
     "id": "setnet-wakasa-b444b70488edc096",
     "date": "2026-10-19",
     "region": "小浜湾・若狭町",
