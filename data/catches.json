@@ -1,5 +1,60 @@
 [
   {
+    "id": "session-1141daaf933b7bfb",
+    "date": "2026-10-21",
+    "time": "20:04",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "シブリン🌟",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1305259",
+    "notes": "18:30〜シゴオワ 全く当たりのないまま時間が過ぎ もうダメ20時で終わりって思って投げたら釣れました笑 坊主喰らうかと思いました😅 トレーはろーこーさんのやつ笑 #盗撮 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8ae9761fa3226bde"
+    ]
+  },
+  {
+    "id": "session-60e6ef014f3a3291",
+    "date": "2026-10-21",
+    "time": "18:05〜19:30",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ろーこー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1305320",
+    "notes": "昼以降予報通り土砂降り強風！ でも、夕マズメ雨も嘘の様に止みキャスト〜 カっ飛び〜〜〜！ 風にロッド煽られながら 巻きに集中〜〜〜 モゾッ❓️我慢して巻き続けること５秒！ ヌッ〜〜〜！ジー！ コレコレ😊 久々の釣果で雄叫び〜〜〜！笑 サイズ云々嬉しい一杯となりました✨ 詳細ページ → / １時間以上。無。 カラー変えても当たりすら💦 風も落ち着き半分以上巻いた付近で ボケ〜ッと巻いていたらヌッ〜！ 目が覚めました🫪 #ニャン子 #悪い猫😸 #きんちゃん 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-db1f13db53122a2a",
+      "yamaria-event-decab4771851c019"
+    ]
+  },
+  {
     "id": "session-0500b664f647345a",
     "date": "2026-10-21",
     "time": "17:49",
@@ -108,6 +163,34 @@
     ]
   },
   {
+    "id": "session-904c2a59938ae24a",
+    "date": "2026-10-21",
+    "time": "05:25〜05:40",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "みゆパパ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1305325",
+    "notes": "#決戦 #天下人 小さい 詳細ページ → / #決戦 #天下人 小さい 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a876d0d9a4d6d4b8",
+      "yamaria-event-f4a1607167ffdc77"
+    ]
+  },
+  {
     "id": "session-16693fed2da70261",
     "date": "2026-10-21",
     "time": "05:00〜05:40",
@@ -188,6 +271,35 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-bac62a2c20fa8624"
+    ]
+  },
+  {
+    "id": "session-9c7ecefc909d986d",
+    "date": "2026-10-20",
+    "time": "21:17〜23:29",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "イカ釣り戦車",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1305329",
+    "notes": "#決戦#天下人 軍艦グリーン 詳細ページ → / #決戦#天下人 チラツキアジ 詳細ページ → / #決戦#天下人 軍艦グリーン 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-dd540d0f1bc79178",
+      "yamaria-event-01aaf82c1fc09e20",
+      "yamaria-event-ffbdc0b67d53328c"
     ]
   },
   {
@@ -380,7 +492,7 @@
     ]
   },
   {
-    "id": "session-2e3b289523221018",
+    "id": "session-52fd379b41b4abed",
     "date": "2026-10-20",
     "time": "18:50〜20:10",
     "region": "越前",
@@ -404,8 +516,8 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-6b39be7858e93826",
-      "yamaria-event-f49b671eefc854dd",
-      "yamaria-event-d22809beefcaa585"
+      "yamaria-event-d22809beefcaa585",
+      "yamaria-event-f49b671eefc854dd"
     ]
   },
   {
@@ -1500,6 +1612,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-325d8877b393d8b9"
+    ]
+  },
+  {
+    "id": "session-583d8c613aea6974",
+    "date": "2026-10-18",
+    "time": "09:45",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "クウパパ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1305337",
+    "notes": "イカ遠征の一コマ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-716ca66d6fbb219e"
     ]
   },
   {
@@ -4108,7 +4247,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "かどや丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
-    "notes": "（木）中潮 アオリイカ 波高： 多少あり。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:02 日の入 17:21 月の出 10:29 月の入 19:54 天気 晴れ 気温 23℃ / 14℃ 気圧 1021.0hPa 風 北 2.9m/s 波 北 1.4m/s 水温 23.7℃ 潮 中潮 月齢 4.5 BI 10.2 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 7日前 釣り船詳細を見る お気",
+    "notes": "（木）中潮 アオリイカ 波高： 多少あり。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:02 日の入 17:21 月の出 10:29 月の入 19:54 天気 晴れ 気温 23℃ / 14℃ 気圧 1021.0hPa 風 北 2.9m/s 波 北 1.4m/s 水温 23.7℃ 潮 中潮 月齢 4.5 BI 10.2 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 8日前 釣り船詳細を見る お気",
     "verified": true
   },
   {
@@ -7771,6 +7910,33 @@
     ]
   },
   {
+    "id": "session-2f29713dd717ec7a",
+    "date": "2026-10-09",
+    "time": "18:07",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "けーさん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1305281",
+    "notes": "潮通しの良いところにまずめのタイミング 大きくダートさせることを意識して、しっかり沈めてるタイミングにつれました DUELのEQ3.5号の深場グリーンでコウイカ追加 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5d8a145677de668d"
+    ]
+  },
+  {
     "id": "session-ab4dca6e5619cc4a",
     "date": "2026-10-09",
     "time": "17:58",
@@ -9084,6 +9250,33 @@
       "yamaria-event-200286a5e40df3ba",
       "yamaria-event-634ed2a14b0a936e",
       "yamaria-event-a5d53dab8067f9ff"
+    ]
+  },
+  {
+    "id": "session-b524c9ce700cd701",
+    "date": "2026-10-04",
+    "time": "05:50",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "なかじ。",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1305355",
+    "notes": "トンカツサイズᔦ*° ꒳ °*ᔨ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9c08a35c64390753"
     ]
   },
   {
