@@ -1,5 +1,34 @@
 [
   {
+    "id": "session-6eea8716b317085b",
+    "date": "2026-10-21",
+    "time": "20:15〜21:48",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g / 800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "ちゃんなお",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1305424",
+    "notes": "＃決戦 ＃天下人 中層ただ巻きでイタダキました 詳細ページ → / ＃決戦 ＃天下人 少しサイズダウン 詳細ページ → / ＃決戦 ＃天下人 今季最大840gでした。やはりカクテル 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-c6ddb87d1e9d7976",
+      "yamaria-event-591b55bd7a72f593",
+      "yamaria-event-105b32b31bc438c7"
+    ]
+  },
+  {
     "id": "session-1141daaf933b7bfb",
     "date": "2026-10-21",
     "time": "20:04",
@@ -274,7 +303,7 @@
     ]
   },
   {
-    "id": "session-9c7ecefc909d986d",
+    "id": "session-e5c6f349f9367211",
     "date": "2026-10-20",
     "time": "21:17〜23:29",
     "region": "越前",
@@ -297,8 +326,8 @@
     "notes": "#決戦#天下人 軍艦グリーン 詳細ページ → / #決戦#天下人 チラツキアジ 詳細ページ → / #決戦#天下人 軍艦グリーン 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-dd540d0f1bc79178",
       "yamaria-event-01aaf82c1fc09e20",
+      "yamaria-event-dd540d0f1bc79178",
       "yamaria-event-ffbdc0b67d53328c"
     ]
   },
