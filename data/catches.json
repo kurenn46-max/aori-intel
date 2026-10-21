@@ -1,5 +1,86 @@
 [
   {
+    "id": "session-0500b664f647345a",
+    "date": "2026-10-21",
+    "time": "17:49",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ヒゲ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1305211",
+    "notes": "#決戦 #天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5ff53d555cece22f"
+    ]
+  },
+  {
+    "id": "session-6db9562d3997d2eb",
+    "date": "2026-10-21",
+    "time": "09:30",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "のんさん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1305147",
+    "notes": "まだまだ美味しいサイズ釣れてます。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1580ed9f03f756e8"
+    ]
+  },
+  {
+    "id": "session-f39b67f03912b334",
+    "date": "2026-10-21",
+    "time": "09:20",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "るぱん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1305113",
+    "notes": "♯決戦♯天下人 今日は強風で3回場所移動😅 最後のポイントでようやく一杯🦑 コツンコツンとイカパンチがあり、シャクるとさらにイカパンチ。これは是非ともGETしたい‼︎っと優しく小さくシャクって少し長めにフォールさせてると引っ張っていきました😁 今秋初めての20cmオーバー🙌満足の一杯でした😁 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1ae290924c429587"
+    ]
+  },
+  {
     "id": "session-ccbc02c0cda64f94",
     "date": "2026-10-21",
     "time": "07:47",
@@ -164,6 +245,33 @@
     ]
   },
   {
+    "id": "session-addaff0517adb61d",
+    "date": "2026-10-20",
+    "time": "20:05",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "こざえもん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1305104",
+    "notes": "#決戦 #天下人 昨日は3時間粘って1杯、全く釣れる気がせず退散です 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-039c96c19a1d648d"
+    ]
+  },
+  {
     "id": "session-0d9c932bef87a31c",
     "date": "2026-10-20",
     "time": "19:56",
@@ -218,6 +326,33 @@
     ]
   },
   {
+    "id": "session-ebd01c3d1b1201be",
+    "date": "2026-10-20",
+    "time": "19:05",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ヒゲ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1305210",
+    "notes": "#決戦 #天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ddcc6c6ef5a766da"
+    ]
+  },
+  {
     "id": "session-68e361a9f0f57021",
     "date": "2026-10-20",
     "time": "19:00",
@@ -242,6 +377,35 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-65eeb1624519b77c"
+    ]
+  },
+  {
+    "id": "session-2e3b289523221018",
+    "date": "2026-10-20",
+    "time": "18:50〜20:10",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": 3,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "antchan",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1305138",
+    "notes": "小雨の中釣行 詳細ページ → / 渋いなかでの粘って２杯目 詳細ページ → / 3杯目で終了 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6b39be7858e93826",
+      "yamaria-event-f49b671eefc854dd",
+      "yamaria-event-d22809beefcaa585"
     ]
   },
   {
@@ -1476,7 +1640,7 @@
     ]
   },
   {
-    "id": "session-324ab74e1060ff9d",
+    "id": "session-103c2a170646955f",
     "date": "2026-10-18",
     "time": "06:21〜07:50",
     "region": "小浜湾",
@@ -1499,8 +1663,8 @@
     "notes": "#決戦 #天下人 ボロボロなったので今秋2個目のカクテル！ 詳細ページ → / #決戦 #天下人 グリーンでナイスサイズ！ 詳細ページ → / #決戦 #天下人 単発ですわ！カクテルに 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-7946a845de359d86",
       "yamaria-event-32cd41b3f3dda05d",
+      "yamaria-event-7946a845de359d86",
       "yamaria-event-8f5fa1d6023bfc3b"
     ]
   },
