@@ -56,7 +56,7 @@
     ]
   },
   {
-    "id": "session-0d0a6b84402c737a",
+    "id": "session-4e373fcbbd5a8f62",
     "date": "2026-10-24",
     "time": "21:33〜22:45",
     "region": "宮津",
@@ -79,8 +79,8 @@
     "notes": "瞬間移動後 ドン！ ワープしてよかった〜 このイカはすんごいよく引きました🥰 このくらいのサイズすごい元気ですね💨🦑 これにて納竿！と思ったんですが… 一緒に瞬間移動したきんちゃんがポツポツ釣るから😅 粘って続行することに笑 詳細ページ → / 粘って粘って粘って… パタパタ喰わせにチェンジして チョンチョンとすると フッってあたり チョン フッ！ ジーーーー🦑💨 10センチのイカ来ました笑 いやいやデカイカきました🦑 その後23時30分まで粘って流石に納竿としました笑笑 910g キロまであと少し！ がんばろ〜 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-cc2afabedd614728",
-      "yamaria-event-76b2ab3fb788a3a7"
+      "yamaria-event-76b2ab3fb788a3a7",
+      "yamaria-event-cc2afabedd614728"
     ]
   },
   {
@@ -139,7 +139,7 @@
     ]
   },
   {
-    "id": "session-4b0251503cbe965f",
+    "id": "session-2f6936d72b0202d9",
     "date": "2026-10-24",
     "time": "20:00〜22:47",
     "region": "宮津",
@@ -162,36 +162,37 @@
     "notes": "釣れました🦑 詳細ページ → / また釣れました🦑 詳細ページ → / またまた釣れました🦑 詳細ページ → / 今日は、あちこち回って思い切って瞬間移動！笑 マヅメは、とっくに過ぎていましたが何とかポツポツ釣れて結局粘ることに……笑 そうこうしてると隣から10cmくらいの釣れたーと言うことで見に行くとデッカイカでした🦑それを見て目から触腕でした🦑 僕もと同じコース投げてシャクシャク巻き巻きトンッグーンジーーー！僕にも良さげなサイズきました^^ 皆様コラボありがとうございました^^🎶 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-444dd7f0cb87135f",
       "yamaria-event-6ee5813b069ef408",
       "yamaria-event-d0c479cf39033763",
-      "yamaria-event-444dd7f0cb87135f",
       "yamaria-event-f2ae188fd9b3080c"
     ]
   },
   {
-    "id": "session-974197735f2b35db",
+    "id": "session-3ce48dbd6b5b40ea",
     "date": "2026-10-24",
-    "time": "19:50〜20:10",
+    "time": "19:50〜20:25",
     "region": "小浜湾",
     "subregion": "小浜",
     "mode": "shore",
     "method": "エギング",
     "place_type": "防波堤",
-    "catch_count": 2,
-    "confirmed_events": 2,
+    "catch_count": 3,
+    "confirmed_events": 3,
     "claimed_count": null,
     "count_source": "posted_events",
     "duration_hours": null,
     "cpue": null,
-    "size_text": "300g〜500g",
-    "max_size_text": "300g〜500g",
+    "size_text": "300g〜500g / 500g〜800g",
+    "max_size_text": "500g〜800g",
     "angler": "2.5.8",
     "confidence": "写真付き実釣",
     "source": "エギCOM 小浜",
-    "source_url": "https://www.yamaria.com/catches/1307656",
-    "notes": "#決戦#天下人 波風弱い予報だったので出撃 ポイント到着後の一投目から来てくれました 詳細ページ → / #決戦#天下人 中層を軍艦様にサグっていただいたらグイ～と重くなり来てくれました 詳細ページ →",
+    "source_url": "https://www.yamaria.com/catches/1307721",
+    "notes": "#決戦#天下人 波風弱い予報だったので出撃 ポイント到着後の一投目から来てくれました 詳細ページ → / #決戦#天下人 中層を軍艦様にサグっていただいたらグイ～と重くなり来てくれました 詳細ページ → / #決戦#天下人 ボロボロのローズゴールドで表層付近をサグってきたらひったくられました 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-3a8fca3b7e072d68",
       "yamaria-event-6ff2eb5113361267",
       "yamaria-event-ad2a5a7e43afb1d4"
     ]
