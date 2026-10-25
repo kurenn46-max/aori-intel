@@ -1,6 +1,33 @@
 [
   {
-    "id": "session-fddede2e8ea86249",
+    "id": "session-e8fe62ad5bfa1900",
+    "date": "2026-10-25",
+    "time": "18:02",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "𝕟𝕠̆̈𝕒",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1308500",
+    "notes": "雨も耐えそう！今日も釣りたい！ なんかやる気に目覚めて家から3分も遠征！ちょっと嫌な風でしたが3.5号よく飛ぶー🪽 アタリあるが中々乗せれない💦マズメパワーに助けられ何とか釣れました☺️ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-eee29aa984930878"
+    ]
+  },
+  {
+    "id": "session-ea3b4c9bcb13e698",
     "date": "2026-10-25",
     "time": "14:46〜14:49",
     "region": "敦賀",
@@ -23,8 +50,8 @@
     "notes": "9時までに上がるのでサクッと 詳細ページ → / 追加の追加 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-d701cfbb27ba070a",
-      "yamaria-event-58205409220c6309"
+      "yamaria-event-58205409220c6309",
+      "yamaria-event-d701cfbb27ba070a"
     ]
   },
   {
@@ -52,6 +79,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-c30a314d7efd6027"
+    ]
+  },
+  {
+    "id": "session-669090d6ab024601",
+    "date": "2026-10-25",
+    "time": "14:00",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "kio",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1308337",
+    "notes": "#決戦 #天下人 なんとか1杯❗️ 前日の夜、朝まずめは爆風で釣りにならない。 11:30 風が落ち着いた頃に釣り再開。 港内には見えイカが沢山。サイズは小指サイズから600g程の良いサイズのアオリイカ。しかし、エギには反応しない。 13:20 潮目ができたのでキャスト。 エギ王K3.0号シャロー ネオンブライトブルー ディープストライクでスローに誘う。 すると、1キロ近いアオリイカが追ってきた❗️この時期にしてはかなり良いサイズだったがエギを見切られ、二度目の追尾は無かった。悔しい。 しばらくしてシャロー帯を探るとイカの追尾がありサイトでヒット❗️しかし、サイズが小さい。 その後、イカの姿も見えなくなったので16:00納竿。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9592722aefb95738"
     ]
   },
   {
@@ -137,6 +191,33 @@
     ]
   },
   {
+    "id": "session-d368de3a2379212c",
+    "date": "2026-10-25",
+    "time": "06:29",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "HIBIKI",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1308441",
+    "notes": "1回目のおさわりで反応出来ず、再度沈め、2回目のツンでキャッチ出来ました！！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b8d4f65991673a8d"
+    ]
+  },
+  {
     "id": "session-0757ddd20706f24c",
     "date": "2026-10-25",
     "time": "06:03",
@@ -164,7 +245,7 @@
     ]
   },
   {
-    "id": "session-7bb34c9516b61939",
+    "id": "session-e1cca407058866ae",
     "date": "2026-10-25",
     "time": "05:55〜06:28",
     "region": "宮津",
@@ -187,13 +268,40 @@
     "notes": "♯決戦 ♯天下人 久々の遠征でそこそこサイズ 詳細ページ → / ♯決戦 ♯天下人 さっきのより小さいです。 詳細ページ → / ♯決戦 ♯天下人 ラインがスルスルと引っ張られましたが さらにサイズダウン。。。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-a4d3298690059a44",
+      "yamaria-event-0066c98755d6a015",
       "yamaria-event-679344d80dbefa79",
-      "yamaria-event-0066c98755d6a015"
+      "yamaria-event-a4d3298690059a44"
     ]
   },
   {
-    "id": "session-05d9f7fda1b23de8",
+    "id": "session-2bbb799bcb45b341",
+    "date": "2026-10-25",
+    "time": "05:40",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "シマウマ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1308399",
+    "notes": "胴長２３センチ出ました。 久しぶりに型、数共に満足出来ました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-953469323f078269"
+    ]
+  },
+  {
+    "id": "session-b92d373c14801b92",
     "date": "2026-10-25",
     "time": "05:33〜06:33",
     "region": "小浜湾",
@@ -216,8 +324,8 @@
     "notes": "#決戦 #天下人 この時期にしてはかわいいサイズ 詳細ページ → / #決戦 #天下人 寒いなか頑張って釣れてくれたので、どんなサイズでも感謝です。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-ca67a1538391afb4",
-      "yamaria-event-0e27ec26cdce6295"
+      "yamaria-event-0e27ec26cdce6295",
+      "yamaria-event-ca67a1538391afb4"
     ]
   },
   {
@@ -3787,6 +3895,35 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-3c89056f00071a32"
+    ]
+  },
+  {
+    "id": "session-f9801fcfd80dc67e",
+    "date": "2026-10-19",
+    "time": "20:30〜23:30",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g / 500g〜800g / 100g以下",
+    "max_size_text": "500g〜800g",
+    "angler": "やまぴー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1308335",
+    "notes": "#決戦#天下人 さい先よく一杯目 激雨でした😓 詳細ページ → / #決戦#天下人 カクテルオレンジ ええ仕事してくれました👍 詳細ページ → / #決戦#天下人 最後の一杯です 小さくなったのでこれにて納竿としました お疲れ様でした🙂‍↕️ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-55437df4210d0195",
+      "yamaria-event-63bf0100af8f2c0b",
+      "yamaria-event-58a8d39054a8d09c"
     ]
   },
   {
