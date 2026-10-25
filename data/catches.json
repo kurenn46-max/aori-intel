@@ -27,6 +27,33 @@
     ]
   },
   {
+    "id": "session-27ff2e330f8ccd3b",
+    "date": "2026-10-25",
+    "time": "21:37",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "たねなし",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1308825",
+    "notes": "#決戦 #天下人 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1d7fc03b1bf4157b"
+    ]
+  },
+  {
     "id": "session-672147865e730539",
     "date": "2026-10-25",
     "time": "21:36",
@@ -185,7 +212,7 @@
     "confidence": "写真付き実釣",
     "source": "エギCOM 越前",
     "source_url": "https://www.yamaria.com/catches/1308337",
-    "notes": "#決戦 #天下人 なんとか1杯❗️ 前日の夜、朝まずめは爆風で釣りにならない。 11:30 風が落ち着いた頃に釣り再開。 港内には見えイカが沢山。サイズは小指サイズから600g程の良いサイズのアオリイカ。しかし、エギには反応しない。 13:20 潮目ができたのでキャスト。 エギ王K3.0号シャロー ネオンブライトブルー ディープストライクでスローに誘う。 すると、1キロ近いアオリイカが追ってきた❗️この時期にしてはかなり良いサイズだったがエギを見切られ、二度目の追尾は無かった。悔しい。 しばらくしてシャロー帯を探るとイカの追尾がありサイトでヒット❗️しかし、サイズが小さい。 その後、イカの姿も見えなくなったので16:00納竿。 詳細ページ →",
+    "notes": "#決戦 #天下人 なんとか1杯❗️ 前日の夜、朝まずめは爆風で釣りにならない。 11:30 風が落ち着いた頃に釣り再開。 港内には見えイカが沢山。サイズは小指サイズから600g程の良いサイズのアオリイカも❗️しかし、エギには反応しない。 13:20 潮目ができたのでキャスト。 エギ王K3.0号シャロー ネオンブライトブルー ディープストライクでスローに誘う。 すると、1キロ近いアオリイカが追ってきた❗️この時期にしてはかなり良いサイズだったがエギを見切られ、二度目の追尾は無かった。悔しい。 しばらくしてシャロー帯を探るとイカの追尾がありサイトでヒット❗️しかし、サイズが小さい。 その後、イカの姿も見えなくなったので16:00納竿。 詳細ページ →",
     "verified": true,
     "event_ids": [
       "yamaria-event-9592722aefb95738"
@@ -740,6 +767,33 @@
     "event_ids": [
       "yamaria-event-8eebd47369be2f9c",
       "yamaria-event-3d26c46e5024c95c"
+    ]
+  },
+  {
+    "id": "session-c3440223ee663a06",
+    "date": "2026-10-24",
+    "time": "20:35",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "2.5.8",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1308842",
+    "notes": "#決戦#天下人 続けざまにボロボロのローズゴールドで表層でひったくられて合わせを入れましたがのらず、そのままフォールさせたら抱いてきました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-0773a429fe56f5cf"
     ]
   },
   {
