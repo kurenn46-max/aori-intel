@@ -81,6 +81,33 @@
     ]
   },
   {
+    "id": "session-60002e3575014b79",
+    "date": "2026-10-25",
+    "time": "21:30",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "五臓六腑",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1309085",
+    "notes": "初のマリアナで墨付け終わり。 キロアップの更新なりそうだったけどお預けです。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b4d8f02149956ef6"
+    ]
+  },
+  {
     "id": "session-c5b76934f3205d68",
     "date": "2026-10-25",
     "time": "20:16〜22:02",
@@ -271,6 +298,33 @@
     "event_ids": [
       "yamaria-event-98e33a55ba36d48a",
       "yamaria-event-ed0c8b55216a5b11"
+    ]
+  },
+  {
+    "id": "session-287b872f672206d5",
+    "date": "2026-10-25",
+    "time": "06:55",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "はじめ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1309033",
+    "notes": "凪 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-bf0d198379a1d48e"
     ]
   },
   {
@@ -1129,6 +1183,35 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-8af42858cd773ab2"
+    ]
+  },
+  {
+    "id": "session-b4cbf618b507aa67",
+    "date": "2026-10-24",
+    "time": "16:29〜18:35",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "なかけん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1309088",
+    "notes": "#決戦 #天下人 バーニングオレンジ^ ^初日出ました！ 底付近、絶妙なフォールで… 詳細ページ → / #決戦 #天下人 軍艦にかえて連発、 詳細ページ → / #決戦 #天下人 最後はカクテルオレンジで… 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-997d46c64806e7bb",
+      "yamaria-event-7a923cde6dc9b8c8",
+      "yamaria-event-5d83e02c7a5ab2d6"
     ]
   },
   {
@@ -2218,11 +2301,36 @@
     "cpue": null,
     "size_text": null,
     "max_size_text": null,
-    "angler": "K様よりエギングでのアオリイカ釣果情報をいただきました♪いつも情報のご提供ありがとうございます！ 朝マズメ時にエギ王K3.5号のカクテルオレンジにて、ボトムレンジを探っているとヒットしたそうです。この時期、ボトムまで丁寧に探ると良さそうですね♪ お疲れのところお立ち寄りくださいまして、ありがとうございました。道中、お気を付けてお帰り下さいませ。 ‘26 10月20日 福井県 新敦賀店 --> 登録日：2026年10月20日 画像をクリックすると、拡大画像が表示されます",
+    "angler": "K様よりエギングでのアオリイカ釣果情報をいただきました♪いつも情報のご提供ありがとうございます！ 朝マズメ時にエギ王K3.5号のカクテルオレンジにて、ボトムレンジを探っているとヒットしたそうです。この時期、ボトムまで丁寧に探ると良さそうですね♪ お疲れのところお立ち寄りくださいまして、ありがとうございました。道中、お気を付けてお帰り下さいませ。 ‘26 10月23日 福井県 新敦賀店 --> 登録日：2026年10月26日 画像をクリックすると、拡大画像が表示されます",
     "confidence": "現地釣具店・実釣/持込情報",
     "source": "上州屋 新敦賀店",
     "source_url": "https://johshuya.co.jp/shop/choka.php?s=151",
-    "notes": "曇り 釣り場 釣り人 K様よりエギングでのアオリイカ釣果情報をいただきました♪いつも情報のご提供ありがとうございます！ 朝マズメ時にエギ王K3.5号のカクテルオレンジにて、ボトムレンジを探っているとヒットしたそうです。この時期、ボトムまで丁寧に探ると良さそうですね♪ お疲れのところお立ち寄りくださいまして、ありがとうございました。道中、お気を付けてお帰り下さいませ。 ‘26 10月20日 福井県 新敦賀店 --> 登録日：2026年10月20日 画像をクリックすると、拡大画像が表示されます",
+    "notes": "曇り 釣り場 釣り人 K様よりエギングでのアオリイカ釣果情報をいただきました♪いつも情報のご提供ありがとうございます！ 朝マズメ時にエギ王K3.5号のカクテルオレンジにて、ボトムレンジを探っているとヒットしたそうです。この時期、ボトムまで丁寧に探ると良さそうですね♪ お疲れのところお立ち寄りくださいまして、ありがとうございました。道中、お気を付けてお帰り下さいませ。 ‘26 10月23日 福井県 新敦賀店 --> 登録日：2026年10月26日 画像をクリックすると、拡大画像が表示されます",
+    "verified": true
+  },
+  {
+    "id": "johshuya-77116a52831c3153",
+    "date": "2026-10-23",
+    "time": null,
+    "region": "敦賀",
+    "subregion": "敦賀の堤防",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "敦賀の堤防",
+    "catch_count": null,
+    "confirmed_events": null,
+    "claimed_count": null,
+    "count_source": "report_only",
+    "count_basis": "reported",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": null,
+    "max_size_text": null,
+    "angler": "S山氏 S山氏、夜の敦賀の堤防からのエギングでアオリイカＧＥＴ！ 950ｇの良型の雄！ ヒットエギはエギ王Ｋ3.5号にて。 お見事です。 数は減ったものの良型が狙えますね！ 釣果情報、有難うございます。 ‘26 10月20日 福井県 新敦賀店 --> 登録日：2026年10月20日 画像をクリックすると、拡大画像が表示されます",
+    "confidence": "現地釣具店・実釣/持込情報",
+    "source": "上州屋 新敦賀店",
+    "source_url": "https://johshuya.co.jp/shop/choka.php?s=151",
+    "notes": "曇り 釣り場 敦賀の堤防 釣り人 S山氏 S山氏、夜の敦賀の堤防からのエギングでアオリイカＧＥＴ！ 950ｇの良型の雄！ ヒットエギはエギ王Ｋ3.5号にて。 お見事です。 数は減ったものの良型が狙えますね！ 釣果情報、有難うございます。 ‘26 10月20日 福井県 新敦賀店 --> 登録日：2026年10月20日 画像をクリックすると、拡大画像が表示されます",
     "verified": true
   },
   {
@@ -2413,6 +2521,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-b3faf2bf0ab732c0"
+    ]
+  },
+  {
+    "id": "session-24146c6ef94654b3",
+    "date": "2026-10-22",
+    "time": "18:23〜19:52",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ハーレー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1309094",
+    "notes": "結構良い大きさだったのにビニール袋に入れてたら獣に持って行かれた 詳細ページ → / その後 ちっちゃいのがきてくれました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8f1d0361882ad3f9",
+      "yamaria-event-8892aa23ef1c26de"
     ]
   },
   {
@@ -3019,6 +3155,33 @@
       "yamaria-event-011ba8e1703a18fd",
       "yamaria-event-0f836c1ceb0f767d",
       "yamaria-event-381d3dd40def9922"
+    ]
+  },
+  {
+    "id": "session-8ceb8297b52995c7",
+    "date": "2026-10-21",
+    "time": "06:55",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "はじめ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1309034",
+    "notes": "凪 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d835df11e1a84e01"
     ]
   },
   {
