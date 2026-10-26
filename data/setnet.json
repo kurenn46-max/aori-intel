@@ -1,5 +1,19 @@
 [
   {
+    "id": "setnet-wakasa-e29ffb4707f240c3",
+    "date": "2026-10-27",
+    "region": "小浜湾・若狭町",
+    "fishery": "定置網",
+    "gear": "定置網",
+    "gear_attribution": "mixed_or_general",
+    "aori_present": false,
+    "species": [],
+    "source": "若狭小浜 おさかな探訪記",
+    "source_url": "https://seiza-design.com/blog/archives/27612",
+    "confidence": "定置と他漁法が混在し魚種帰属不能",
+    "notes": "混合集荷のため定置網指標には算入しない。"
+  },
+  {
     "id": "setnet-wakasa-02bcc624bbf65323",
     "date": "2026-10-26",
     "region": "小浜湾・若狭町",

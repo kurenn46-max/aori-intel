@@ -1,5 +1,33 @@
 [
   {
+    "id": "session-b11add1b1c32076f",
+    "date": "2026-10-27",
+    "time": "04:56〜05:09",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下 / 100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "イカグール",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1309529",
+    "notes": "♯決戦 ♯天下人 軍艦 詳細ページ → / ♯決戦 ♯天下人 軍艦 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5589d94f6ed55435",
+      "yamaria-event-e26b0acdbf9132a9"
+    ]
+  },
+  {
     "id": "session-95f53803a51c731f",
     "date": "2026-10-27",
     "time": "00:57",
@@ -54,7 +82,7 @@
     ]
   },
   {
-    "id": "session-f7aef1dd85bc4f45",
+    "id": "session-a04d87584b0ef5a1",
     "date": "2026-10-26",
     "time": "21:20〜22:30",
     "region": "小浜湾",
@@ -77,8 +105,8 @@
     "notes": "#決戦#天下人 同僚から「イカをもっと釣ってこい」との指令を受け、波が高い予報でしたが出撃。 案の定ウネリがありましたが、やれそうなポイントで釣り開始。 一投目は表層からと一人言を言いながら誘ってさびいてきたらグイ～と引っ張っていきました 詳細ページ → / #決戦#天下人 とりあえず一杯土産が出来て安心しながらの2投目は中層で誘いからの長めのフォール。 底まで沈んだかな位のところからシャクリ合わせでしたが乗ってきました 詳細ページ → / #決戦#天下人 2連荘後はしばし沈黙 色々エギチェンジしながらサグっても反応なく、ローズゴールドに戻したらまたきてくれました 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-d464659306290eec",
       "yamaria-event-b44447306f6700b0",
+      "yamaria-event-d464659306290eec",
       "yamaria-event-f1037fe7e0187871"
     ]
   },

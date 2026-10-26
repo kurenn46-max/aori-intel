@@ -1,25 +1,25 @@
 {
-  "checked_at": "2026-10-26T20:01:44.749Z",
+  "checked_at": "2026-10-26T23:56:48.866Z",
   "sources": [
     {
       "source": "エギCOM 小浜",
-      "checked_at": "2026-10-26T20:01:31.416Z",
+      "checked_at": "2026-10-26T23:56:35.010Z",
       "status": "ok",
-      "new_count": 3,
+      "new_count": 0,
       "note": null,
       "parsed_count": 5
     },
     {
       "source": "エギCOM 敦賀",
-      "checked_at": "2026-10-26T20:01:31.716Z",
+      "checked_at": "2026-10-26T23:56:35.457Z",
       "status": "ok",
-      "new_count": 0,
+      "new_count": 2,
       "note": null,
       "parsed_count": 6
     },
     {
       "source": "エギCOM 丹後",
-      "checked_at": "2026-10-26T20:01:31.843Z",
+      "checked_at": "2026-10-26T23:56:35.677Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -27,15 +27,15 @@
     },
     {
       "source": "エギCOM 宮津",
-      "checked_at": "2026-10-26T20:01:31.960Z",
+      "checked_at": "2026-10-26T23:56:35.903Z",
       "status": "ok",
-      "new_count": 1,
+      "new_count": 0,
       "note": null,
       "parsed_count": 5
     },
     {
       "source": "エギCOM 舞鶴",
-      "checked_at": "2026-10-26T20:01:32.056Z",
+      "checked_at": "2026-10-26T23:56:36.160Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -43,7 +43,7 @@
     },
     {
       "source": "エギCOM 越前",
-      "checked_at": "2026-10-26T20:01:32.164Z",
+      "checked_at": "2026-10-26T23:56:36.384Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -51,7 +51,7 @@
     },
     {
       "source": "上州屋 新敦賀店",
-      "checked_at": "2026-10-26T20:01:32.249Z",
+      "checked_at": "2026-10-26T23:56:36.647Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -59,15 +59,15 @@
     },
     {
       "source": "かどや丸 釣果",
-      "checked_at": "2026-10-26T20:01:33.513Z",
+      "checked_at": "2026-10-26T23:56:37.813Z",
       "status": "ok",
-      "new_count": 2,
+      "new_count": 0,
       "note": null,
       "parsed_count": 5
     },
     {
       "source": "川代丸 釣果",
-      "checked_at": "2026-10-26T20:01:34.787Z",
+      "checked_at": "2026-10-26T23:56:39.267Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -75,15 +75,15 @@
     },
     {
       "source": "SUPER VIKING 釣果",
-      "checked_at": "2026-10-26T20:01:35.721Z",
+      "checked_at": "2026-10-26T23:56:40.225Z",
       "status": "ok",
-      "new_count": 1,
+      "new_count": 0,
       "note": null,
       "parsed_count": 5
     },
     {
       "source": "つりれぽ 宮本丸（舞鶴）",
-      "checked_at": "2026-10-26T20:01:36.838Z",
+      "checked_at": "2026-10-26T23:56:41.018Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -91,7 +91,7 @@
     },
     {
       "source": "つりれぽ 海生丸（若狭大島）",
-      "checked_at": "2026-10-26T20:01:37.035Z",
+      "checked_at": "2026-10-26T23:56:41.175Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -99,7 +99,7 @@
     },
     {
       "source": "魚速 福井県アオリイカ",
-      "checked_at": "2026-10-26T20:01:37.093Z",
+      "checked_at": "2026-10-26T23:56:41.241Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -107,7 +107,7 @@
     },
     {
       "source": "魚速 敦賀アオリイカ",
-      "checked_at": "2026-10-26T20:01:37.267Z",
+      "checked_at": "2026-10-26T23:56:41.314Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず",
@@ -115,7 +115,7 @@
     },
     {
       "source": "魚速 音海アオリイカ",
-      "checked_at": "2026-10-26T20:01:38.517Z",
+      "checked_at": "2026-10-26T23:56:42.651Z",
       "status": "blocked",
       "new_count": 0,
       "note": "Error: 403 Forbidden",
@@ -123,7 +123,7 @@
     },
     {
       "source": "魚速 若狭湾アオリイカ",
-      "checked_at": "2026-10-26T20:01:38.579Z",
+      "checked_at": "2026-10-26T23:56:42.696Z",
       "status": "no_new",
       "new_count": 0,
       "note": "魚速の公開一覧から直近アオリ情報を抽出できず",
@@ -131,7 +131,7 @@
     },
     {
       "source": "小浜市漁業協同組合 水揚げ情報",
-      "checked_at": "2026-10-26T20:01:39.954Z",
+      "checked_at": "2026-10-26T23:56:44.041Z",
       "status": "ok",
       "new_count": 0,
       "note": null,
@@ -139,9 +139,9 @@
     },
     {
       "source": "若狭小浜 おさかな探訪記",
-      "checked_at": "2026-10-26T20:01:41.683Z",
+      "checked_at": "2026-10-26T23:56:45.820Z",
       "status": "ok",
-      "new_count": 0,
+      "new_count": 1,
       "note": null,
       "parsed_count": 6
     }
