@@ -1,6 +1,33 @@
 [
   {
-    "id": "session-f223f6e3e2b9765b",
+    "id": "session-bea884b7156982ea",
+    "date": "2026-10-28",
+    "time": "04:15",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "hamu",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1310190",
+    "notes": "#決戦 #天下人 ☂️後の🍃予報は6m…まぁ風裏で少し出来たらとZX-R740を持ち込んで、途中☂️…これは 暗がりから現着🚗 🌕️明かり有、雨なし、風思ったほど2〜3m、波少し、濁りほんの少し、、これは🦑釣れそう… 軍艦グリーンから🚤 3投目、、少し違和感感じながら、、 シャクリ…当たり💧全く引かない、、藻？ 🦑でした、、手前でジェット噴射💨💨 秋サイズ✨️ とりあえず、坊主逃れ😅 それからは、、爆風のちマシの繰り返し、、なかなか厳しいです💦 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8347de1900d58df6"
+    ]
+  },
+  {
+    "id": "session-bf763f0fa6d44abb",
     "date": "2026-10-27",
     "time": "22:03",
     "region": "越前",
@@ -23,8 +50,8 @@
     "notes": "20日ぶりの越前、ちょっと淋しい釣果ですが満喫できました。 詳細ページ → / 沖にフルキャストした3.5号にこのサイズですか😅 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-ad23e8a4273cdc74",
-      "yamaria-event-6e980e4da62474b7"
+      "yamaria-event-6e980e4da62474b7",
+      "yamaria-event-ad23e8a4273cdc74"
     ]
   },
   {
@@ -55,6 +82,33 @@
     ]
   },
   {
+    "id": "session-4fa0b09f8702cc29",
+    "date": "2026-10-27",
+    "time": "20:50",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "いか釣りてぇニキ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1310182",
+    "notes": "今年9月のデビュー戦以降、お子ちゃまサイズ中心に8杯ゲットしてきましたが、ついに OKきたよ！ 上から657g,344g,258gの良型含む3杯追加で今季計11杯(+コウちゃん2杯) 台風30号通過後の、強い冬型気圧配置で、強風＋うねりも出始め、20〜22時までの２時間程度で撤退！ 晩秋エギング楽しくなってきた！！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-31a32d6ab4594ffa"
+    ]
+  },
+  {
     "id": "session-2d1d3928e7468250",
     "date": "2026-10-27",
     "time": "19:45〜20:51",
@@ -80,6 +134,33 @@
     "event_ids": [
       "yamaria-event-094167c993be37eb",
       "yamaria-event-4298cf5b391e3107"
+    ]
+  },
+  {
+    "id": "session-b2d3ffe99d605219",
+    "date": "2026-10-27",
+    "time": "19:06",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "あなちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1310174",
+    "notes": "#決戦 #天下人 雨上がり後の一発 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-685a12b32dd21d7b"
     ]
   },
   {
@@ -221,6 +302,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-7f7f73537cfc494a"
+    ]
+  },
+  {
+    "id": "session-971e05c2bc456dd5",
+    "date": "2026-10-26",
+    "time": "22:35〜23:45",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "2.5.8",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1310185",
+    "notes": "#決戦#天下人 底で長めの放置後のシャクリで乗ってきました。 沖の方で掛かったので長く楽しい引きが楽しめました 570g 詳細ページ → / #決戦#天下人 連荘では釣れずカラーやタナ、方向を変えながらあの手この手をためして、何とか底で来てくれました。 この日釣れたのはローズゴールドだけ、 ローズゴールド様様でした。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ae1ef6f785848ed2",
+      "yamaria-event-a821b135c32f8816"
     ]
   },
   {
@@ -2776,7 +2885,7 @@
     ]
   },
   {
-    "id": "session-6e0832e3fa048429",
+    "id": "session-633ff0abd40f2fff",
     "date": "2026-10-23",
     "time": "20:50〜21:40",
     "region": "宮津",
@@ -2799,9 +2908,9 @@
     "notes": "#決戦#天下人 詳細ページ → / #決戦#天下人 詳細ページ → / #決戦#天下人 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-fe0915f54e593904",
+      "yamaria-event-99ea2a03fa1ed508",
       "yamaria-event-a0299f6286b746ff",
-      "yamaria-event-99ea2a03fa1ed508"
+      "yamaria-event-fe0915f54e593904"
     ]
   },
   {
