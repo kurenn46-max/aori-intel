@@ -1,5 +1,34 @@
 [
   {
+    "id": "session-7c44d92278677877",
+    "date": "2026-10-27",
+    "time": "10:01〜10:08",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょうじ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1309613",
+    "notes": "湾奥からスタート 詳細ページ → / 二つ目げっと 詳細ページ → / 連発ゲット 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8a73f815a2bae90d",
+      "yamaria-event-e2244a7b1fbac044",
+      "yamaria-event-800c832f29637246"
+    ]
+  },
+  {
     "id": "session-b11add1b1c32076f",
     "date": "2026-10-27",
     "time": "04:56〜05:09",
@@ -1596,6 +1625,33 @@
     ]
   },
   {
+    "id": "session-1c1969c33aa58383",
+    "date": "2026-10-24",
+    "time": "19:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "Rize",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1309686",
+    "notes": "#決戦 #天下人 いい感じにサイズが大きくなってきました。 YAMASHITAのエギ最高！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-e8c648b022477ceb"
+    ]
+  },
+  {
     "id": "session-cc736f4ba14609dc",
     "date": "2026-10-24",
     "time": "18:00〜19:30",
@@ -2520,6 +2576,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-f6a4bf4d8923a920"
+    ]
+  },
+  {
+    "id": "session-c9a8b290a78828f7",
+    "date": "2026-10-23",
+    "time": "20:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "Rize",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1309685",
+    "notes": "#決戦 #天下人 軍艦グリーンが好調すぎ！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-8410ac9d0f1a3d33"
     ]
   },
   {
@@ -5046,6 +5129,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-13309c25ab8731e2"
+    ]
+  },
+  {
+    "id": "session-fd5f25003d7508ae",
+    "date": "2026-10-19",
+    "time": "19:00",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "Rize",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1309682",
+    "notes": "#決戦 #天下人 いつもの漁港にて！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5ac92bdc95aaa3ce"
     ]
   },
   {
@@ -11122,6 +11232,33 @@
     ]
   },
   {
+    "id": "session-461312970f708464",
+    "date": "2026-10-10",
+    "time": "21:21",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "どすどす",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1309635",
+    "notes": "常夜灯がありよく釣れました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9304a7007503a8b4"
+    ]
+  },
+  {
     "id": "session-cf20be52f0cd205e",
     "date": "2026-10-10",
     "time": "21:15",
@@ -14009,87 +14146,6 @@
     "source": "川代丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00122/catch/",
     "notes": "（日）大潮 アオリ 15～25cm 竿頭5匹 ナイトティップラン便(夜便)。 途中から完全に止まってしまいました。 水面をカジキが泳いでました。 前半に釣れたアオリの型はめっちゃよかったです！！ 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「川代丸」の 予約プランを見る 「川代丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:48 日の入 17:46 月の出 17:49 月の入 06:05 天気 曇り 気温 27℃ / 18℃ 気圧 1010.4hPa 風 西南西 0.6m/s 波 北 0.2m/s 水温 25.4℃ 潮 大潮 月齢 16.0 BI 9.6",
-    "verified": true
-  },
-  {
-    "id": "session-9a14cb9ad7b2344a",
-    "date": "2026-09-26",
-    "time": "01:00",
-    "region": "敦賀",
-    "subregion": "敦賀",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "防波堤",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g以下",
-    "max_size_text": "100g以下",
-    "angler": "Nosuke",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 敦賀",
-    "source_url": "https://www.yamaria.com/catches/1289881",
-    "notes": "なかなかのサイズ 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-a48dfe5271a9a441"
-    ]
-  },
-  {
-    "id": "tsurirepo-6d7828100b25b10f",
-    "date": "2026-09-26",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "若狭大島沖",
-    "mode": "boat",
-    "method": "船釣り・詳細不明",
-    "place_type": "船/沖",
-    "catch_count": 12,
-    "count_basis": "per_angler_max",
-    "count_source": "secondary_boat_listing",
-    "catch_min": null,
-    "catch_max": 12,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "船釣果の二次集約・元船報告推奨",
-    "verified": false,
-    "source": "つりれぽ 海生丸（若狭大島）",
-    "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-26",
-    "notes": "集約ページ記載の最多12杯。船中総数・平均ではありません。"
-  },
-  {
-    "id": "chowari-0e6466583dde1e7e",
-    "date": "2026-09-26",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "小浜新港沖",
-    "mode": "boat",
-    "method": "船アオリ",
-    "place_type": "沖/船",
-    "catch_count": null,
-    "catch_min": null,
-    "catch_max": null,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "count_source": "report_only",
-    "count_basis": "unknown",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "遊漁船公式/予約サイト掲載釣果",
-    "source": "SUPER VIKING 釣果",
-    "source_url": "https://www.chowari.jp/ship/00107/catch/",
-    "notes": "（土）大潮 アオリイカ アオリイカぼちぼちです。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:47 日の入 17:49 月の出 17:23 月の入 05:02 天気 雨のち曇り 気温 24℃ / 18℃ 気圧 1013.9hPa 風 北東 2.7m/s 波 北 0.9m/s 水温 25.4℃ 潮 大潮 月齢 15.0 BI 9.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す SUPER VIK",
     "verified": true
   }
 ]
