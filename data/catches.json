@@ -1,5 +1,32 @@
 [
   {
+    "id": "session-351bed201f7a279f",
+    "date": "2026-10-28",
+    "time": "05:38",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "ガビンガー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1310311",
+    "notes": "暴風・雨・寒波・大波 私一人しかいませんでした 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ae3a91d68ecd29f2"
+    ]
+  },
+  {
     "id": "session-bea884b7156982ea",
     "date": "2026-10-28",
     "time": "04:15",
@@ -24,6 +51,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-8347de1900d58df6"
+    ]
+  },
+  {
+    "id": "session-35b9619314e9cff8",
+    "date": "2026-10-28",
+    "time": "00:02〜00:08",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "あなちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1310397",
+    "notes": "#決戦 #天下人 底をねちねちでゲット 詳細ページ → / #決戦 #天下人 ラスト一投って言葉に出して丁寧に底意識してたらクンッとティップ持って行きました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ccdb42cfac3e19c7",
+      "yamaria-event-22c7f7e2f723565d"
     ]
   },
   {
@@ -109,6 +164,33 @@
     ]
   },
   {
+    "id": "session-dc454feb60fefae5",
+    "date": "2026-10-27",
+    "time": "20:14",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "unknown",
+    "method": "エギング",
+    "place_type": "その他",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "いか釣りてぇニキ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1310333",
+    "notes": "334g 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-871864072286a485"
+    ]
+  },
+  {
     "id": "session-2d1d3928e7468250",
     "date": "2026-10-27",
     "time": "19:45〜20:51",
@@ -137,30 +219,32 @@
     ]
   },
   {
-    "id": "session-b2d3ffe99d605219",
+    "id": "session-b8ec4c16e0a80a90",
     "date": "2026-10-27",
-    "time": "19:06",
+    "time": "19:06〜20:12",
     "region": "宮津",
     "subregion": "宮津",
     "mode": "shore",
     "method": "エギング",
     "place_type": "防波堤",
-    "catch_count": 1,
-    "confirmed_events": 1,
+    "catch_count": 3,
+    "confirmed_events": 3,
     "claimed_count": null,
     "count_source": "posted_events",
     "duration_hours": null,
     "cpue": null,
-    "size_text": "300g〜500g",
+    "size_text": "300g〜500g / 100g〜300g",
     "max_size_text": "300g〜500g",
     "angler": "あなちゃん",
     "confidence": "写真付き実釣",
     "source": "エギCOM 宮津",
-    "source_url": "https://www.yamaria.com/catches/1310174",
-    "notes": "#決戦 #天下人 雨上がり後の一発 詳細ページ →",
+    "source_url": "https://www.yamaria.com/catches/1310394",
+    "notes": "#決戦 #天下人 雨上がり後の一発 詳細ページ → / #初投稿#決戦 #天下人 一時間に一回は当たり有ります 詳細ページ → / #決戦 #天下人 月明かりがでたら連発します‼️ 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-685a12b32dd21d7b"
+      "yamaria-event-23ca1c67457a09dd",
+      "yamaria-event-685a12b32dd21d7b",
+      "yamaria-event-942572aa20e3b294"
     ]
   },
   {
@@ -303,6 +387,33 @@
     "event_ids": [
       "yamaria-event-7f7f73537cfc494a"
     ]
+  },
+  {
+    "id": "chowari-c80f061c731f72e4",
+    "date": "2026-10-27",
+    "time": null,
+    "region": "小浜湾",
+    "subregion": "甲ヶ崎・小浜沖",
+    "mode": "boat",
+    "method": "ティップラン",
+    "place_type": "沖/船",
+    "catch_count": null,
+    "catch_min": null,
+    "catch_max": null,
+    "confirmed_events": null,
+    "claimed_count": null,
+    "count_source": "report_only",
+    "count_basis": "unknown",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": null,
+    "max_size_text": null,
+    "angler": null,
+    "confidence": "遊漁船公式/予約サイト掲載釣果",
+    "source": "かどや丸 釣果",
+    "source_url": "https://www.chowari.jp/ship/00105/catch/",
+    "notes": "（火）大潮 アオリイカ マイカ 昨夜アオリイカ釣りに出船しました。ウネリと雨でユサユサと。後半良い感じの海になって来ました。アオリイカは、良さそうな感じと思いきや、ビタ止まりで、移動して帰って来ました。また凪にお待ちしています。アオリイカ１人４.４.３.２.頭ゲソ１.マイカ、１。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:13 日の入 17:07 月の出 17:29 月の入 07:15 天気 曇り一時雨 気温 23℃ / 15℃ 気圧 1011",
+    "verified": true
   },
   {
     "id": "session-5e4909abc2851ef7",
@@ -1984,6 +2095,33 @@
     ]
   },
   {
+    "id": "session-76447c9d18063db1",
+    "date": "2026-10-24",
+    "time": "18:50",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "ゆたか",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1310347",
+    "notes": "深場狙いで！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-cfe07a8407cacc18"
+    ]
+  },
+  {
     "id": "session-3aa0a6fdc61b83ee",
     "date": "2026-10-24",
     "time": "18:38〜20:24",
@@ -2693,6 +2831,33 @@
     "source_url": "https://www.chowari.jp/ship/00107/catch/",
     "notes": "（土）大潮 アオリイカ 今日はアオリイカサイズが良かったですが 数がイマイチでした。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:11 日の入 17:12 月の出 15:49 月の入 03:48 天気 雨のち曇り 気温 24℃ / 16℃ 気圧 1019.9hPa 風 南東 4.8m/s 波 北 0.5m/s 水温 23.0℃ 潮 大潮 月齢 13.5 BI 8.2 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日",
     "verified": true
+  },
+  {
+    "id": "session-bfb809743ce6df02",
+    "date": "2026-10-23",
+    "time": "23:59",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "ゆたか",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1310344",
+    "notes": "確実にいるとわかってる場所でマッチザベイト！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-ee04eabcd9e7c0bb"
+    ]
   },
   {
     "id": "session-aef9a128b450017c",
@@ -4006,7 +4171,7 @@
     "confidence": "遊漁船公式/予約サイト掲載釣果",
     "source": "かどや丸 釣果",
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
-    "notes": "（木）中潮 アオリイカ ティップランエギ他 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:08 日の入 17:13 月の出 14:56 月の入 01:41 天気 曇り時々晴れ 気温 22℃ / 13℃ 気圧 1021.7hPa 風 北 4.2m/s 波 北北西 1.6m/s 水温 23.2℃ 潮 中潮 月齢 11.5 BI 6.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す かどや丸 福井県 小浜市 甲ヶ崎 7日前 釣り船詳細",
+    "notes": "（木）中潮 アオリイカ ティップランエギ他 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:08 日の入 17:13 月の出 14:56 月の入 01:41 天気 曇り時々晴れ 気温 22℃ / 13℃ 気圧 1021.7hPa 風 北 4.2m/s 波 北北西 1.6m/s 水温 23.2℃ 潮 中潮 月齢 11.5 BI 6.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象情報を表示 釣行当日の気象情報を隠す --> この条件では釣果がありませんでした 他の条件",
     "verified": true
   },
   {
