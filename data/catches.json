@@ -1,5 +1,113 @@
 [
   {
+    "id": "session-8baa330fa1375c8e",
+    "date": "2026-10-29",
+    "time": "19:52",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "散香",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1311398",
+    "notes": "水温低い中の貴重な2杯 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1ad00847b84bcd9d"
+    ]
+  },
+  {
+    "id": "session-65495e9d4b2bb84d",
+    "date": "2026-10-29",
+    "time": "19:22",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "ワーゲン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1311389",
+    "notes": "今日も仕事終わりに出撃。 １時間以上な〜んもナッシングで、 やっと釣れました〜^_^ その後アタリはあるものの乗らずに、タイムオーバーです。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-7f3658cce23247f7"
+    ]
+  },
+  {
+    "id": "session-05e35d4226698b77",
+    "date": "2026-10-29",
+    "time": "18:40",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "シブリン🌟",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1311351",
+    "notes": "これが釣れた後にまたデカいの途中で抜けた😭 横抱きなバレ方 すんごいフッキング決まったのにな〜汗 エギがちょっとしか写ってなかった😅 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3ceef6755d4ab780"
+    ]
+  },
+  {
+    "id": "session-4ef4179052a35945",
+    "date": "2026-10-29",
+    "time": "12:57",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "りょーた。",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1311135",
+    "notes": "南風が強かったため、3.0Dを使用 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-5560182ef216e4d0"
+    ]
+  },
+  {
     "id": "session-4fc122dc9728b3b7",
     "date": "2026-10-29",
     "time": "07:55",
@@ -277,6 +385,61 @@
     ]
   },
   {
+    "id": "session-66c63adb54bd33b7",
+    "date": "2026-10-28",
+    "time": "10:33〜12:21",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "いがけん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1311290",
+    "notes": "#決戦#天下人 追尾してきたイカをネバリのサイトでやっと抱いてくれました🦑 詳細ページ → / #決戦#天下人 シャクリ上げて表層で止めた瞬間飛びついてきた🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b91771a6690e8310",
+      "yamaria-event-8e42fe25d99f47fd"
+    ]
+  },
+  {
+    "id": "session-1c2f00141708e92e",
+    "date": "2026-10-28",
+    "time": "06:33",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "いがけん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1311281",
+    "notes": "#決戦#天下人 キャストしてラインが、たるんだまま沈んでいかないので合わせたら釣れていた🦑 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-6e60452d6a09b775"
+    ]
+  },
+  {
     "id": "session-351bed201f7a279f",
     "date": "2026-10-28",
     "time": "05:38",
@@ -356,6 +519,33 @@
     "event_ids": [
       "yamaria-event-22c7f7e2f723565d",
       "yamaria-event-ccdb42cfac3e19c7"
+    ]
+  },
+  {
+    "id": "session-c5c7716aea86a270",
+    "date": "2026-10-27",
+    "time": "22:22",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "かわちん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1311341",
+    "notes": "大潮３日目。台風の影響も残るウネリと風の強い日だった。3.5号に仮面シンカー1〜1.5gを追加してドリフトで。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-907909c0a1529c7b"
     ]
   },
   {
@@ -604,6 +794,33 @@
     "event_ids": [
       "yamaria-event-82a717b5bacdf675",
       "yamaria-event-de9e1cade06a5fcc"
+    ]
+  },
+  {
+    "id": "session-0024640405999434",
+    "date": "2026-10-27",
+    "time": "10:22",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "かわちん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1311337",
+    "notes": "大潮３日目。台風の影響も残るウネリと風の強い日だった。3.5号に仮面シンカー1〜1.5gを追加してドリフトで。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b5c6bfeb0b96f7f7"
     ]
   },
   {
@@ -1707,7 +1924,7 @@
     ]
   },
   {
-    "id": "session-dacf5a16115761a9",
+    "id": "session-1c121161b1768475",
     "date": "2026-10-25",
     "time": "05:50〜06:00",
     "region": "敦賀",
@@ -1730,8 +1947,8 @@
     "notes": "295g 詳細ページ → / 505g 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-e13f88cf143bb071",
-      "yamaria-event-7e053de2c5ee071e"
+      "yamaria-event-7e053de2c5ee071e",
+      "yamaria-event-e13f88cf143bb071"
     ]
   },
   {
