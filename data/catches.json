@@ -1,5 +1,34 @@
 [
   {
+    "id": "session-b79f7dc7dee65856",
+    "date": "2026-10-29",
+    "time": "07:01〜07:07",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "しょうじ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1310862",
+    "notes": "1番湾奥からスタート 詳細ページ → / ムラムラで来たよ〜 詳細ページ → / なかなか渋い 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b7c6ebea7d36b960",
+      "yamaria-event-5ab24e0813b2fb6a",
+      "yamaria-event-efa8ecb00a8f5e2a"
+    ]
+  },
+  {
     "id": "session-e9c9410638136711",
     "date": "2026-10-28",
     "time": "22:30",
@@ -54,7 +83,7 @@
     ]
   },
   {
-    "id": "session-96e1235e16031418",
+    "id": "session-d0297d77b38f5f69",
     "date": "2026-10-28",
     "time": "21:51〜23:33",
     "region": "宮津",
@@ -77,13 +106,13 @@
     "notes": "#決戦#天下人 潮のきいているシャローで 詳細ページ → / #決戦#天下人 落ちパクでした 詳細ページ → / #決戦#天下人 乗せきれず、次のキャストで手前まで丁寧に誘いGET 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-a925421084a67b42",
+      "yamaria-event-29aa2a119367d3e6",
       "yamaria-event-9346b4f35590a363",
-      "yamaria-event-29aa2a119367d3e6"
+      "yamaria-event-a925421084a67b42"
     ]
   },
   {
-    "id": "session-ec2ac6091c4ef72f",
+    "id": "session-056076c540f4192e",
     "date": "2026-10-28",
     "time": "19:47〜21:10",
     "region": "宮津",
@@ -107,8 +136,8 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-6047a3b5246edb4b",
-      "yamaria-event-7d36b33822bac60a",
-      "yamaria-event-7b57487a98799d1e"
+      "yamaria-event-7b57487a98799d1e",
+      "yamaria-event-7d36b33822bac60a"
     ]
   },
   {
@@ -635,6 +664,33 @@
       "yamaria-event-05dfb8279d9ed05c",
       "yamaria-event-6564a2c40deb110a",
       "yamaria-event-bdf8bbce8e0b8c96"
+    ]
+  },
+  {
+    "id": "session-b915fd70df403fbf",
+    "date": "2026-10-27",
+    "time": "01:56",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "ゴリラ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1310838",
+    "notes": "何とか1キャッチ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-66f2c6fcf6639bf6"
     ]
   },
   {
@@ -14788,140 +14844,5 @@
     "source_url": "https://www.chowari.jp/ship/00105/catch/",
     "notes": "（水）中潮 アオリイカ マイカ 合計1匹 モンゴウイカ 合計1匹 潮： ゆるい。波高： 低い。おはようございます。昨夜最近のいつものポイントへ行きましたが、大きなうねりが有りました。あんまり弾まず、ビタ止まりしたので、移動して帰って来ました。アオリイカ１人、８・４・４・２・・＋２。ティップランエギ他。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「かどや丸」の 予約プランを見る 「かどや丸」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:50 日の入 17:42 月の出 19:34 月の入 09:34 天気 晴れ 気温 25℃ / 16℃ 気圧 1014.3",
     "verified": true
-  },
-  {
-    "id": "session-a7f02a5dd64f08c9",
-    "date": "2026-09-28",
-    "time": "11:18",
-    "region": "越前",
-    "subregion": "越前",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "防波堤",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "300g〜500g",
-    "max_size_text": "300g〜500g",
-    "angler": "みっちゃん",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 越前",
-    "source_url": "https://www.yamaria.com/catches/1304350",
-    "notes": "人生初のアオリイカゲット🦑 #初心者#emeraldas#daiwa#エギ王 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-78d18a8e8694a169"
-    ]
-  },
-  {
-    "id": "session-50d3c9a9d57189ee",
-    "date": "2026-09-28",
-    "time": "04:28",
-    "region": "宮津",
-    "subregion": "丹後",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "磯",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g以下",
-    "max_size_text": "100g以下",
-    "angler": "Ryoji",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 丹後",
-    "source_url": "https://www.yamaria.com/catches/1303270",
-    "notes": "🦑 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-a37d2719be480951"
-    ]
-  },
-  {
-    "id": "session-6898c978a27862fb",
-    "date": "2026-09-28",
-    "time": "04:28",
-    "region": "宮津",
-    "subregion": "丹後",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "磯",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g以下",
-    "max_size_text": "100g以下",
-    "angler": "®️0421",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 丹後",
-    "source_url": "https://www.yamaria.com/catches/1303270",
-    "notes": "🦑 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-1b1027d9b5417cd4"
-    ]
-  },
-  {
-    "id": "tsurirepo-0123586e7d94e658",
-    "date": "2026-09-28",
-    "time": null,
-    "region": "舞鶴",
-    "subregion": "舞鶴沖",
-    "mode": "boat",
-    "method": "船釣り・詳細不明",
-    "place_type": "船/沖",
-    "catch_count": null,
-    "count_basis": "unknown",
-    "count_source": "secondary_boat_listing",
-    "catch_min": null,
-    "catch_max": null,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "船釣果の二次集約・元船報告推奨",
-    "verified": false,
-    "source": "つりれぽ 宮本丸（舞鶴）",
-    "source_url": "https://tsurirepo.com/boats/kyoto_miyamotomaru/#d-2026-09-28",
-    "notes": "アオリ入網でなく船釣果掲載あり・数量不明"
-  },
-  {
-    "id": "tsurirepo-d162ce85e26fafbb",
-    "date": "2026-09-28",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "若狭大島沖",
-    "mode": "boat",
-    "method": "ティップラン",
-    "place_type": "船/沖",
-    "catch_count": 14,
-    "count_basis": "per_angler_max",
-    "count_source": "secondary_boat_listing",
-    "catch_min": null,
-    "catch_max": 14,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "船釣果の二次集約・元船報告推奨",
-    "verified": false,
-    "source": "つりれぽ 海生丸（若狭大島）",
-    "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-09-28",
-    "notes": "集約ページ記載の最多14杯。船中総数・平均ではありません。"
   }
 ]
