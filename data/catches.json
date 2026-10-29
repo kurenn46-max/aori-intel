@@ -1,5 +1,33 @@
 [
   {
+    "id": "session-60ea00f43f107f50",
+    "date": "2026-10-30",
+    "time": "05:00〜07:35",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 100g〜300g",
+    "max_size_text": "300g〜500g",
+    "angler": "りょう",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1311726",
+    "notes": "ボルカノ 詳細ページ → / 型落 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-fee3bdad05951829",
+      "yamaria-event-6d97ee8a3674ac9d"
+    ]
+  },
+  {
     "id": "session-21eac2669c204b9b",
     "date": "2026-10-30",
     "time": "01:20",
@@ -2001,6 +2029,33 @@
     "event_ids": [
       "yamaria-event-0e0f2d0d9eb2f8ae",
       "yamaria-event-34a8cd9fe4ae762a"
+    ]
+  },
+  {
+    "id": "session-84ab57fea574873e",
+    "date": "2026-10-25",
+    "time": "06:44",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "とみ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1311659",
+    "notes": "♯決戦 ♯天下人 エギサイズです。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-69e57dd69dfe0c01"
     ]
   },
   {
