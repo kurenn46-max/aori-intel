@@ -1,5 +1,33 @@
 [
   {
+    "id": "session-a71c49d0e8e169c7",
+    "date": "2026-11-01",
+    "time": "01:59〜03:29",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g / 500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "ハルハルブルー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1313649",
+    "notes": "新色ローストムーン来たよ！ 詳細ページ → / 安定のナイトファングキタヨ！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-1410485b788b62f8",
+      "yamaria-event-8512ae899d869a5a"
+    ]
+  },
+  {
     "id": "session-757785602e8dbc4d",
     "date": "2026-10-31",
     "time": "23:15",
@@ -54,7 +82,7 @@
     ]
   },
   {
-    "id": "session-a874b1f16200d879",
+    "id": "session-24fd60fd2777bf05",
     "date": "2026-10-31",
     "time": "17:44〜18:25",
     "region": "宮津",
@@ -77,12 +105,12 @@
     "notes": "今日は土曜日で仕事も早仕舞いだったので17:30からの釣行🦑 到着後少しして今日も良型ヒット よう引いたわ〜💨 詳細ページ → / 一つ目が釣れてから 当たりがまぁまぁあり 思ったタイミングでヒットしてくれました！ 胴長28センチの930gと810g その後22時までやったのは内緒です笑笑 途中雨 雷 色々な天気 そして夜が更けると寒すぎます。 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-bddf95ad0cee9361",
-      "yamaria-event-1d3254e9110ddd54"
+      "yamaria-event-1d3254e9110ddd54",
+      "yamaria-event-bddf95ad0cee9361"
     ]
   },
   {
-    "id": "session-d2cd3e8a0b2e8dc8",
+    "id": "session-132d43d90d778bf0",
     "date": "2026-10-31",
     "time": "17:37〜21:23",
     "region": "宮津",
@@ -105,13 +133,13 @@
     "notes": "1つ目🦑 詳細ページ → / 2つ目🦑 詳細ページ → / 今日はティップラン午前便後、仮眠とって夕まづめからの夜まづめ🦑1日やってみました😅w 帰る間際にちょっといいの釣れて満足満足できました！ さすがに疲れたので明日はやめておきます😴もう既に海が恋しいですが…… 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-b883436f95fafab6",
+      "yamaria-event-114297182013170f",
       "yamaria-event-346fc2fc39a7d80f",
-      "yamaria-event-114297182013170f"
+      "yamaria-event-b883436f95fafab6"
     ]
   },
   {
-    "id": "session-c64ad434cd734a17",
+    "id": "session-dabca404f2fb051e",
     "date": "2026-10-31",
     "time": "16:36〜18:44",
     "region": "宮津",
@@ -134,8 +162,8 @@
     "notes": "あぁ、久しぶり過ぎるぅぅ😭🌊 海のにおい〜、潮風〜、あおりちゃん🦑 普段出来ない夕まづめに出撃🤩 着いて１投目投げてしゃくりながらよそ見👀 なんか潮目と潮がぶつかってもにゃもにゃしてる所発見🎃 無性に気になり、早まき回収してそこにキャストするとドンピシャ（笑） ちょっと沈めてひとしゃくり目で、違和感...... 少しさびくと根掛かりみたいなゴンで、フッキングからジージージーーーー🦑💥 ああ、脳汁🤯✨ 久しぶりであげるまで緊張し過ぎて写真撮ったやつがエギ写ってないし、ブレブレやしで、自宅写真💦すみません😭 詳細ページ → / 一杯目でもう帰っても良いかと思うくらいやったけどやっぱ久しぶりの海やしまだまだ夕まづめやし、家に帰る時間を決めてあちこちシャクシャク🤩 エギングの神様が僕の頭上に降臨され仰せの通りにしゃくってるとモゾモゾからのフルフッキング（笑） さっきのに比べると小さかったけどこれでも十分過ぎるサイズ✨ 久々脳汁噴射＆補充出来て大満足でした🦑✨ 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-6a9a225899c38a04",
-      "yamaria-event-3d676ece9a5cc59b"
+      "yamaria-event-3d676ece9a5cc59b",
+      "yamaria-event-6a9a225899c38a04"
     ]
   },
   {
@@ -167,7 +195,7 @@
     ]
   },
   {
-    "id": "session-13249b1191a22161",
+    "id": "session-dc4c51fb889dd390",
     "date": "2026-10-31",
     "time": "08:40〜11:27",
     "region": "小浜湾",
@@ -190,9 +218,9 @@
     "notes": "#決戦#天下人 うねりが大きくて厳しい中 なんとか引っ張ってくれました 詳細ページ → / #決戦#天下人 すぐ投げ直したら引っ張ってくれました 今日は良い日になるかな。 詳細ページ → / #決戦#天下人 時間が空いたけどなんとかツンアタリでのってくれました 結局今日は3杯 今年は厳しい 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-db4ff06f33daef8a",
       "yamaria-event-1545ed014b8f2312",
-      "yamaria-event-94f711d5568d43d0"
+      "yamaria-event-94f711d5568d43d0",
+      "yamaria-event-db4ff06f33daef8a"
     ]
   },
   {
