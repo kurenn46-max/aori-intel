@@ -54,7 +54,7 @@
     ]
   },
   {
-    "id": "session-7f5c8a1ae86f771a",
+    "id": "session-fc0f3ac1d0cfcd8d",
     "date": "2026-11-01",
     "time": "21:13〜21:56",
     "region": "宮津",
@@ -78,8 +78,8 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-108aed8e2e1cb129",
-      "yamaria-event-8602fc0204909735",
-      "yamaria-event-50864356972659f3"
+      "yamaria-event-50864356972659f3",
+      "yamaria-event-8602fc0204909735"
     ]
   },
   {
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "id": "session-97afc72d97ada062",
+    "id": "session-7a18ad9021896e85",
     "date": "2026-11-01",
     "time": "19:14〜20:00",
     "region": "越前",
@@ -120,7 +120,7 @@
     "place_type": "防波堤",
     "catch_count": 2,
     "confirmed_events": 2,
-    "claimed_count": 0,
+    "claimed_count": null,
     "count_source": "posted_events",
     "duration_hours": null,
     "cpue": null,
@@ -133,8 +133,8 @@
     "notes": "仕事前に1時間半だけと海へ🎣 手前5メーターぐらいからただ巻き。 時々巻くのを止めて抱くタイミングをつくってみる。 このパターンで最近よく釣れてます🦑 この子もそのパターンで抱いてきました！ 詳細ページ → / この前に下足一本を抜こうとして身ギレバラシ。 この子もまた下足一本だったからバラさない様にタモ入れました🦑 今日は3杯とも手間ただ巻きからの抱きでした！ そしてこの子で今年100杯目達成！ 目標にしてた100杯を達成できて大満足⤴︎ まだ2ヶ月あるのでもっと記録を伸ばしたい！！！ 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-77618801a7e8c745",
-      "yamaria-event-4f927a3ced7e4c82"
+      "yamaria-event-4f927a3ced7e4c82",
+      "yamaria-event-77618801a7e8c745"
     ]
   },
   {
@@ -493,7 +493,7 @@
     ]
   },
   {
-    "id": "session-a3dabfc8d964930e",
+    "id": "session-8eaf842c34e473d2",
     "date": "2026-11-01",
     "time": "06:20〜06:52",
     "region": "越前",
@@ -516,8 +516,8 @@
     "notes": "波が高いから3.5投入 詳細ページ → / うねりであたりが取れず、しゃくったら釣れてました 詳細ページ → / 安定のムラチェ 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-7ec0dfce9bbf32b3",
       "yamaria-event-6ee94e0e6ae5df8b",
+      "yamaria-event-7ec0dfce9bbf32b3",
       "yamaria-event-874663c123524111"
     ]
   },
