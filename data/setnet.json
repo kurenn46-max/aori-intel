@@ -14,6 +14,20 @@
     "notes": "混合集荷のため定置網指標には算入しない。"
   },
   {
+    "id": "setnet-jf-2026-11-02",
+    "date": "2026-11-02",
+    "region": "小浜湾",
+    "fishery": "小浜市漁協 市場水揚げ",
+    "gear": "定置網",
+    "gear_attribution": "species_explicit",
+    "aori_present": false,
+    "species": [],
+    "source": "小浜市漁業協同組合 水揚げ情報",
+    "source_url": "https://jf-obama.com/catchinfo/",
+    "confidence": "定置対象魚種が本文で明示",
+    "notes": "おはようございます。今朝は底曳・定置その他の水揚げがありました。 小雨も降り、寒くなってきましたね。定置はサゴシ、シイラが今日も多く揚がっています。 本日、底曳・延縄は休漁です。"
+  },
+  {
     "id": "setnet-wakasa-b351a626a3dca664",
     "date": "2026-10-31",
     "region": "小浜湾・若狭町",
@@ -207,7 +221,7 @@
     "source": "小浜市漁業協同組合 水揚げ情報",
     "source_url": "https://jf-obama.com/catchinfo/",
     "confidence": "定置水揚げあり・魚種帰属は限定",
-    "notes": "おはようございます。今日は定置その他の水揚げがありました。"
+    "notes": "おはようございます。今日は定置その他の水揚げがありました。 投稿のページ送り 1 2 &hellip; 69 次へ 月別アーカイブ 選択してください 2026年11月 (1) 2026年10月 (16) 2026年9月 (15) 2026年8月 (16) 2026年7月 (17) 2026年6月 (18) 2026年5月 (14) 2026年4月 (17) 2026年3月 (17) 2026年2月 (14) 2026年1月 (13) 2025年12月 (18) 2025年11"
   },
   {
     "id": "setnet-jf-2026-10-13",
@@ -426,81 +440,6 @@
     ],
     "source": "若狭小浜 おさかな探訪記",
     "source_url": "https://seiza-design.com/blog/archives/26945",
-    "confidence": "定置網帰属が記事で明示",
-    "notes": "数量は明記分のみ。未公表量は補完しない。"
-  },
-  {
-    "id": "setnet-wakasa-4d6ddb73292fcba0",
-    "date": "2026-10-02",
-    "region": "小浜湾・若狭町",
-    "fishery": "宇久定置網",
-    "gear": "定置網",
-    "gear_attribution": "confirmed",
-    "aori_present": true,
-    "species": [
-      {
-        "name": "シロサバフグ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "アオリイカ",
-        "signal": "target",
-        "amount": null
-      },
-      {
-        "name": "スルメイカ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "カンパチ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "カワハギ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "サゴシ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "サワラ",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "ツバス",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "カマス",
-        "signal": "indirect_predator_signal",
-        "amount": null
-      },
-      {
-        "name": "ヒラメ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "マダイ",
-        "signal": "other",
-        "amount": null
-      },
-      {
-        "name": "ガザミ",
-        "signal": "other",
-        "amount": null
-      }
-    ],
-    "source": "若狭小浜 おさかな探訪記",
-    "source_url": "https://seiza-design.com/blog/archives/26875",
     "confidence": "定置網帰属が記事で明示",
     "notes": "数量は明記分のみ。未公表量は補完しない。"
   }
