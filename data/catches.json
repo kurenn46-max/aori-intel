@@ -1,5 +1,114 @@
 [
   {
+    "id": "session-2aa95eca8ff1f009",
+    "date": "2026-11-03",
+    "time": "17:00",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ろーこー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1315958",
+    "notes": "５日ボーズ更新中🫩 先行者１人 苦手な3.5号を克服したく １７時前からキャスト〜〜〜 無風、潮ペタ🧑‍🩰🧑‍🩰🧑‍🩰🧑‍🩰 手前、ボトム付近でパ〜んち！！ 直後、少し重みを感じど〜にか合わせ成功😆 ゲソ１ど〜にか釣れてくれました👯‍♀️👯‍♀️👯‍♀️ 長かった〜〜〜💧 以降、２バイトのみ。 向かい風になり風が冷たく６時過ぎ終了。 #3.5号 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d2cbaf58397b7026"
+    ]
+  },
+  {
+    "id": "session-6135a15667a818f7",
+    "date": "2026-11-03",
+    "time": "16:59",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "ゆうや",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1315973",
+    "notes": "ボウズ続きでやっと釣れた 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-7a2dbe7b15112cfc"
+    ]
+  },
+  {
+    "id": "session-d6328b5e19be3a82",
+    "date": "2026-11-03",
+    "time": "16:43",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "リッタン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1315805",
+    "notes": "うるさいブタがいたけど釣れた 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-20ccdaffb3144e0d"
+    ]
+  },
+  {
+    "id": "session-6849d7c0c8bb988f",
+    "date": "2026-11-03",
+    "time": "16:30〜16:53",
+    "region": "越前",
+    "subregion": "越前",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "かな",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 越前",
+    "source_url": "https://www.yamaria.com/catches/1315886",
+    "notes": "飛猿使ってみたが、このあとすぐロスト⤵︎ 詳細ページ → / 安定のムラチェでした 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9758c4f59e26f735",
+      "yamaria-event-da1cc25d0e3fc699"
+    ]
+  },
+  {
     "id": "session-e5ab610fcd4e8080",
     "date": "2026-11-03",
     "time": "08:45",
@@ -51,6 +160,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-c7b71a96b1465039"
+    ]
+  },
+  {
+    "id": "session-b819262d52096ebc",
+    "date": "2026-11-03",
+    "time": "05:55",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "マーサン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1315803",
+    "notes": "悪天候の中、この時期にしては小さいですが価値ある1パイでした。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a10451720be96dac"
     ]
   },
   {
@@ -524,7 +660,7 @@
     ]
   },
   {
-    "id": "session-69e9dcac41f7671e",
+    "id": "session-85147b9834f58f35",
     "date": "2026-11-01",
     "time": "19:02〜20:59",
     "region": "宮津",
@@ -547,8 +683,8 @@
     "notes": "#決戦#天下人 ブイについてました 詳細ページ → / #決戦#天下人 沖の回遊から引きずり出しました 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-a603a56db9699a7b",
-      "yamaria-event-5afbb1659103f0be"
+      "yamaria-event-5afbb1659103f0be",
+      "yamaria-event-a603a56db9699a7b"
     ]
   },
   {
@@ -933,6 +1069,33 @@
     ]
   },
   {
+    "id": "session-7532f35594ffb48b",
+    "date": "2026-11-01",
+    "time": "07:22",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "磯",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "はじめ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1315892",
+    "notes": "凪 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d2cf79302e98a82e"
+    ]
+  },
+  {
     "id": "session-352cd6bffdbf7138",
     "date": "2026-11-01",
     "time": "07:09",
@@ -957,6 +1120,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-0c11597c29851891"
+    ]
+  },
+  {
+    "id": "session-6e7923bff5ae9895",
+    "date": "2026-11-01",
+    "time": "07:02",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "boat",
+    "method": "エギング",
+    "place_type": "ボート・船",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "やのっぴ",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1315789",
+    "notes": "磯の波打ち際から。 今年は新子はよく釣れましたが、その後が全然です。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-4391c67204d7036e"
     ]
   },
   {
@@ -1567,6 +1757,35 @@
       "yamaria-event-0666cb78d1cdd210",
       "yamaria-event-63daf0268b9beeae",
       "yamaria-event-d23ea526b32dbf4c"
+    ]
+  },
+  {
+    "id": "session-8467d8e81bf6eb15",
+    "date": "2026-10-31",
+    "time": "15:18〜18:36",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": 2,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g / 500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "くうちゃん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1315830",
+    "notes": "2杯目🦑 詳細ページ → / 追いかけてきたのをサイトで！ 詳細ページ → / フォール中に持って行く気持ちいいあたりでした〜 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-044d11ab0d93c074",
+      "yamaria-event-d03dc270e9e6605c",
+      "yamaria-event-6db5849ef2e0cdbf"
     ]
   },
   {
@@ -18451,61 +18670,6 @@
     "notes": "同行者0杯。同じ夕まずめで釣果差あり。釣行時間・エギ号数は未記録。",
     "verified": true,
     "is_user_data": true
-  },
-  {
-    "id": "session-01b79e6979ab334b",
-    "date": "2026-09-19",
-    "time": "21:08",
-    "region": "宮津",
-    "subregion": "宮津",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "防波堤",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g〜300g",
-    "max_size_text": "100g〜300g",
-    "angler": "スクイッドハンター",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 宮津",
-    "source_url": "https://www.yamaria.com/catches/1315326",
-    "notes": "サイズアーップ🦑✨✨ 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-ec311f41539e042b"
-    ]
-  },
-  {
-    "id": "session-07485e9eb93222c9",
-    "date": "2026-09-19",
-    "time": "20:23〜21:23",
-    "region": "宮津",
-    "subregion": "宮津",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "サーフ・砂浜・ゴロタ浜",
-    "catch_count": 2,
-    "confirmed_events": 2,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "100g〜300g",
-    "max_size_text": "100g〜300g",
-    "angler": "スクイッドハンター",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 宮津",
-    "source_url": "https://www.yamaria.com/catches/1315329",
-    "notes": "ただ巻きやめられません🦑✨✨ 詳細ページ → / イイ餌木🦑✨ 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-c0a49e1f827981a0",
-      "yamaria-event-e169cdd7d4eeba6c"
-    ]
   },
   {
     "id": "session-641a4de671980979",
