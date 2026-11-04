@@ -270,7 +270,7 @@
     ]
   },
   {
-    "id": "session-8110d51ec4c36be1",
+    "id": "session-7c23eb8218b1bf5b",
     "date": "2026-11-04",
     "time": "05:40〜07:02",
     "region": "敦賀",
@@ -293,8 +293,8 @@
     "notes": "寒かった 詳細ページ → / 小さい… 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-594bf3fd96957a6d",
-      "yamaria-event-24928bd7e4399b3d"
+      "yamaria-event-24928bd7e4399b3d",
+      "yamaria-event-594bf3fd96957a6d"
     ]
   },
   {
@@ -865,6 +865,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-5ceeb5a491c417c7"
+    ]
+  },
+  {
+    "id": "session-dac412718276345b",
+    "date": "2026-11-03",
+    "time": "00:11〜00:21",
+    "region": "敦賀",
+    "subregion": "敦賀",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g / 800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "あっきー４５",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 敦賀",
+    "source_url": "https://www.yamaria.com/catches/1316920",
+    "notes": "うねりと風で当たりとれず 詳細ページ → / 連続イカパンチ ５回目でやっとヒット 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-baf348bb327f14a1",
+      "yamaria-event-712468b6038ea704"
     ]
   },
   {
