@@ -27,6 +27,60 @@
     ]
   },
   {
+    "id": "session-95c031af55045fff",
+    "date": "2026-11-04",
+    "time": "19:25",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "2.5.8",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1317022",
+    "notes": "底で軽めのアクション後にグイ～と重くなり来てくれました 遠目で掛かったので、長く楽しい引きが楽しめました 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-111a01c537ebb4f8"
+    ]
+  },
+  {
+    "id": "session-2eb7b4a8af92b56f",
+    "date": "2026-11-04",
+    "time": "18:41",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "yuuuu",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1317081",
+    "notes": "10月渋めすぎてイカはどこにとおもったんですが。11月やっと釣れました！！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-058b842c4c65b8cd"
+    ]
+  },
+  {
     "id": "session-fcf4c5d7dd8b0006",
     "date": "2026-11-04",
     "time": "18:05",
@@ -105,6 +159,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-48e4e714c3a241b4"
+    ]
+  },
+  {
+    "id": "session-8475ab9d900cefa3",
+    "date": "2026-11-04",
+    "time": "15:50",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "南瓜帽子",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1317057",
+    "notes": "矢代で反応ゼロ。移動して何とか一杯確保……初のアオリイカ\\\\ ٩( 'ω' )و // ありがとうムラムラチェリー。サイズミスって3.5号なのによくぞ抱かせた 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-847994f205cd6d15"
     ]
   },
   {
@@ -267,6 +348,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-62f1b5fffa1b60b9"
+    ]
+  },
+  {
+    "id": "session-8ede2917298bbe45",
+    "date": "2026-11-04",
+    "time": "06:17",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "シェリー",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1317146",
+    "notes": "かなり渋く何度かのあたりも乗らない状況でピックアップ寸前にキャッチ。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-10ff786b23d1b1ef"
     ]
   },
   {
@@ -868,7 +976,7 @@
     ]
   },
   {
-    "id": "session-dac412718276345b",
+    "id": "session-2a61a992c0d7737d",
     "date": "2026-11-03",
     "time": "00:11〜00:21",
     "region": "敦賀",
@@ -891,8 +999,8 @@
     "notes": "うねりと風で当たりとれず 詳細ページ → / 連続イカパンチ ５回目でやっとヒット 詳細ページ →",
     "verified": true,
     "event_ids": [
-      "yamaria-event-baf348bb327f14a1",
-      "yamaria-event-712468b6038ea704"
+      "yamaria-event-712468b6038ea704",
+      "yamaria-event-baf348bb327f14a1"
     ]
   },
   {
@@ -1553,6 +1661,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-83e3ec187d3a5ce9"
+    ]
+  },
+  {
+    "id": "session-0edf61078b92acba",
+    "date": "2026-11-01",
+    "time": "18:04",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "y-squid",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1317020",
+    "notes": "小さくね？！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-36849487b892b51d"
     ]
   },
   {
@@ -6862,6 +6997,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-b57989d72fdc862b"
+    ]
+  },
+  {
+    "id": "session-e709290bce9e66ce",
+    "date": "2026-10-24",
+    "time": "22:22",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "y-squid",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1317021",
+    "notes": "天下人終わってしまった 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-b63b9ec79beaf6e6"
     ]
   },
   {
@@ -19326,60 +19488,6 @@
     "verified": true
   },
   {
-    "id": "tsurirepo-4d755b9533db2f9b",
-    "date": "2026-10-05",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "若狭大島沖",
-    "mode": "boat",
-    "method": "ティップラン",
-    "place_type": "船/沖",
-    "catch_count": 12,
-    "count_basis": "per_angler_max",
-    "count_source": "secondary_boat_listing",
-    "catch_min": null,
-    "catch_max": 12,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "船釣果の二次集約・元船報告推奨",
-    "verified": false,
-    "source": "つりれぽ 海生丸（若狭大島）",
-    "source_url": "https://tsurirepo.com/boats/fukui_kaiseimaru/#d-2026-10-05",
-    "notes": "集約ページ記載の最多12杯。船中総数・平均ではありません。"
-  },
-  {
-    "id": "chowari-c11fb78e89659386",
-    "date": "2026-10-05",
-    "time": null,
-    "region": "小浜湾",
-    "subregion": "小浜新港沖",
-    "mode": "boat",
-    "method": "船アオリ",
-    "place_type": "沖/船",
-    "catch_count": 15,
-    "catch_min": null,
-    "catch_max": 15,
-    "confirmed_events": null,
-    "claimed_count": null,
-    "count_source": "boat_report",
-    "count_basis": "per_angler_max",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": null,
-    "max_size_text": null,
-    "angler": null,
-    "confidence": "遊漁船公式/予約サイト掲載釣果",
-    "source": "SUPER VIKING 釣果",
-    "source_url": "https://www.chowari.jp/ship/00107/catch/",
-    "notes": "（月）長潮 アオリイカ 竿頭15匹 今日は４ヶ所回り拾い釣りでした。 型は良かったです。 皆さんお土産十分でした！ 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 05:54 日の入 17:36 月の出 月の入 14:32 天気 曇り一時雨 気温 24℃ / 17℃ 気圧 1012.2hPa 風 南南東 3.0m/s 波 北 0.5m/s 水温 24.6℃ 潮 長潮 月齢 24.0 BI 7.5 潮見表・タイドグラフの詳細を見る 釣行当日の気象",
-    "verified": true
-  },
-  {
     "id": "user-20261003-ogawa-evening",
     "date": "2026-10-03",
     "time": "夕まずめ",
@@ -19425,33 +19533,6 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-e808ea279dcaf386"
-    ]
-  },
-  {
-    "id": "session-274f09654d2f7466",
-    "date": "2025-11-13",
-    "time": "06:11",
-    "region": "小浜湾",
-    "subregion": "小浜",
-    "mode": "shore",
-    "method": "エギング",
-    "place_type": "磯",
-    "catch_count": 1,
-    "confirmed_events": 1,
-    "claimed_count": null,
-    "count_source": "posted_events",
-    "duration_hours": null,
-    "cpue": null,
-    "size_text": "300g〜500g",
-    "max_size_text": "300g〜500g",
-    "angler": "たろう",
-    "confidence": "写真付き実釣",
-    "source": "エギCOM 小浜",
-    "source_url": "https://www.yamaria.com/catches/1315630",
-    "notes": "活性高かった 詳細ページ →",
-    "verified": true,
-    "event_ids": [
-      "yamaria-event-e92fe1e5e020cc8d"
     ]
   }
 ]
