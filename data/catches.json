@@ -27,6 +27,33 @@
     ]
   },
   {
+    "id": "session-fa30024334686d8c",
+    "date": "2026-11-06",
+    "time": "22:37",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "800g〜1kg",
+    "max_size_text": "800g〜1kg",
+    "angler": "ワーゲン",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1317990",
+    "notes": "今日はちょこっとYOASOBI。 開始早々にシャクシャクの巻き巻きでグィーンとアタリ！ その瞬間からジィ〜〜〜😱 キタ〜！ 慎重に寄せて来て取り込み成功！ でかっ！ 見ると足二本しか掛かって無くて 危ない危ない…💦💦 よかった… 今秋シーズン更新の1杯となりました^_^ ♪スキップ、スキップ、ランランラン♪ うれぴーー！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-68f0dc746d1682f7"
+    ]
+  },
+  {
     "id": "session-3db14044b39b2adb",
     "date": "2026-11-06",
     "time": "19:40",
@@ -81,7 +108,7 @@
     ]
   },
   {
-    "id": "session-48cf6a6d31a4917a",
+    "id": "session-90db5d2f88c5a6d4",
     "date": "2026-11-06",
     "time": "19:30〜21:30",
     "region": "舞鶴",
@@ -104,9 +131,9 @@
     "notes": "小雨の中で 詳細ページ → / ちょいサイズダウン 詳細ページ → / サイズアップ 風が出てきたので撤収 良型で楽しく出来た 詳細ページ →",
     "verified": true,
     "event_ids": [
+      "yamaria-event-22ba53b0a8b905b0",
       "yamaria-event-c507268de12afd2e",
-      "yamaria-event-c8d2d51147b31cc9",
-      "yamaria-event-22ba53b0a8b905b0"
+      "yamaria-event-c8d2d51147b31cc9"
     ]
   },
   {
@@ -136,6 +163,33 @@
       "yamaria-event-2aea87192785c98f",
       "yamaria-event-50e6824dd64177a8",
       "yamaria-event-da3210c492d2fd09"
+    ]
+  },
+  {
+    "id": "session-0674e8c51748b680",
+    "date": "2026-11-06",
+    "time": "17:43",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "パワフル🦑",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1318013",
+    "notes": "釣り友さん達、皆んな活躍されてるので刺激を受けて出陣すると天気予報通り雨降りで降ったり止んだりで風は弱かったので良かったです。開始１時間何もなしで狙いは17時から下げから上げになっていくタイムと思っててボトムネチネチでヒット｡坊主回避出来､安心出来て嬉しい１杯ですね😃 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-505df2d2a28cb162"
     ]
   },
   {
@@ -660,6 +714,33 @@
     "source_url": "https://www.chowari.jp/ship/00107/catch/",
     "notes": "（木）若潮 アオリイカ 竿頭10匹 今日は南風少し強くおまけに潮速く釣り辛かったですが、 お客様の頑張りで何とか釣果になりました。 しばらく時化休みです。時化後期待したいですね。 続きを表示 % OFF ポイント還元 残 詳細を見る Amazon Pay決済可 クレジットカード決済可 「SUPER VIKING」の 予約プランを見る 「SUPER VIKING」の 全ての釣果を見る 釣行当日の潮汐 50 0 -10 0:00 6:00 12:00 18:00 24:00 釣行当日の気象 日の出 06:22 日の入 16:59 月の出 02:07 月の入 14:36 天気 晴れ後一時雨 気温 24℃ / 14℃ 気圧 1014.7hPa 風 南 0.7m/s 波 北 0.5m/s 水温 21.9℃ 潮 若潮 月齢",
     "verified": true
+  },
+  {
+    "id": "session-9f6c8a37537b67b8",
+    "date": "2026-11-04",
+    "time": "20:00",
+    "region": "舞鶴",
+    "subregion": "舞鶴",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g",
+    "max_size_text": "500g〜800g",
+    "angler": "valchon",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 舞鶴",
+    "source_url": "https://www.yamaria.com/catches/1318015",
+    "notes": "テトラ横イカが通りそうなところをぴょんぴょん 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-dcf70d3d61f13cd0"
+    ]
   },
   {
     "id": "session-19081984db393d48",
@@ -20169,5 +20250,32 @@
     "notes": "同行者0杯。同じ夕まずめで釣果差あり。釣行時間・エギ号数は未記録。",
     "verified": true,
     "is_user_data": true
+  },
+  {
+    "id": "session-525405f48f2f6485",
+    "date": "2025-10-03",
+    "time": "10:16",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "たろう",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1318016",
+    "notes": "オラオラマンゴー 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-3e9fd15f7eca227a"
+    ]
   }
 ]
