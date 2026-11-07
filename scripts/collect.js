@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const {reconcileCatches,countNew} = require('./quality');
+const {collectFishingPoint}=require('./fishing-point');
 
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data');
@@ -565,6 +566,11 @@ async function collect() {
         const html=await fetchText(source.url); const rows=parseJohshuya(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
         if(!rows.length){st.status='no_new';st.note='店舗公開釣果に直近アオリ情報なし';}
+      } else if(source.adapter==='fishingpoint'){
+        const result=await collectFishingPoint(source,fetchText);
+        newSessions.push(...result.rows);st.new_count=result.rows.length;
+        if(!result.rows.length){st.status=result.errors.length?'error':'no_new';st.note='個別記事を検査したが越前岸アオリ実釣なし';}
+        else if(result.errors.length){st.note='一部の個別記事が取得不可: '+result.errors.length+'件';}
       } else if(source.adapter==='uosoku'){
         const html=await fetchText(source.url); const rows=parseUosoku(html,source);
         newSessions.push(...rows); st.new_count=rows.length;
