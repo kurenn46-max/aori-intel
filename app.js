@@ -84,7 +84,9 @@ function analysis(rows){
   if(!rows.length)return ['材料不足','条件に合うアオリ釣果が取得できていません。釣れていないという意味ではありません。','neutral'];
   const reliable=rows.filter(x=>x.verified!==false && (state.mode!=='boat'||!['boat_total','reported_boat_total','report_only','reported_page','unknown'].includes(x.count_basis||x.count_source)));
   if(!reliable.length)return ['材料不足','確認できた杯数が不足しています。地域の魚影は判断できません。','neutral'];
-  const max=Math.max(0,...reliable.map(x=>x.catch_count||0)); const good=reliable.filter(x=>(x.catch_count||0)>=5).length; const user=rows.find(x=>x.is_user_data);
+  const measured=reliable.filter(x=>x.catch_count!=null && Number.isFinite(Number(x.catch_count)));
+  if(!measured.length)return ['杯数不明','直近の実釣報告はありますが、杯数が明記されていません。多い・少ないは判定できません。','neutral'];
+  const max=Math.max(0,...measured.map(x=>Number(x.catch_count))); const good=measured.filter(x=>Number(x.catch_count)>=5).length; const user=rows.find(x=>x.is_user_data);
   let txt=`直近条件内の最多は${max}杯。5杯以上の確認釣行は${good}件。`;
   if(user)txt+=` 本人実釣では${user.subregion}で${user.catch_count}杯、同行者${user.companion_catch_count??'不明'}杯。`;
   if(state.mode==='boat')txt+=' 船釣果は沖の魚影・水深の参考に使い、岸の好調判定には加えません。';
