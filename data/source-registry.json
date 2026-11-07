@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "updated_at": "2026-11-08",
   "sources": [
     {
@@ -85,6 +85,17 @@
       "url": "https://www.johshuya.co.jp/shop/choka.php?s=60",
       "enabled": true,
       "note": "越前海岸の岸エギング実釣・持込投稿を補完。釣り場が県外・不明な釣果は誤分類しない。"
+    },
+    {
+      "id": "fishingpoint-echizen",
+      "name": "フィッシングポイント 越前",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "fishingpoint",
+      "region": "越前",
+      "url": "https://fishing-point.jp/fishing_cat/aori_squid/",
+      "enabled": true,
+      "note": "個別の公開記事でアオリ・エギング・実釣日・越前海岸を確認した記録だけ採用。杯数不明はnull、地域精度。"
     },
     {
       "id": "chowari-kadoya",
