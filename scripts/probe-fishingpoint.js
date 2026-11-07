@@ -1,21 +1,24 @@
 'use strict';
-async function fetchPage(url){const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),12000);try{
- const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 AORI-INTEL validation (+GitHub Actions)'},signal:ctrl.signal});
- if(!r.ok)throw Error('HTTP '+r.status);
- return await r.text();}finally{clearTimeout(t)}}
+const {collectFishingPoint}=require('./fishing-point');
+const fs=require('node:fs');
+const registry=JSON.parse(fs.readFileSync('data/source-registry.json','utf8'));
+const source=registry.sources.find(x=>x.id==='fishingpoint-echizen');
+async function fetchPage(url){
+ const ctrl=new AbortController(),timer=setTimeout(()=>ctrl.abort(),12000);
+ try{
+  const r=await fetch(url,{headers:{'user-agent':'Mozilla/5.0 AORI-INTEL validation (+GitHub Actions)'},signal:ctrl.signal});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  return await r.text();
+ }finally{clearTimeout(timer);}
+}
 (async()=>{
- const html=await fetchPage('https://fishing-point.jp/fishing_cat/aori_squid/');
- const hrefs=[...html.matchAll(/href\s*=\s*["']([^"']*\/fishing\/\d+\.html)["']/gi)].map(x=>x[1]);
- const uniq=[...new Set(hrefs)].slice(0,3);
- console.log('FISHINGPOINT_INDEX_PROBE',JSON.stringify({length:html.length,links:hrefs.length,sample:uniq}));
- if(!uniq.length)throw Error('No detail links found');
- const url=new URL(uniq[0],'https://fishing-point.jp').toString();
- const detail=await fetchPage(url);
- const strip=s=>s.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/\s+/g,' ').trim();
- const txt=strip(detail);
- for(const key of ['釣人','日時','場所','サイズ','仕掛orヒットルアー']){
-  const i=txt.indexOf(key);
-  console.log('FISHINGPOINT_DETAIL_PROBE',key, i, i>=0?txt.slice(Math.max(0,i-60),i+220):'not found');
- }
- console.log('FISHINGPOINT_TAG_PROBE',JSON.stringify({h3Eging:/<h[1-5][^>]*>\s*エギング\s*<\/h[1-5]>/i.test(detail),hAori:/<h[1-5][^>]*>\s*アオリイカ\s*<\/h[1-5]>/i.test(detail)}));
-})().catch(e=>{console.error('FISHINGPOINT_PROBE_FAILED',String(e));process.exitCode=1;});
+ const result=await collectFishingPoint(source,fetchPage);
+ const summary={source:source.name,index:source.url,links_examined:result.detail_links,
+  verified_shore:result.rows.length,errors:result.errors.length,
+  dates:result.rows.map(x=>x.date).slice(0,8),unknown_counts:result.rows.filter(x=>x.catch_count==null).length,
+  latest:result.rows.map(x=>x.date).sort().at(-1)||null};
+ console.log('FISHINGPOINT_REAL_SMOKE',JSON.stringify(summary));
+ if(!result.rows.length)throw Error('No verified onshore squid articles extracted');
+ if(result.rows.some(x=>x.mode!=='shore'||x.verified!==true||x.catch_count!=null))
+  throw Error('Source safety invariant violated');
+})().catch(e=>{console.error('FISHINGPOINT_SMOKE_FAILED',String(e));process.exitCode=1;});
