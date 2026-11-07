@@ -1,5 +1,61 @@
 [
   {
+    "id": "session-61573e23d01544eb",
+    "date": "2026-11-07",
+    "time": "17:40",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g以下",
+    "max_size_text": "100g以下",
+    "angler": "けん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1318220",
+    "notes": "夕方には風は弱くなる予報、夕マヅメにイン まあまあな人、向かい風なので3.5号で飛距離を 左から右へ流れててやりにくい 回収してたらなんか引っかかり…弱いながらも生命反応を感じ…3.5号サイズ🦑 ボウズ回避…その後、雨、撤収 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-d6cc81f20d778908"
+    ]
+  },
+  {
+    "id": "session-9b45f954254889d0",
+    "date": "2026-11-07",
+    "time": "05:10〜07:24",
+    "region": "小浜湾",
+    "subregion": "小浜",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 3,
+    "confirmed_events": 3,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "500g〜800g / 300g〜500g / 100g〜300g",
+    "max_size_text": "500g〜800g",
+    "angler": "なかけん",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 小浜",
+    "source_url": "https://www.yamaria.com/catches/1318143",
+    "notes": "寒くて、暗い中スローでさびいてドン！ 詳細ページ → / あとが続かず、サイズダウンですわ！ 詳細ページ → / カクテルオレンジと同化！ 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-a0fba173c7b86000",
+      "yamaria-event-40563ccd205c9b2b",
+      "yamaria-event-0f11dbb8b0026d13"
+    ]
+  },
+  {
     "id": "session-f76553b5ef882ccd",
     "date": "2026-11-06",
     "time": "23:22",
@@ -51,6 +107,33 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-68f0dc746d1682f7"
+    ]
+  },
+  {
+    "id": "session-79af93d17161d744",
+    "date": "2026-11-06",
+    "time": "21:38",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "300g〜500g",
+    "max_size_text": "300g〜500g",
+    "angler": "けい",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1318245",
+    "notes": "釣れる気満々で行ったのに、生命反応なし。 ボウズを覚悟しましたが、釣れてくれました。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-92835b40f0a991eb"
     ]
   },
   {
@@ -276,6 +359,33 @@
     ]
   },
   {
+    "id": "session-ea1c8291c39fb617",
+    "date": "2026-11-06",
+    "time": "17:00",
+    "region": "宮津",
+    "subregion": "丹後",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "防波堤",
+    "catch_count": 1,
+    "confirmed_events": 1,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "niji",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 丹後",
+    "source_url": "https://www.yamaria.com/catches/1318211",
+    "notes": "夕方１時間半の釣果。 アタリはかなり渋い感じ。 ボトムでしっかり見せて、１回シャクリ後のテンションフォール中のフケアタリが多かった。 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-9458a7a3b50a9cd1"
+    ]
+  },
+  {
     "id": "session-62b43f30e7e706ca",
     "date": "2026-11-06",
     "time": "12:31",
@@ -464,6 +574,34 @@
     "verified": true,
     "event_ids": [
       "yamaria-event-9942f7d110a6c969"
+    ]
+  },
+  {
+    "id": "session-884c2c1126021cb0",
+    "date": "2026-11-05",
+    "time": "20:03〜20:05",
+    "region": "宮津",
+    "subregion": "宮津",
+    "mode": "shore",
+    "method": "エギング",
+    "place_type": "サーフ・砂浜・ゴロタ浜",
+    "catch_count": 2,
+    "confirmed_events": 2,
+    "claimed_count": null,
+    "count_source": "posted_events",
+    "duration_hours": null,
+    "cpue": null,
+    "size_text": "100g〜300g",
+    "max_size_text": "100g〜300g",
+    "angler": "ちゃんなお",
+    "confidence": "写真付き実釣",
+    "source": "エギCOM 宮津",
+    "source_url": "https://www.yamaria.com/catches/1318226",
+    "notes": "釣れますが、小さい。 詳細ページ → / またまた 詳細ページ →",
+    "verified": true,
+    "event_ids": [
+      "yamaria-event-0626271a90561e9f",
+      "yamaria-event-229568a92abefa0b"
     ]
   },
   {
