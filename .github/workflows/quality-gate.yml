@@ -20,3 +20,6 @@ jobs:
         run: npm run validate
       - name: Report independent evidence coverage
         run: npm run audit
+      - name: Verify new independent shop from GitHub Actions (non-gating)
+        continue-on-error: true
+        run: node scripts/smoke-independent-source.js
