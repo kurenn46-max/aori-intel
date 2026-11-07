@@ -264,12 +264,17 @@ function parseJohshuya(html, source) {
   const rows=[];
   for(let i=0;i<marks.length;i++){
     const cur=marks[i],next=marks[i+1]?.idx??text.length;
+    if(source.shop_label && cur.shop!==source.shop_label)continue;
     const block=normalizeSpace(text.slice(cur.end,Math.min(next,cur.end+5000)));
     if(!/アオリイカ/.test(block)) continue;
     const place=normalizeSpace((block.match(/釣り場\s*\|?\s*(.+?)\s+釣り人/)||[])[1]||'');
-    let region=normalizeRegion(place+' '+block);
-    if(!region && source.region && !/(金沢|能登|新潟|石川|富山|岐阜|三重)/.test(block)) region=source.region;
-    if(!region) continue;
+    // A report from a local shop can describe fishing in another prefecture.
+    // Never infer the shop's region when the fishing location is explicitly elsewhere.
+    if(/金沢|能登|新潟|石川|富山|岐阜|三重|愛知/.test(place))continue;
+    let region=normalizeRegion(place);
+    if(!region)region=normalizeRegion(block);
+    if(!region && source.region && !/(金沢|能登|新潟|石川|富山|岐阜|三重|愛知)/.test(block))region=source.region;
+    if(!region)continue;
 
     let mode='unknown';
     if(/ティップラン|船|沖|サップ|SUP|カヤック|ボート/.test(block)) mode='boat';
