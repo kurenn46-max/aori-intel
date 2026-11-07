@@ -106,6 +106,29 @@ function recordCard(x){
   const tags=[`<span class="metric"><b>${esc(countLabel)}</b></span>`,x.size_text?`<span class="metric">${esc(x.size_text)}</span>`:'',x.method?`<span class="metric">${esc(x.method)}</span>`:'',cp?`<span class="metric">${esc(cp)}</span>`:'',ev?`<span class="metric">${esc(ev)}</span>`:''].filter(Boolean).join('');
   return `<article class="record card"><div class="record-top"><div><div class="record-date">${esc(fmtDate(x.date,x.time))}</div><h3>${esc(x.subregion||x.region)}${x.place_type?`・${esc(x.place_type)}`:''}</h3></div><span class="confidence pill ${x.is_user_data?'good':'neutral'}">${esc(x.confidence||'確認済み')}</span></div><div class="metrics">${tags}</div><p class="record-notes">${esc(x.notes||'')}</p><div class="record-foot"><span>${esc(x.source||'')}</span>${x.source_url?`<a href="${esc(x.source_url)}" target="_blank" rel="noopener">出典</a>`:''}</div></article>`;
 }
+function renderSourceBalance(){
+  const el=$('#balancePanel');
+  if(!el || !window.AoriSourceBalance)return;
+  const b=window.AoriSourceBalance.summarize(state.catches,{today:todayJst(),region:state.region,days:7});
+  const concentration=b.status==='concentrated';
+  const badge=b.status==='no_data'?'材料不足':concentration?'情報源集中':b.status==='diversified'?'複数情報源':'出典が少ない';
+  const cls=b.status==='diversified'?'good':concentration?'warn':'neutral';
+  let html='<div class="section-head"><div><p class="eyebrow">EVIDENCE COVERAGE</p><h2>岸釣果・情報源の偏り（直近7日）</h2></div>'+
+    '<span class="pill '+cls+'">'+badge+'</span></div>';
+  if(!b.total){
+    html+='<p class="balance-note">この地域で確認できた直近7日の岸釣果がありません。釣果ゼロではなく、判断材料が不足しています。</p>';
+  } else {
+    html+='<div class="balance-figures"><span>確認記録 <b>'+b.total+'件</b></span>'+
+      '<span>エギCOM由来 <b>'+b.egicom+'件 / '+b.share+'%</b></span>'+
+      '<span>その他 <b>'+b.independent+'件</b></span></div>';
+    html+='<p class="balance-note">'+(concentration?
+      'エギCOMへの依存が高いため、地域全体の好不調を断定できません。':
+      '情報源の種類が増えても、釣れる確率を意味する数値ではありません。')+'</p>';
+    html+='<p class="balance-note">その他の情報源: '+
+      (b.independentSources.length?esc(b.independentSources.join('、')):'確認なし')+'</p>';
+  }
+  el.innerHTML=html;
+}
 function renderNetEvidence(){
   const rows=state.setnet.filter(x=>x.gear_attribution==='confirmed' && x.aori_present===true)
     .sort((a,b)=>b.date.localeCompare(a.date));
@@ -127,7 +150,7 @@ function renderSources(){
   $('#sourceStatus').innerHTML=`<p class="fineprint">固定情報源 最終巡回: ${esc(checked)}</p>`+searchRow+(s.length?s.map(x=>`<div class="source-row"><span>${esc(x.source)}</span><span class="status-${esc(x.status)}">${esc(x.status)} / 新規${x.new_count??0}件${x.parsed_count!=null?`（照合${x.parsed_count}）`:''}</span></div>`).join(''):'<div class="source-row"><span>固定情報源 初回実行待ち</span><span class="status-no_new">seed</span></div>');
 }
 function render(){
-  renderRegions(); const rows=selectedRecords(); renderSummary(rows);
+  renderRegions(); const rows=selectedRecords(); renderSummary(rows); renderSourceBalance();
   renderNetEvidence();
   const names={shore:'岸釣果',boat:'船釣果'}; $('#listTitle').textContent=`最新の${names[state.mode]}`;$('#resultCount').textContent=`${rows.length}件`;
   $('#records').innerHTML=rows.length?rows.map(recordCard).join(''):'<div class="empty card">条件に合う確認データなし</div>';
