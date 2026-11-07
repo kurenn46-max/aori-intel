@@ -23,3 +23,6 @@ jobs:
       - name: Verify new independent shop from GitHub Actions (non-gating)
         continue-on-error: true
         run: node scripts/smoke-independent-source.js
+      - name: Inspect Fishing Point direct reports (experimental)
+        continue-on-error: true
+        run: node scripts/probe-fishingpoint.js
