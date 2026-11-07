@@ -32,3 +32,9 @@ main{width:min(980px,100%);margin:auto;padding:14px 14px 44px}.card{background:l
 .manual-refresh summary{font-size:12px;font-weight:750;cursor:pointer;color:var(--muted)}
 .manual-refresh p{font-size:12px;line-height:1.6;color:var(--muted)}
 .manual-refresh a{color:var(--accent2)}
+
+.source-balance{margin-bottom:12px;padding:14px}
+.source-balance .section-head h2{font-size:16px}
+.balance-figures{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 6px}
+.balance-figures span{background:#09151d;border:1px solid #264353;border-radius:10px;padding:7px 9px;font-size:12px}
+.balance-note{font-size:12px;line-height:1.6;color:var(--muted);margin:8px 0 0}
