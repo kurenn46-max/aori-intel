@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updated_at": "2026-10-07T10:30:32.920Z",
+  "version": 5,
+  "updated_at": "2026-11-08",
   "sources": [
     {
       "id": "yamaria-obama",
@@ -71,7 +71,20 @@
       "region": "敦賀",
       "url": "https://johshuya.co.jp/shop/choka.php?s=151",
       "enabled": true,
-      "note": "店舗公開の実釣・持込情報。釣り場本文から敦賀/美浜/小浜等を再分類。"
+      "note": "店舗公開の実釣・持込情報。釣り場本文から敦賀/美浜/小浜等を再分類。",
+      "shop_label": "新敦賀店"
+    },
+    {
+      "id": "johshuya-shinfukui",
+      "name": "上州屋 新福井店",
+      "shop_label": "新福井店",
+      "type": "catch",
+      "priority": "A",
+      "adapter": "johshuya",
+      "region": "越前",
+      "url": "https://www.johshuya.co.jp/shop/choka.php?s=60",
+      "enabled": true,
+      "note": "越前海岸の岸エギング実釣・持込投稿を補完。釣り場が県外・不明な釣果は誤分類しない。"
     },
     {
       "id": "chowari-kadoya",
