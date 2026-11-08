@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-08T00:46:30.970Z",
+  "checked_at": "2026-11-08T07:29:41.815Z",
   "provider": "search_irrelevant",
-  "search_round": 114,
+  "search_round": 115,
   "search_regions": [
     "高浜",
     "小浜湾",
@@ -14,88 +14,88 @@
     "高浜",
     "常神半島",
     "美浜",
-    "越前"
+    "舞鶴"
   ],
   "query_stats": [
     {
-      "query": "\"内浦\" 高浜 アオリイカ 釣れた 2026 11",
+      "query": "\"和田\" 高浜 ティップラン アオリイカ 釣果 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"泊\" 小浜湾 ティップラン アオリイカ 釣果 2026 11",
+      "query": "\"堅海\" 小浜湾 秋イカ エギング 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"神子\" 常神半島 秋イカ エギング 2026 11",
+      "query": "\"世久見\" 常神半島 遊漁船 アオリイカ 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"美浜\" 美浜 遊漁船 アオリイカ 2026 11",
+      "query": "\"日向\" 美浜 新子 アオリイカ 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"色ヶ浜\" 敦賀 新子 アオリイカ 2026 11",
+      "query": "\"敦賀\" 敦賀 アオリイカ 陸っぱり 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"白杉\" 舞鶴 アオリイカ 陸っぱり 2026 11",
+      "query": "\"小橋\" 舞鶴 アオリイカ 釣果 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"宮津\" 宮津 アオリイカ 釣果 2026 11",
+      "query": "\"栗田\" 宮津 エギング アオリイカ 2026 11",
+      "raw": 9,
+      "relevant": 0,
+      "rejected_no_aori": 9,
+      "rejected_no_region": 0
+    },
+    {
+      "query": "\"越前\" 越前 アオリイカ 釣れた 2026 11",
       "raw": 10,
       "relevant": 0,
       "rejected_no_aori": 10,
       "rejected_no_region": 0
     },
     {
-      "query": "\"梅浦\" 越前 エギング アオリイカ 2026 11",
-      "raw": 10,
-      "relevant": 0,
-      "rejected_no_aori": 10,
-      "rejected_no_region": 0
-    },
-    {
-      "query": "site:anglers.jp \"和田\" 高浜 アオリイカ エギング 2026",
+      "query": "site:anglers.jp \"高浜\" 高浜 アオリイカ 朝まずめ 2026",
       "raw": 0,
       "relevant": 0,
       "rejected_no_aori": 0,
       "rejected_no_region": 0
     },
     {
-      "query": "site:johshuya.co.jp \"常神\" 常神半島 アオリイカ 朝まずめ 2026",
+      "query": "site:johshuya.co.jp \"小川漁港\" 常神半島 アオリイカ 秋イカ 2026",
       "raw": 0,
       "relevant": 0,
       "rejected_no_aori": 0,
       "rejected_no_region": 0
     },
     {
-      "query": "site:anglers.jp \"美浜\" 美浜 アオリイカ 秋イカ 2026",
+      "query": "site:anglers.jp \"日向\" 美浜 アオリイカ 新子 2026",
       "raw": 0,
       "relevant": 0,
       "rejected_no_aori": 0,
       "rejected_no_region": 0
     },
     {
-      "query": "site:johshuya.co.jp \"厨\" 越前 アオリイカ 新子 2026",
+      "query": "site:johshuya.co.jp \"小橋\" 舞鶴 アオリイカ エギング 2026",
       "raw": 0,
       "relevant": 0,
       "rejected_no_aori": 0,
@@ -104,50 +104,50 @@
   ],
   "rejected_examples": [
     {
-      "query": "\"内浦\" 高浜 アオリイカ 釣れた 2026 11",
-      "title": "会議費と交際費の区分｜1人1万円以下の飲食費と5,000円基準 ...",
-      "domain": "houjinzei-guide.com"
+      "query": "\"和田\" 高浜 ティップラン アオリイカ 釣果 2026 11",
+      "title": "すまいる（山形県米沢市の就労継続支援B型事業所）｜就労 ...",
+      "domain": "bgatanavi.com"
     },
     {
-      "query": "\"内浦\" 高浜 アオリイカ 釣れた 2026 11",
-      "title": "その飲食代は経費？「交際費・会議費・社内飲食費」の境界線 ...",
-      "domain": "roumu-110.co.jp"
+      "query": "\"和田\" 高浜 ティップラン アオリイカ 釣果 2026 11",
+      "title": "すまいる (山形県米沢市の就労継続支援B型事業所)の詳細情報 ...",
+      "domain": "snabi.jp"
     },
     {
-      "query": "\"泊\" 小浜湾 ティップラン アオリイカ 釣果 2026 11",
-      "title": "横浜駅からみなとみらいまで徒歩で行く方法は ...",
-      "domain": "shufunowa.com"
+      "query": "\"堅海\" 小浜湾 秋イカ エギング 2026 11",
+      "title": "磯海水浴場の1時間天気 週末の天気・紫外線情報【お出かけ ...",
+      "domain": "tenki.jp"
     },
     {
-      "query": "\"泊\" 小浜湾 ティップラン アオリイカ 釣果 2026 11",
-      "title": "横浜駅からみなとみらい駅へのアクセスガイド｜みなとみらい ...",
-      "domain": "jp.trip.com"
+      "query": "\"堅海\" 小浜湾 秋イカ エギング 2026 11",
+      "title": "磯海水浴場 (鹿児島県)の10日間天気｜雨雲レーダー｜Surf life",
+      "domain": "surf-life.blue"
     },
     {
-      "query": "\"神子\" 常神半島 秋イカ エギング 2026 11",
-      "title": "Why Does AOMEI Sometimes Freeze During Backup Or ...",
-      "domain": "cyberly.org"
+      "query": "\"世久見\" 常神半島 遊漁船 アオリイカ 2026 11",
+      "title": "単発 市街地再開発 連続性 事例 研究のバイト・求人情報",
+      "domain": "jp.indeed.com"
     },
     {
-      "query": "\"神子\" 常神半島 秋イカ エギング 2026 11",
-      "title": "AOMEI Backupper FAQ：バックアップ、復元、同期、クローン",
-      "domain": "aomei.jp"
+      "query": "\"世久見\" 常神半島 遊漁船 アオリイカ 2026 11",
+      "title": "東京都市圏における市街地再開発事業の変遷とその要因 - J ...",
+      "domain": "jstage.jst.go.jp"
     },
     {
-      "query": "\"美浜\" 美浜 遊漁船 アオリイカ 2026 11",
-      "title": "JIS C 8411 : 2019 合成樹脂製可とう電線管",
-      "domain": "kikakurui.com"
+      "query": "\"日向\" 美浜 新子 アオリイカ 2026 11",
+      "title": "人身傷害保険の保険金額は無制限にしたほうがいい？",
+      "domain": "life.oricon.co.jp"
     },
     {
-      "query": "\"美浜\" 美浜 遊漁船 アオリイカ 2026 11",
-      "title": "露出配管可能 ｜ 電設資材 ｜ 製品情報 ｜ ナガセルータック ...",
-      "domain": "rootac.nagase.com"
+      "query": "\"日向\" 美浜 新子 アオリイカ 2026 11",
+      "title": "人身傷害保険の金額は、3000万？5000万？1億？無制限 ...",
+      "domain": "anewleaf.xsrv.jp"
     }
   ],
   "search_key_configured": false,
   "queries_planned": 12,
   "queries_ok": 12,
-  "raw_results": 80,
+  "raw_results": 79,
   "relevant_results": 0,
   "unique_results": 0,
   "pages_attempted": 0,
@@ -156,13 +156,13 @@
   "new_catches": 0,
   "errors": [],
   "sample_queries": [
-    "\"内浦\" 高浜 アオリイカ 釣れた 2026 11",
-    "\"泊\" 小浜湾 ティップラン アオリイカ 釣果 2026 11",
-    "\"神子\" 常神半島 秋イカ エギング 2026 11",
-    "\"美浜\" 美浜 遊漁船 アオリイカ 2026 11",
-    "\"色ヶ浜\" 敦賀 新子 アオリイカ 2026 11",
-    "\"白杉\" 舞鶴 アオリイカ 陸っぱり 2026 11",
-    "\"宮津\" 宮津 アオリイカ 釣果 2026 11",
-    "\"梅浦\" 越前 エギング アオリイカ 2026 11"
+    "\"和田\" 高浜 ティップラン アオリイカ 釣果 2026 11",
+    "\"堅海\" 小浜湾 秋イカ エギング 2026 11",
+    "\"世久見\" 常神半島 遊漁船 アオリイカ 2026 11",
+    "\"日向\" 美浜 新子 アオリイカ 2026 11",
+    "\"敦賀\" 敦賀 アオリイカ 陸っぱり 2026 11",
+    "\"小橋\" 舞鶴 アオリイカ 釣果 2026 11",
+    "\"栗田\" 宮津 エギング アオリイカ 2026 11",
+    "\"越前\" 越前 アオリイカ 釣れた 2026 11"
   ]
 }
