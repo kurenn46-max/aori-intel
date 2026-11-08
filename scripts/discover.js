@@ -133,7 +133,9 @@ function trusted(url){const d=domain(url);return cfg.trusted_domains.some(x=>d==
 function rejected(url){const d=domain(url);return cfg.reject_domains.some(x=>d===x||d.endsWith('.'+x));}
 function relevantSearchHit(x){
   const text=[x.title,x.description].join(' ');
-  return /アオリイカ|秋イカ|エギング|ティップラン/.test(text) && Boolean(regionOf(text));
+  // Search result snippets may omit the location even when the query is geo-targeted.
+  // This only enters the candidate queue: the fetched page must independently prove region/date/count.
+  return /アオリイカ|秋イカ|エギング|ティップラン/.test(text) && Boolean(regionOf(text)||regionOf(x.query||''));
 }
 function queryList(round=0,shoreCounts={}) {
   return createPlan(cfg,round,cfg.provider.max_queries||40,shoreCounts).map(x=>x.query);
@@ -251,7 +253,7 @@ async function main(){
   const queries=plan.map(x=>x.query);
   const provider=braveKey?'brave_search':'bing_rss_fallback';
   const searchResults=[]; const errors=[]; let searchesOk=0; let rawCount=0;
-  const queryStats=[];
+  const queryStats=[]; const rejectedExamples=[];
   for(const q of queries){
     try{
       let items=braveKey
@@ -263,7 +265,15 @@ async function main(){
         items=items.filter(x=>{const d=domain(x.url).toLowerCase();return d===host||d.endsWith('.'+host);});
       }
       const relevant=items.filter(relevantSearchHit);
-      queryStats.push({query:q,raw:items.length,relevant:relevant.length});
+      const noAori=items.filter(x=>!/アオリイカ|秋イカ|エギング|ティップラン/.test(x.title+' '+x.description)).length;
+      const noRegion=items.filter(x=>/アオリイカ|秋イカ|エギング|ティップラン/.test(x.title+' '+x.description)
+        && !regionOf(x.title+' '+x.description)&&!regionOf(x.query||'')).length;
+      queryStats.push({query:q,raw:items.length,relevant:relevant.length,rejected_no_aori:noAori,rejected_no_region:noRegion});
+      if(relevant.length===0 && items.length){
+        for(const x of items.slice(0,2)){
+          if(rejectedExamples.length<8)rejectedExamples.push({query:q,title:x.title.slice(0,120),domain:domain(x.url)});
+        }
+      }
       rawCount+=items.length;
       searchResults.push(...relevant); searchesOk++;
     }catch(e){
@@ -322,6 +332,7 @@ async function main(){
     checked_at:checkedAt,provider:searchesOk?(searchResults.length?provider:'search_irrelevant'):'search_unavailable',
     search_round:round,search_regions:plan.filter(x=>x.region).map(x=>x.region),
     query_stats:queryStats,
+    rejected_examples:rejectedExamples,
     search_key_configured:Boolean(braveKey),
     queries_planned:queries.length,queries_ok:searchesOk,raw_results:rawCount,relevant_results:searchResults.length,
     unique_results:uniq.length,pages_attempted:ranked.length,candidates:candidates.length,

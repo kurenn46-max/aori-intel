@@ -1,0 +1,28 @@
+name: Aori Intel Quality Gate
+on:
+  pull_request:
+  push:
+    branches:
+      - "restart/**"
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Syntax, regressions and evidence audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate parsers and browser logic
+        run: npm run validate
+      - name: Report independent evidence coverage
+        run: npm run audit
+      - name: Verify new independent shop from GitHub Actions (non-gating)
+        continue-on-error: true
+        run: node scripts/smoke-independent-source.js
+      - name: Inspect Fishing Point direct reports (experimental)
+        continue-on-error: true
+        run: node scripts/probe-fishingpoint.js

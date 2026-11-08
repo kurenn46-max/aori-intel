@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#0d1720" />
   <title>アオリイカ釣果情報</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2.5.0" />
 </head>
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">AORI INTEL · V2.4.1</p>
+      <p class="eyebrow">AORI INTEL · V2.5.0</p>
       <h1>アオリイカ釣果情報</h1>
       <p class="sub">アオリイカ釣果に特化。岸と船を分離し、地域・日時・杯数を比較します</p>
     </div>
@@ -46,6 +46,8 @@
     </details>
 
     <section class="summary-grid" id="summary"></section>
+
+    <section class="source-balance card" id="balancePanel" aria-live="polite"></section>
 
     <section class="analysis card" id="analysisCard">
       <div class="section-head">
@@ -101,6 +103,7 @@
     </article>
   </template>
 
-  <script src="app.js" defer></script>
+  <script src="source-balance.js?v=2.5.0" defer></script>
+  <script src="app.js?v=2.5.0" defer></script>
 </body>
 </html>
