@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-11-07T20:58:29.071Z",
+  "checked_at": "2026-11-08T00:43:47.660Z",
   "provider": "search_irrelevant",
-  "search_round": 112,
+  "search_round": 113,
   "search_regions": [
     "高浜",
     "小浜湾",
@@ -18,70 +18,136 @@
   ],
   "query_stats": [
     {
-      "query": "\"高浜\" 高浜 アオリイカ 釣果 2026 11",
-      "raw": 0,
-      "relevant": 0
+      "query": "\"音海\" 高浜 エギング アオリイカ 2026 11",
+      "raw": 9,
+      "relevant": 0,
+      "rejected_no_aori": 9,
+      "rejected_no_region": 0
     },
     {
-      "query": "\"宇久\" 小浜湾 エギング アオリイカ 2026 11",
+      "query": "\"小浜\" 小浜湾 アオリイカ 釣れた 2026 11",
       "raw": 10,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 10,
+      "rejected_no_region": 0
     },
     {
-      "query": "\"常神\" 常神半島 アオリイカ 釣れた 2026 11",
+      "query": "\"小川漁港\" 常神半島 ティップラン アオリイカ 釣果 2026 11",
+      "raw": 9,
+      "relevant": 0,
+      "rejected_no_aori": 9,
+      "rejected_no_region": 0
+    },
+    {
+      "query": "\"菅浜\" 美浜 秋イカ エギング 2026 11",
       "raw": 10,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 10,
+      "rejected_no_region": 0
     },
     {
-      "query": "\"日向\" 美浜 ティップラン アオリイカ 釣果 2026 11",
+      "query": "\"白木\" 敦賀 遊漁船 アオリイカ 2026 11",
       "raw": 10,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 10,
+      "rejected_no_region": 0
     },
     {
-      "query": "\"敦賀\" 敦賀 秋イカ エギング 2026 11",
+      "query": "\"舞鶴\" 舞鶴 新子 アオリイカ 2026 11",
+      "raw": 0,
+      "relevant": 0,
+      "rejected_no_aori": 0,
+      "rejected_no_region": 0
+    },
+    {
+      "query": "\"伊根\" 宮津 アオリイカ 陸っぱり 2026 11",
       "raw": 10,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 10,
+      "rejected_no_region": 0
     },
     {
-      "query": "\"小橋\" 舞鶴 遊漁船 アオリイカ 2026 11",
-      "raw": 0,
-      "relevant": 0
-    },
-    {
-      "query": "\"栗田\" 宮津 新子 アオリイカ 2026 11",
-      "raw": 0,
-      "relevant": 0
-    },
-    {
-      "query": "\"越前\" 越前 アオリイカ 陸っぱり 2026 11",
+      "query": "\"厨\" 越前 アオリイカ 釣果 2026 11",
       "raw": 10,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 10,
+      "rejected_no_region": 0
     },
     {
-      "query": "site:anglers.jp \"音海\" 高浜 アオリイカ 秋イカ 2026",
+      "query": "site:anglers.jp \"内浦\" 高浜 アオリイカ 新子 2026",
       "raw": 0,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 0,
+      "rejected_no_region": 0
     },
     {
-      "query": "site:johshuya.co.jp \"神子\" 常神半島 アオリイカ 新子 2026",
+      "query": "site:johshuya.co.jp \"世久見\" 常神半島 アオリイカ エギング 2026",
       "raw": 0,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 0,
+      "rejected_no_region": 0
     },
     {
-      "query": "site:anglers.jp \"日向\" 美浜 アオリイカ エギング 2026",
+      "query": "site:anglers.jp \"菅浜\" 美浜 アオリイカ 朝まずめ 2026",
       "raw": 0,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 0,
+      "rejected_no_region": 0
     },
     {
-      "query": "site:johshuya.co.jp \"梅浦\" 越前 アオリイカ 朝まずめ 2026",
+      "query": "site:johshuya.co.jp \"越前\" 越前 アオリイカ 秋イカ 2026",
       "raw": 0,
-      "relevant": 0
+      "relevant": 0,
+      "rejected_no_aori": 0,
+      "rejected_no_region": 0
+    }
+  ],
+  "rejected_examples": [
+    {
+      "query": "\"音海\" 高浜 エギング アオリイカ 2026 11",
+      "title": "効果音ラボ - フリー、商用無料、報告不用の効果音素材を ...",
+      "domain": "soundeffect-lab.info"
+    },
+    {
+      "query": "\"音海\" 高浜 エギング アオリイカ 2026 11",
+      "title": "フリー効果音素材・無料効果音",
+      "domain": "taira-komori.net"
+    },
+    {
+      "query": "\"小浜\" 小浜湾 アオリイカ 釣れた 2026 11",
+      "title": "軽トラの荷台に人が乗るのは違法？原則や例外とは - クロス ...",
+      "domain": "x-work.jp"
+    },
+    {
+      "query": "\"小浜\" 小浜湾 アオリイカ 釣れた 2026 11",
+      "title": "軽トラの荷台に人を乗せる条件と注意点｜違反にならない乗り ...",
+      "domain": "hakopro.jp"
+    },
+    {
+      "query": "\"小川漁港\" 常神半島 ティップラン アオリイカ 釣果 2026 11",
+      "title": "ブルジュ・ハリファ：世界で最も高い建物 | ギネス世界記録",
+      "domain": "guinnessworldrecords.jp"
+    },
+    {
+      "query": "\"小川漁港\" 常神半島 ティップラン アオリイカ 釣果 2026 11",
+      "title": "ブルジュ・ハリファ：世界一高い高層ビル | ギネス世界記録",
+      "domain": "guinnessworldrecords.jp"
+    },
+    {
+      "query": "\"菅浜\" 美浜 秋イカ エギング 2026 11",
+      "title": "Close the All tools pane in Acrobat Reader",
+      "domain": "helpx.adobe.com"
+    },
+    {
+      "query": "\"菅浜\" 美浜 秋イカ エギング 2026 11",
+      "title": "Acrobat Reader のツールパネルを完全に閉じる | Acrobat Reader",
+      "domain": "helpx.adobe.com"
     }
   ],
   "search_key_configured": false,
   "queries_planned": 12,
   "queries_ok": 12,
-  "raw_results": 50,
+  "raw_results": 68,
   "relevant_results": 0,
   "unique_results": 0,
   "pages_attempted": 0,
@@ -90,13 +156,13 @@
   "new_catches": 0,
   "errors": [],
   "sample_queries": [
-    "\"高浜\" 高浜 アオリイカ 釣果 2026 11",
-    "\"宇久\" 小浜湾 エギング アオリイカ 2026 11",
-    "\"常神\" 常神半島 アオリイカ 釣れた 2026 11",
-    "\"日向\" 美浜 ティップラン アオリイカ 釣果 2026 11",
-    "\"敦賀\" 敦賀 秋イカ エギング 2026 11",
-    "\"小橋\" 舞鶴 遊漁船 アオリイカ 2026 11",
-    "\"栗田\" 宮津 新子 アオリイカ 2026 11",
-    "\"越前\" 越前 アオリイカ 陸っぱり 2026 11"
+    "\"音海\" 高浜 エギング アオリイカ 2026 11",
+    "\"小浜\" 小浜湾 アオリイカ 釣れた 2026 11",
+    "\"小川漁港\" 常神半島 ティップラン アオリイカ 釣果 2026 11",
+    "\"菅浜\" 美浜 秋イカ エギング 2026 11",
+    "\"白木\" 敦賀 遊漁船 アオリイカ 2026 11",
+    "\"舞鶴\" 舞鶴 新子 アオリイカ 2026 11",
+    "\"伊根\" 宮津 アオリイカ 陸っぱり 2026 11",
+    "\"厨\" 越前 アオリイカ 釣果 2026 11"
   ]
 }
