@@ -1,5 +1,17 @@
 # NIGHT AORI INTEL — restart architecture (2026-11-08)
 
+## 最上位の基本理念（ユーザー確認：2026-11-08）
+**広範囲の公開釣果情報を集め、正確に整理し、スマホで見やすく表示すること。**
+
+機能優先順位：
+1. 多元的な情報収集（エギCOM依存を下げ、ANGLERS、カンパリ、釣具店、遊漁船、公開ブログ等の到達可能なソースを増やす。アクセス制限は遵守する）
+2. 地域・実釣日・岸/船・杯数・サイズ・釣法・出典を正規化し、重複・誤分類・推測値を排除する
+3. 今日/昨日/7日・地域・地図/一覧・情報源リンクで直感的に閲覧できるUI
+4. 風・波・水温・潮や予測はオプション。情報収集と閲覧を妨げたり、予測中心に転換したりしない
+
+**受入評価は新たに検証済みの独立した情報源と表示の使いやすさを中心にする。** 釣行予測スコアの実装数は成功指標ではない。
+
+
 ## Mission
 Move from a single-site catch digest toward a **traceable shore-fishing decision assistant** for Echizen, Tsuruga, Wakasa, Maizuru and Tango. A catch post is **not** a probability sample. No "chance to catch" percentage without calibrated independent evidence.
 
